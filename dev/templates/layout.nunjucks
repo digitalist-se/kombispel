@@ -1,18 +1,18 @@
 <!-- layout.nunjucks -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="se">
 <head>
   <meta charset="UTF-8">
   <title>{{ pageName }}</title>
   <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-  {% include "sections/header.nunjucks" %}
-
+  {% include "components/header/header.nunjucks" %}
+  <main>
   {% block content %} {% endblock %}
-
-  {% include "sections/footer.nunjucks" %}
+  </main>
+  {% include "components/footer/footer.nunjucks" %}
   <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

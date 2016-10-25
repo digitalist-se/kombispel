@@ -1,0 +1,54 @@
+.Lottery-container {
+  width: 500px;
+  margin: 0 auto;
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+
+.Lottery-column {
+  position: relative;
+  // overflow: hidden;
+  width: calc(25% - 2px);
+  float: left;
+  height: 60px;
+  border: 1px solid green;
+  float: left;
+}
+
+
+
+
+.Lottery-number {
+  animation: slideshow 1s linear infinite;
+  position: absolute;
+  top: 0;
+  // position: relative;
+  // overflow: hidden;
+
+  div {
+    // position: absolute;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    // animation: slideshow 3s linear infinite;
+  }
+
+}
+// @keyframes slideshow {
+//   0%    { left: 0; }
+//   100%  { top: -200%; }
+// }
+
+
+
+.correct {
+  color: green;
+}
+.wrong {
+  color: red;
+}

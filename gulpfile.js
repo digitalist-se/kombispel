@@ -6,6 +6,11 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
+var concat = require("gulp-concat");
+var cleanCSS = require('gulp-clean-css');
+var minify = require('gulp-minify');
+
+
 // var data = require('gulp-data');
 /////////////////////////////////////////////
 //////// BROWSERSYNC
@@ -24,7 +29,7 @@ var autoprefixerOptions = {
     browsers: ['last 2 versions','ie >= 9', '> 5%', 'Firefox ESR']
 };
 gulp.task('sass', function() {
-    return gulp.src('dev/scss/**/*.scss')
+    return gulp.src(['dev/scss/**/*.scss','dev/templates/components/**/*.scss'])
         .pipe(sourcemaps.init())
         .pipe(sass())
         .on("error", sass.logError)
@@ -61,19 +66,67 @@ gulp.task('nunjucks', function() {
   }));
 });
 /////////////////////////////////////////////
+//////// JAVASCRIPT
+/////////////////////////////////////////////
+gulp.task('js', function() {
+	return gulp.src([
+ 'dev/templates/components/lottery/Lottery.js'
+ // 'dev/templates/components/header/Header.js'
+ // 'dev/js/app/settings.js',
+ // 'dev/js/app/firebase.js',
+])
+    .pipe(sourcemaps.init())
+		.pipe(concat('main.js'))
+    .pipe(sourcemaps.write())
+		.pipe(gulp.dest("dev/js"));
+});
+/////////////////////////////////////////////
 //////// WATCH
 /////////////////////////////////////////////
 gulp.task('watch', function() {
-    gulp.watch('dev/scss/**/*.scss', ['sass']);
+    gulp.watch(['dev/scss/**/*.scss','dev/templates/components/**/*.scss' ], ['sass']);
     gulp.watch('dev/templates/**/*.nunjucks',['nunjucks']);
     gulp.watch('dev/*.html', browserSync.reload);
-    gulp.watch('dev/js/**/*.js', browserSync.reload);
+    gulp.watch("dev/templates/components/**/*.js", ["js"]);
+    gulp.watch(['dev/js/**/*.js','dev/templates/components/**/*.js'], browserSync.reload);
 })
 /////////////////////////////////////////////
 //////// DEFAULT GULP
 /////////////////////////////////////////////
 gulp.task('default', function(callback) {
-    runSequence(['sass', 'nunjucks', 'browserSync', 'watch'],
+    runSequence(['sass','js','nunjucks', 'browserSync', 'watch'],
         callback
     )
+});
+
+/////////////////////////////////////////////
+//////// BUILD
+/////////////////////////////////////////////
+gulp.task('build', function(callback) {
+  runSequence(["min-css","min-js"], callback)
+});
+
+
+gulp.task("min-css", function() {
+  return gulp.src('dev/css/stylesheet.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('src/css/'));
+})
+gulp.task("min-css", function() {
+  return gulp.src('dev/css/stylesheet.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('src/css/'));
+})
+
+gulp.task('min-js', function() {
+  gulp.src('dev/js/main.js')
+    .pipe(minify({
+        ext:{
+            src:'.js',
+            min:'-min.js'
+        },
+        exclude: ['tasks'],
+        ignoreFiles: ['.combo.js', '-min.js']
+    }))
+    .pipe(gulp.dest('dev/js/'))
 });

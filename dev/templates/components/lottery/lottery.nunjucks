@@ -1,0 +1,16 @@
+<div class="Lottery-container">
+  <div class="Lottery-column">
+    <div class="Lottery-number"></div>
+  </div>
+  <div class="Lottery-column">
+    <div class="Lottery-number"></div>
+  </div>
+  <div class="Lottery-column">
+    <div class="Lottery-number"></div>
+  </div>
+  <div class="Lottery-column">
+    <div class="Lottery-number"></div>
+  </div>
+
+
+</div>

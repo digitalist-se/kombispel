@@ -1,0 +1,27 @@
+{% set pageName = "Om oss" %}
+{% extends "layout.nunjucks" %}
+{% block content %}
+<h1>DET HÄR ÄR LOTTERI SIDAN</h1>
+
+
+
+<div class="Lottery-container">
+  <div class="Lottery-number">
+    <span>1</span>
+  </div>
+  <div class="Lottery-number">
+    <span>7</span>
+  </div>
+  <div class="Lottery-number">
+    <span>3</span>
+  </div>
+  <div class="Lottery-number">
+    <span>4</span>
+  </div>
+
+</div>
+
+
+
+
+{% endblock %}
