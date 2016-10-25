@@ -1,0 +1,15 @@
+{% set pageName = "Galleri" %}
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<h1>DET HÄR ÄR GALLERY SIDAN</h1>
+{% for image in images %}
+<div class="gallery__item">
+  <h2>
+    {{image.title}}
+  </h2>
+  <img src="{{ image.src }}" alt="{{image.alt}}">
+</div>
+{% endfor %}
+
+{% endblock %}

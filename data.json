@@ -1,0 +1,11 @@
+{
+  "images": [{
+    "title": "Ett vackert fält",
+    "src": "images/heroes/field.png",
+    "alt": "A nice field"
+  }, {
+    "title": "En fin väg",
+    "src": "images/heroes/road.png",
+    "alt": "A nice field"
+  }]
+}

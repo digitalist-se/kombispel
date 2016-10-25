@@ -1,34 +1,22 @@
 {
-  "name": "kombispel",
+  "name": "nunjucks",
   "version": "1.0.0",
-  "description": "",
+  "description": "Nunjucks test",
   "main": "gulpfile.js",
-  "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-nunjucks-render": "^2.0.0",
-    "nunjucks": "^2.5.2"
-  },
   "devDependencies": {
-    "del": "^2.2.2",
+    "browser-sync": "^2.17.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-cache": "^0.4.5",
-    "gulp-concat": "^2.6.0",
-    "gulp-cssnano": "^2.1.2",
     "gulp-data": "^1.2.1",
-    "gulp-imagemin": "^3.0.3",
-    "gulp-livereload": "^3.8.1",
-    "gulp-notify": "^2.2.0",
-    "gulp-nunjucks-api": "^0.7.0",
     "gulp-nunjucks-render": "^2.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-ruby-sass": "^2.1.0",
-    "gulp-uglify": "^2.0.0",
-    "nunjucks": "^2.5.2"
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "run-sequence": "^1.2.2",
+    "sassdoc": "^2.1.20"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Vilhelm Falkenmark",
   "license": "ISC"
 }
