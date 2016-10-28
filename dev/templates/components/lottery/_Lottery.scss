@@ -8,20 +8,18 @@
   }
 }
 
-
 .Lottery-column {
   position: relative;
   overflow: hidden;
-  width: calc(25% - 2px);
+  width: calc(20% - 2px);
   float: left;
   height: 60px;
-  border: 1px solid green;
+  border: 1px solid blue;
   float: left;
 }
 
-
 .Lottery-number--spinning {
-  animation: spinning 5s linear infinite;
+  animation: spinning 2.5s linear infinite;
 }
 
 .Lottery-number {
@@ -30,13 +28,15 @@
   width: 100%;
 // THE NUMBER DIV
   div {
+    background-color: white;
+    color: black;
+    transition: all 0.2s ease;
     @extend .flex-center;
     font-size: 22px;
     height: 60px;
     width: 100%;
     text-align: center;
   }
-
 }
 @keyframes spinning {
   0% {
@@ -47,11 +47,23 @@
   }
 }
 
-
-
-.correct {
-  color: green;
+.Lottery-number {
+  .Lottery-correct {
+    color: green;
+  }
+  .Lottery-wrong {
+    color: red;
+  }
 }
-.wrong {
-  color: red;
+.Lottery-correct, .Lottery-wrong {
+position: relative;
+// &:after {
+//   content:"";
+//   position: absolute;
+//   width: 60px;
+//   height: 60px;
+//   background-color: green;
+//   top: 50px;
+// }
+
 }
