@@ -2,6 +2,7 @@
 <header class="Header">
 
   {% include "components/menu-row/menu-row.nunjucks" %}
+  {% include "components/menu-product/menu-product.nunjucks" %}
 
 
 <nav>
