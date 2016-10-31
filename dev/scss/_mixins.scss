@@ -1,4 +1,20 @@
-
 ////////////////////////////////
 // BUTTONS
 ///////////////////////////////
+@mixin rounded-btn($background,$color,$width) {
+cursor: pointer;
+background-color: $background;
+outline: 0;
+color: $color;
+border-radius: 8px;
+border: 0;
+font-size: 27px;
+padding: 20px 20px;
+max-width: $width;
+transition: all 0.2s ease;
+border: 2px solid $background;
+&:hover {
+  background: $color;
+  color: $background;
+}
+}
