@@ -70,7 +70,7 @@ gulp.task('nunjucks', function() {
 /////////////////////////////////////////////
 gulp.task('js', function() {
 	return gulp.src([
- 'dev/templates/components/lottery/Lottery.js'
+ // 'dev/templates/components/lottery/Lottery.js'
  // 'dev/templates/components/header/Header.js'
  // 'dev/js/app/settings.js',
  // 'dev/js/app/firebase.js',
