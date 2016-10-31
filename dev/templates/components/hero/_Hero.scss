@@ -1,0 +1,53 @@
+/////////////////////////////////////////////
+// HERO FROM INDEX PAGE
+/////////////////////////////////////////////
+.Hero {
+  height: 645px;
+  @include row(100%);
+  margin: 0 auto;
+  background: url("../images/heroes/start_hero.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.Hero-box {
+  background-color: white;
+  border-radius: 10px;
+  width: 450px;
+  padding: 20px;
+  position: absolute;
+  bottom: 150px;
+  right: 200px;
+  text-align: center;
+}
+
+.Hero-box-title {
+  color: $green;
+  margin-bottom: 15px;
+  span {
+    border-bottom: solid 1px gray;
+    padding-bottom: 3px;
+  }
+}
+
+.Hero-box-quote {
+  font-size: 27px;
+  margin-bottom: 25px;
+  &:before {
+    content: "“";
+  }
+  &:after {
+    content: "”";
+  }
+}
+
+.Hero-box-button {
+  @include button($green, rgb(141,171,64));
+  color: white;
+  margin: 0 auto;
+}
+
+.Hero-box-button-text {
+  font-size: 27px;
+}
+
