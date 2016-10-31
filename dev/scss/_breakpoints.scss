@@ -1,29 +1,30 @@
+/////////////////////////////////////////////
+//////// RESPONSIVE BREAKPOINTS
+/////////////////////////////////////////////
+$small: 320px;
+$medium: 768px;
+$large: 1024px;
+
+/////////////////////////////////////////////
+// MIN-WIDTHS
+/////////////////////////////////////////////
 @mixin respond-to($breakpoint) {
-  @if $breakpoint == "mobile-small" {
-    @media (min-width: 1px) and (max-width: $mobile-small-break) {
+
+  @if $breakpoint == "x-small" {
+    @media (min-width: 1px) and (max-width: $small) {
       @content;
     }
-  } @else if $breakpoint == "mobile-large" {
-    @media (min-width: $mobile-small-break+1) and (max-width: $mobile-large-break) {
+  } @else if $breakpoint == "small" {
+    @media (min-width: $small+1)  {
       @content;
     }
-  } @else if $breakpoint == "tablet" {
-    @media (min-width: $mobile-large-break+1) and (max-width: $tablet-break) {
-      @content;
-    }
-  }
-  @else if $breakpoint == "desktop" {
-    @media (min-width: $tablet-break+1) {
+  } @else if $breakpoint == "medium" {
+    @media (min-width: $medium) {
       @content;
     }
   }
-  @else if $breakpoint == "mobile" {
-    @media (min-width: 1px) and (max-width: $mobile-large-break) {
-      @content;
-    }
-  }
-  @else if $breakpoint == "not-mobile" {
-    @media (min-width: $mobile-large-break+1) {
+  @else if $breakpoint == "large" {
+    @media (min-width: $large) {
       @content;
     }
   }

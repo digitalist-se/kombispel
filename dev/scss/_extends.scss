@@ -1,5 +1,19 @@
+/////////////////////////////////////////////
+// .Row
+/////////////////////////////////////////////
+.Row {
+  width: 100%;
+  &:before, &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+
+
 // Justify content vertically and horizontally
-.flex-center
+.Flex-center
 {
   display:flex;
   justify-content:center;
