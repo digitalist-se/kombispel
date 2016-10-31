@@ -1,5 +1,5 @@
 {% set pageName = "Hem" %}
 {% extends "layout.nunjucks" %}
 {% block content %}
-<h1>DET HÄR ÄR ÄR STARTSIDAN</h1>
+{# <h1>DET HÄR ÄR ÄR STARTSIDAN</h1> #}
 {% endblock %}

@@ -1,13 +1,15 @@
 {% import 'macros/header-navigation.nunjucks' as nav %}
 <header class="Header">
-<h1>LOGOTYP</h1>
-<p>DET HÄR ÄR ÄR HEADERN</p>
+
+  {% include "components/menu-row/menu-row.nunjucks" %}
+
+
 <nav>
-<ul>
+{# <ul>
   {{nav.active(pageName,"index.html", "Hem")}}
   {{nav.active(pageName,"contact.html", "Kontakt")}}
   {{nav.active(pageName,"about.html", "Om oss")}}
   {{nav.active(pageName,"lottery.html", "Lotteri")}}
-</ul>
+</ul> #}
 </nav>
 </header>

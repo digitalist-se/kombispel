@@ -1,0 +1,58 @@
+.Menu-row-container {
+height: 75px;
+width: 100%;
+background-color: $red;
+position: relative;
+}
+
+/////////////////////////////////////////////
+ // LEFT SECTION
+ /////////////////////////////////////////////
+
+.Menu-row-menu {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  @include row(150px);
+}
+
+.Menu-row-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 4px solid white;
+  @extend .Flex-center;
+  float: left;
+}
+.Menu-row-title {
+  margin-left: 15px;
+  float: left;
+  color: white;
+}
+.Menu-row-burger {
+  width: 60%;
+  span {
+    margin: 4px 0;
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    height: 4px;
+    background-color: white;
+  }
+}
+
+/////////////////////////////////////////////
+// RIGHT SECTION
+/////////////////////////////////////////////
+.Menu-row-profile {
+  @include row(150px);
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+.Menu-row-image {
+background: url("../images/svg/profile-icon.svg") no-repeat center center;
+height: 45px;
+width: 45px;
+float: left;
+}
