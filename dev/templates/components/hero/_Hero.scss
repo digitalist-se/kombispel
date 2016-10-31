@@ -8,7 +8,7 @@
 
 .Hero-image {
   height: 645px;
-  background: url("../images/heroes/start_hero.png") no-repeat center center;
+  background: no-repeat center center;
   background-size: cover;
   position: relative;
 }
@@ -56,7 +56,7 @@
 }
 
 .Hero-box-button {
-  @include button($green, rgb(141,171,64));
+  @include button($green, $green_dark);
   color: white;
   margin: 0 auto;
 }
