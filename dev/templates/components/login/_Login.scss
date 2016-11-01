@@ -1,0 +1,251 @@
+.Login-overlay-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(0,0,0,0.7);
+}
+//  CLICKAREA
+.Login-clickarea--js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.Login-form-container {
+  background-color: white;
+  max-height: calc(100vh - 70px);
+  width: 90%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 5px;
+  position: relative;
+  overflow: auto;
+
+  @include respond-to("medium") {
+    margin-top: 100px;
+    max-height: calc(100vh - 150px);
+
+  }
+}
+.Login-close-form--js {
+position: absolute;
+right: 10px;
+top: 10px;
+height: 25px;
+width: 25px;
+border: 2px solid $light-grey;
+border-radius: 50%;
+transform: rotate(45deg);
+cursor: pointer;
+transition: all 0.3s ease;
+&:before, &:after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  width: 19px;
+  height: 2px;
+  background-color: $light-grey;
+  top: 12px;
+  border-radius: 4px;
+}
+&:after {
+  transform: rotate(90deg);
+}
+&:hover {
+  transform: rotate(225deg);
+}
+}
+.Login-header {
+  color: $red;
+  margin: 0;
+  text-align: center;
+  padding: 50px 0 10px 0;
+}
+.Login-form {
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+  label {
+    margin: 25px 0 7.5px 0;
+    font-size: 14px;
+  }
+  .Login-label--block {
+    display: block;
+  }
+
+  .Login-input {
+    padding-left: 5px;
+    height: 35px;
+    outline: 0;
+    background-color: $lighter-grey;
+    border: 1px solid $grey;
+    box-sizing: border-box;
+    width: 100%;
+    transition: all 0.2s ease;
+    &:focus {
+      height: 50px;
+      border: 1px solid $orange;
+      background-color: white;
+    }
+  }
+/////////////////////////////////////////////
+// TOGGLE HELP SECTION
+/////////////////////////////////////////////
+.Login-input-section {
+  position: relative;
+}
+
+.Login-toggle-help--js {
+  width: 25px;
+  height: 25px;
+  background-color: $orange;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  cursor: pointer;
+  &:before {
+    content: "?";
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 22px;
+  }
+}
+
+.Login-help-box--js {
+  display: none;
+}
+
+
+.Login-help-box {
+  position: relative;
+  margin-top: 15px;
+  width: 100%;
+  border: 2px solid $orange;
+  box-sizing: border-box;
+  &:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -10px;
+  right:15px;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-right:2px solid $orange;
+  border-bottom:2px solid $orange;
+  transform:rotate(-135deg);
+  }
+  ul {
+    padding-left: 0;
+    list-style-type: none;
+
+      a {
+        color: $red;
+        text-decoration: none;
+      }
+
+  }
+}
+
+.Login-contact-phone, .Login-contact-mail {
+  padding: 7.5px 0 7.5px 30px;
+  position: relative;
+  &:before {
+    content:"";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 0;
+  }
+}
+.Login-contact-phone:before {
+  background: url("../images/svg/phone.svg") no-repeat center center;
+}
+.Login-contact-mail:before {
+  background: url("../images/svg/mail.svg") no-repeat center center;
+}
+
+
+
+
+
+
+
+
+
+.Login-help-box-inner {
+  padding: $base-margin;
+}
+
+
+
+
+
+
+/////////////////////////////////////////////
+// LOGIN ROW
+/////////////////////////////////////////////
+.Login-row {
+  margin-top: 25px;
+  @extend .Row;
+}
+.Login-checkbox {
+  @include col(50%);
+}
+.Login-forgot-password {
+  @include col(50%);
+}
+
+  input[type="checkbox"] {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    box-sizing: border-box;
+    outline: 0;
+    position: relative;
+    &:after {
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 0;
+    top: 0;
+    background-color: white;
+    border: 1px solid $grey;
+    }
+    &:checked {
+      &:after {
+        background: $green url("../images/svg/check.svg") center center no-repeat;
+        background-size: 90%;
+      }
+    }
+
+
+  }
+
+  .Login-forgot-password {
+    color: $red;
+    font-size: 10px;
+    text-align: right;
+    display: block;
+    padding: 10px 0;
+  }
+
+  button[type="submit"] {
+    display: block;
+    margin-top: 30px;
+  }
+
+
+
+}
