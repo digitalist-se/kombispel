@@ -16,6 +16,7 @@
             <div class="Promo-box Promo-box--second">
                 <div class="Promo-box-title">Månadens kampanj!</div>
                 <div class="Promo-box-text">Prenie: Vettenkaraff och skraplottpaket på köpet när du skaffar en Kombilott.</div>
+                <img class="Promo-box-image" src="images/promo/promo2.png"></img>
                 <div class="Promo-box-button">KÖP EN KOMBILOTT</div>
             </div>
         </div>
