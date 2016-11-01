@@ -4,6 +4,7 @@
 
 .Promo-container-inner {
   width: calc(100% - 40px);
+  max-width: 1080px;
   margin: 0 auto;
   &:after {
     clear: both;
@@ -39,8 +40,35 @@
 // PROMO FIRST
 /////////////////////////////////////////////
 .Promo-box--first {
+  .Promo-box-title {
+    margin-bottom: 25px;
+  }
   .Promo-box-button {
     @include button($red, $red_dark);
+  }
+  .Promo-box-image {
+    margin-bottom: 20px;
+    max-width:100%;
+    max-height:100%;
+  }
+  .Promo-box-product {
+    @include row(100%);
+    margin: 0 auto;
+    @extend .Flex-center;
+  }
+  .Promo-box-product-item {
+    @include gtr-col(3, 30px);
+    height: 60px;
+    width: 53px;
+  }
+  .Promo-box-product-item--kombi {
+    background: url("../images/svg/kombi.svg") no-repeat center center;
+  }
+  .Promo-box-product-item--dromrese {
+    background: url("../images/svg/dromrese.svg") no-repeat center center;
+  }
+  .Promo-box-product-item--motor {
+    background: url("../images/svg/skrap.svg") no-repeat center center;
   }
 }
 
