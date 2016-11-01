@@ -1,3 +1,9 @@
 /////////////////////////////////////////////
 // ALL THE GENERAL CSS SHOULD BE IN THIS FILE
 /////////////////////////////////////////////
+body {
+  font-family: $gill-regular, "sans-serif";
+}
+h1:not([class]), h2:not([class]), h3:not([class]), h4:not([class]), h5:not([class]), h6:not([class]) {
+  font-family: $gill-bold, "sans-serif";
+}

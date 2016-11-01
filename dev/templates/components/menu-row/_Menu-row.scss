@@ -82,7 +82,10 @@ span:nth-of-type(3) {
 /////////////////////////////////////////////
 // RIGHT SECTION
 /////////////////////////////////////////////
-.Menu-row-profile {
+.Menu-row-profile--js {
+
+  cursor: pointer;
+
   position: absolute;
   right: 15px;
   top: 10px;

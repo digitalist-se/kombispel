@@ -3,10 +3,23 @@
 /////////////////////////////////////////////
 $red: rgb(192,51,47);
 $orange: rgb(251,164,0);
-$ligth-grey: rgb(204,204,204);
+$lighter-grey: rgb(247,247,247);
+$light-grey: rgb(204,204,204);
+$grey: rgb(179,179,179);
+$green: rgb(140,200,65);
 
 /////////////////////////////////////////////
 // Margin and offsets
 /////////////////////////////////////////////
 // Base offset
 $base-margin: 15px;
+
+
+/////////////////////////////////////////////
+// FONTS
+/////////////////////////////////////////////
+$gill-light: 'Gill Sans W01 Light';
+$gill-book: 'Gill Sans W01 Book';
+$gill-bookItalic: 'GillSansW01-BookItalic';
+$gill-bold: 'Gill Sans W01 Bold';
+$gill-regular: 'Gill Sans W01 Medium';
