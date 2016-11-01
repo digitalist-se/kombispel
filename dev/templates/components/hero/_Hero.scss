@@ -56,7 +56,7 @@
 }
 
 .Hero-box-button {
-  @include button($green, $green_dark);
+  @include gradient-button($green, $green_dark);
   color: white;
   margin: 0 auto;
 }
