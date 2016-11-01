@@ -1,0 +1,10 @@
+<div class="Logo-row-container">
+  <div class="Logo-row-logo-container">
+    <div class="Logo-row-logo">
+
+    </div>
+  </div>
+  <div class="Logo-row-button-container">
+    <button class="Correct-lottery-btn--js">Rätta din lott!</button>
+  </div>
+</div>

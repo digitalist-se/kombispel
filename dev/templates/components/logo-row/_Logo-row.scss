@@ -1,0 +1,31 @@
+$logo-row-height: 130px;
+.Logo-row-container {
+border-bottom: 3px solid $ligth-grey;
+@extend .Row;
+}
+
+/////////////////////////////////////////////
+ // LEFT SECTION
+ /////////////////////////////////////////////
+.Logo-row-logo-container {
+height: $logo-row-height;
+@include col(60%);
+@extend .Flex-center;
+}
+.Logo-row-logo {
+  width: 100%;
+  margin-left: $base-margin;
+  height: 70px;
+  background: url("../images/svg/logo.svg") no-repeat ;
+}
+/////////////////////////////////////////////
+// RIGHT SECTION
+/////////////////////////////////////////////
+.Logo-row-button-container {
+  height: $logo-row-height;
+  @include col(40%);
+  @extend .Flex-center;
+}
+.Correct-lottery-btn--js {
+  @include rounded-btn($orange,white, 220px);
+}
