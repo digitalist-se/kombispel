@@ -1,0 +1,139 @@
+.Promo-container {
+  background-color: rgb(242, 242, 242);
+}
+
+.Promo-container-inner {
+  margin: 0 auto;
+  @include respond-to(medium) {
+    width: calc(100% - 40px);
+    max-width: 1080px;
+    &:after {
+      clear: both;
+      content: "";
+      display: block;
+    }
+  }
+  @include breakpoint(1px, 767px) {
+    @include row(100%);
+  }
+}
+
+.Promo-item {
+  @include breakpoint(1px, 767px) {
+    @include gtr-col(1, 0px);
+    margin-top: 35px;
+  }
+  @include respond-to(medium) {
+    @include gtr-col(3, 35px);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 300px;
+  }
+}
+
+.Promo-box {
+  @extend .Promo-box;
+}
+
+.Promo-box-title {
+  color: $red;
+  font-size: 25px;
+}
+
+.Promo-box--first, .Promo-box--second {
+  padding: 25px;
+}
+
+.Promo-box-button {
+  color: white;
+}
+
+/////////////////////////////////////////////
+// PROMO FIRST
+/////////////////////////////////////////////
+.Promo-box--first {
+  .Promo-box-title {
+    margin-bottom: 25px;
+  }
+  .Promo-box-button {
+    @include button($red, $red_dark);
+  }
+  .Promo-box-image {
+    margin-bottom: 20px;
+    max-width:100%;
+    max-height:100%;
+  }
+  .Promo-box-product {
+    @include row(100%);
+    margin: 0 auto;
+    @extend .Flex-center;
+  }
+  .Promo-box-product-item {
+    @include gtr-col(3, 30px);
+    height: 60px;
+    width: 53px;
+  }
+  .Promo-box-product-item--kombi {
+    background: url("../images/svg/kombi.svg") no-repeat center center;
+  }
+  .Promo-box-product-item--dromrese {
+    background: url("../images/svg/dromrese.svg") no-repeat center center;
+  }
+  .Promo-box-product-item--motor {
+    background: url("../images/svg/skrap.svg") no-repeat center center;
+  }
+}
+
+/////////////////////////////////////////////
+// PROMO SECOND
+/////////////////////////////////////////////
+.Promo-box--second {
+  background: url("../images/promo/promo_background.png") no-repeat center center;
+  background-color: white;
+  .Promo-box-title {
+    margin-bottom: 5px;
+  }
+  .Promo-box-text {
+    margin-bottom: 15px;
+  }
+  .Promo-box-button {
+    @include button($orange, $orange_dark);
+  }
+  .Promo-box-image {
+    max-width:100%;
+    max-height:100%;
+  }
+}
+
+/////////////////////////////////////////////
+// PROMO THIRD
+/////////////////////////////////////////////
+.Promo-box--third {
+  .Promo-box-image-big {
+    background: no-repeat center center;
+    background-size: cover;
+    height: 250px;
+  }
+  .Promo-box-band {
+    background-color: $orange;
+    padding: 30px 0 25px 0;
+    color: white;
+  }
+  .Promo-box-band-text {
+    font-size: 12px;
+  }
+  .Promo-box-band-text--big {
+    font-size: 30px;
+  }
+  .Promo-box-link {
+    padding: 30px 0 25px 0;
+    a {
+      color: $red;
+      text-decoration: none;
+      text-transform: uppercase;
+      &:before {
+        content: ">> ";
+      }
+    }
+  }
+}
