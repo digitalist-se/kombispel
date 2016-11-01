@@ -4,9 +4,7 @@
 
   {% include "components/menu-row/menu-row.nunjucks" %}
   {% include "components/logo-row/logo-row.nunjucks" %}
-  {% include "components/menu-product/menu-product.nunjucks" %}
-
-
+  {# {% include "components/menu-product/menu-product.nunjucks" %} #}
 <nav>
 {# <ul>
   {{nav.active(pageName,"index.html", "Hem")}}

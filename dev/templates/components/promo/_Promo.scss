@@ -1,47 +1,39 @@
 .Promo-container {
   background-color: rgb(242, 242, 242);
 }
-
 .Promo-container-inner {
   margin: 0 auto;
-  @include respond-to(medium) {
-    width: calc(100% - 40px);
-    max-width: 1080px;
-    &:after {
-      clear: both;
-      content: "";
-      display: block;
-    }
-  }
-  @include breakpoint(1px, 767px) {
-    @include row(100%);
-  }
+  @extend .Inner-container;
+  @include flex-row();
 }
-
 .Promo-item {
-  @include breakpoint(1px, 767px) {
-    @include gtr-col(1, 0px);
-    margin-top: 35px;
+
+  background-color: white;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0px 5px 1px rgba(51, 51, 51, 0.08);
+
+  @include breakpoint(1px, 999px) {
+    @include flex-gtr-col(1, 10px);
   }
-  @include respond-to(medium) {
-    @include gtr-col(3, 35px);
-    margin-top: 50px;
-    margin-bottom: 50px;
-    max-width: 350px;
+
+  @include breakpoint(1000px) {
+    @include flex-gtr-col(3, 15px);
   }
 }
 
 .Promo-box {
-  @extend .Promo-box;
+  position: relative;
 }
+
 
 .Promo-box-title {
   color: $red;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .Promo-box--first, .Promo-box--second {
-  padding: 25px;
+  padding: 25px 15px;
 }
 
 .Promo-box-button {
@@ -56,22 +48,26 @@
     margin-bottom: 25px;
   }
   .Promo-box-button {
-    @include gradient-button($red, $red_dark);
+    @include gradient-btn($red, $red_dark);
   }
   .Promo-box-image {
     margin-bottom: 20px;
-    max-width:100%;
+    max-width: 100%;
     max-height:100%;
   }
   .Promo-box-product {
-    @include row(100%);
+    // position: absolute;
+    bottom: 0;
     margin: 0 auto;
-    @extend .Flex-center;
+    @extend .Row;
+
+
+    // @extend .Flex-center;
   }
   .Promo-box-product-item {
     @include gtr-col(3, 30px);
     height: 60px;
-    width: 53px;
+    // width: 53px;
   }
   .Promo-box-product-item--kombi {
     background: url("../images/svg/kombi.svg") no-repeat center center;
@@ -97,7 +93,7 @@
     margin-bottom: 15px;
   }
   .Promo-box-button {
-    @include gradient-button($orange, $orange_dark);
+    @include gradient-btn($orange, $orange_dark);
   }
   .Promo-box-image {
     max-width:100%;
@@ -116,14 +112,14 @@
   }
   .Promo-box-band {
     background-color: $orange;
-    padding: 30px 0 25px 0;
+    padding: $base-margin;
     color: white;
   }
   .Promo-box-band-text {
     font-size: 12px;
   }
   .Promo-box-band-text--big {
-    font-size: 30px;
+    font-size: 22px;
   }
   .Promo-box-link {
     padding: 30px 0 25px 0;
