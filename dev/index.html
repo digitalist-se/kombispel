@@ -11,8 +11,82 @@
   
 </head>
 <body>
+  <menu class="Menu-container">
+  <nav>
+    <ul class="Menu-level-one">
+        <!-- LOGIN -->
+      <li class="Menu-item-no-children">
+        <div class="Menu-level-one-header Open-login--js">
+          <span class="Menu-icon--lock"></span>
+          <span class="Menu-item-header">Logga in på din sida</span>
+        </div>
+      </li>
+        <!-- PROMOS -->
+      <li class="Menu-item-no-children">
+        <div class="Menu-level-one-header">
+        <span class="Menu-item-header">Våra spel</span>
+          <div class="Menu-promos-row">
+              <a class="Menu-promos-item" href="#"><div class="Menu-promos-item--kombi"></div></a>
+              <a class="Menu-promos-item" href="#"><div class="Menu-promos-item--dromrese"></div></a>
+              <a class="Menu-promos-item" href="#"><div class="Menu-promos-item--motor"></div></a>
+              <a class="Menu-promos-item" href="#"><div class="Menu-promos-item--skrap"></div></a>
+          </div>
+        </div>
+      </li>
+      <!-- ITEM -->
+      <li class="Menu-item-has-children">
+        <div class="Menu-level-one-header--js">
+          <span class="Menu-icon--arrow"></span>
+          <span class="Menu-item-header">Tävlingar och nöjen</span>
+        </div>
+        <ul class="Menu-level-two">
+          <li><a href="#">Månadens tävling</a></li>
+          <li><a href="#">Tävlingsvinnare</a></li>
+          <li><a href="#">Tävlingsvillkor</a></li>
+          <li><a href="#">Tidningen kombi</a></li>
+          <li><a href="#">Resereportage</a></li>
+        </ul>
+      </li>
+      <!-- ITEM -->
+      <li class="Menu-item-has-children">
+        <div class="Menu-level-one-header--js">
+          <span class="Menu-icon--arrow"></span>
+          <span class="Menu-item-header">Ombud</span>
+        </div>
+        <ul class="Menu-level-two">
+          <li><a href="#">Sak 1</a></li>
+          <li><a href="#">Sak 2</a></li>
+          <li><a href="#">Sak 3</a></li>
+          <li><a href="#">Sak 4</a></li>
+          <li><a href="#">Sak 5</a></li>
+        </ul>
+      </li>
+      <!-- ITEM -->
+      <li class="Menu-item-has-children">
+        <div class="Menu-level-one-header--js">
+          <span class="Menu-icon--arrow"></span>
+          <span class="Menu-item-header">Spelansvar</span>
+        </div>
+        <ul class="Menu-level-two">
+          <li><a href="#">Sak 1</a></li>
+          <li><a href="#">Sak 2</a></li>
+          <li><a href="#">Sak 3</a></li>
+          <li><a href="#">Sak 4</a></li>
+          <li><a href="#">Sak 5</a></li>
+          <li><a href="#">Sak 6</a></li>
+          <li><a href="#">Sak 7</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </nav>
+</menu>
+
+
+  <div class="Site-container">
   
 <header class="Header">
+  
   <div class="Login-overlay-container">
   <div class="Login-clickarea--js"></div>
 
@@ -96,7 +170,7 @@
         </div>
       </div>
       <div class="Menu-row-title">
-        <h3>MENY</h3>
+        <h3 class="Menu-row-title-title">meny</h3>
       </div>
     </div>
     <div class="Menu-row-profile--js">
@@ -110,73 +184,68 @@
   </div>
 </div>
 
-  <div class="Logo-row-container">
+  
+
+</header>
+
+  <main>
+    <div class="Logo-row-container">
   <div class="Logo-row-inner">
 <!-- KOMBI LOGO -->
-
   <div class="Logo-row-logo-container">
     <div class="Logo-row-main-logo"></div>
-
-
   </div>
-
-
   <!-- BUTTON -->
-
   <div class="Logo-row-button-container">
     <button class="Correct-lottery-btn--js">Rätta din lott!</button>
   </div>
-
   <!-- LOTTERY LOGOS -->
   <div class="Logo-row-logos-container">
 
     <div class="Logo-row-logo">
       <div class="Logo-row-logo--kombi"></div>
-      <h4>Kombi Lotteriet</h4>
+      
     </div>
 
     <div class="Logo-row-logo">
       <div class="Logo-row-logo--dromrese"></div>
-      <h4>Drömrese Lotteriet</h4>
+      
     </div>
 
     <div class="Logo-row-logo">
       <div class="Logo-row-logo--motor"></div>
-      <h4>Motor Lotteriet</h4>
+      
     </div>
 
     <div class="Logo-row-logo">
       <div class="Logo-row-logo--skrap"></div>
-      <h4>Skrap Lotter</h4>
+      
     </div>
   </div>
   <!-- END LOTTERY LOGOS -->
   </div>
 </div>
 
-  
-<nav>
 
-</nav>
-</header>
 
-  <main>
+
   
 
 <div class="index-content">
-<div class="Hero">
-    <div class="Hero-image" style="background-image: url('images/heroes/start_hero.png')">
+<div class="Hero" style="background-image: url('images/heroes/start_hero.png')">
+  <div class="Hero-inner">
         <div class="Hero-box">
             <div class="Hero-box-title"><span>VECKANS VINNARE<span></div>
             <div class="Hero-box-quote">Vi har alltid drömt om att åka till karibien. Nu blir det av!</div>
-            <div class="Hero-box-button">
+            <button class="Hero-box-button">
                 <div class="Hero-box-button-title">BLI EN VINNARE DU MED!</div>
                 <div class="Hero-box-button-text">KÖP EN DRÖMRESEOTT</div>
-            </div>
+            </button>
         </div>
     </div>
-    <div class="Hero-bottom">Det svenska lotteriet med störst chans att bli miljönar!</div>
+    <div class="Hero-caption">Det svenska lotteriet med störst chans att bli miljönar!</div>
 </div>
+
 <div class="Promo-container">
     <div class="Promo-container-inner">
         <div class="Promo-item">
@@ -246,6 +315,7 @@
   </div>
 </footer>
 
+  </div>
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/main.js"></script>
 </body>
