@@ -62,7 +62,7 @@ jQuery.fn.extend({
   setLoginForgotText: function(email) {
     $(this).html($.ForgotHelp +
         '<span class="Login-user-email">' + email + '</span>' +
-        '<div class="Login-forgot-button">återställ</div>' +
+        '<div class="Login-forgot-button-wrapper"><button class="Login-forgot-button">återställ</button></div>' +
         '</div>'
     );
   }
@@ -90,7 +90,6 @@ $(function() {
 
 // Pre-check input value on the fly.
 $('input[name="username"]').on('input', function(e)  {
-  console.log('dgdfg');
   // REGEX mail.
   var emailReg = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
   // REGEX user number.
