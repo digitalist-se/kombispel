@@ -126,6 +126,21 @@ transition: all 0.3s ease;
     font-size: 22px;
   }
 }
+  .Login-forgot-button {
+    margin-top: 25px;
+    @include rounded-btn($orange, white, 100%);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .Login-user-email {
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+  }
 
   .Login-toggle-error--js {
     width: 25px;
@@ -133,7 +148,7 @@ transition: all 0.3s ease;
     background: url("../images/svg/login-error.svg") no-repeat center center;
     position: absolute;
     right: 5px;
-    top: 37%;
+    top: 50%;
     cursor: pointer;
   }
 
@@ -201,22 +216,9 @@ transition: all 0.3s ease;
   background: url("../images/svg/mail.svg") no-repeat center center;
 }
 
-
-
-
-
-
-
-
-
 .Login-help-box-inner {
   padding: $base-margin;
 }
-
-
-
-
-
 
 /////////////////////////////////////////////
 // LOGIN ROW

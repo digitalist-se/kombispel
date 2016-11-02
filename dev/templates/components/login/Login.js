@@ -1,4 +1,18 @@
-$(".Login-toggle-help--js").click(function() {
+
+// Title text for the different state.
+$.DefaultTitle = 'Logga in på min sida';
+$.ErrorTitle = 'Inloggningen misslyckades!';
+
+// Value for help text state.
+$.DefaultHelp = '<div class="Login-help-box-top-text--js">' +
+    '<p>Du hittar information om ditt lösenord i ditt bekräftelsemail från oss.</p>' +
+    '</div>';
+
+$.ForgotHelp = '<div class="Login-help-box-top-text--js">' +
+    '<h2>Glömt ditt lösenord?</h2>' +
+    '<p>Klicka på återställ så skickar vi ett nytt lösernord till:</p>';
+
+$(".Login-toggle--js").click(function() {
   $(this).next().slideToggle();
 });
 
@@ -10,6 +24,7 @@ $(".Login-clickarea--js, .Login-close-form--js").click(function() {
 // Set the input state for error.
 jQuery.fn.extend({
   setLoginError: function () {
+    $('.Login-header').text($.ErrorTitle );
     $(this).addClass('Login-input-error--js');
     $(this).removeClass('Login-input-help--js');
 
@@ -42,6 +57,17 @@ jQuery.fn.extend({
   }
 });
 
+// Set the help text for forgotten password.
+jQuery.fn.extend({
+  setLoginForgotText: function(email) {
+    $(this).html($.ForgotHelp +
+        '<span class="Login-user-email">' + email + '</span>' +
+        '<div class="Login-forgot-button">återställ</div>' +
+        '</div>'
+    );
+  }
+});
+
 // Pre-Validation function for the form.
 $(function() {
   $('form[name="Login-form"]').submit(function(e) {
@@ -63,7 +89,8 @@ $(function() {
 });
 
 // Pre-check input value on the fly.
-$('form[name="Login-form"] input[name="username"]').on('input', function()  {
+$('input[name="username"]').on('input', function(e)  {
+  console.log('dgdfg');
   // REGEX mail.
   var emailReg = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
   // REGEX user number.
@@ -78,5 +105,13 @@ $('form[name="Login-form"] input[name="username"]').on('input', function()  {
   else {
     $(this).setLoginHelp();
   }
-});
 
+  // If its a valid email we change the help text.
+  if (emailReg.test($(this).val())) {
+    $('.Login-help-box-top-text--js').setLoginForgotText($(this).val());
+  }
+  // Reset the help text.
+  else {
+    $('.Login-help-box-top-text--js').html($.DefaultHelp);
+  }
+});
