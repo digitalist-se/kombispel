@@ -4,12 +4,13 @@
   <div class="Login-form-container">
     <div class="Login-close-form--js"></div>
     <h2 class="Login-header">Logga in på min sida</h2>
-    <form class="Login-form">
+    <form name="Login-form" class="Login-form">
 
       <!-- INPUT SECTION -->
       <div class="Login-input-section">
         <label class="Login-label--block" for="username">Kundnummer eller e-postadress</label>
-        <input class="Login-input" type="text" name="username" />
+        <input class="Login-input Login-input-help--js" type="text" name="username" />
+        <div class="Error Error-username--js"></div>
         <div class="Login-toggle-help--js"></div>
         <div class="Login-help-box--js">
         <div class="Login-help-box">
@@ -33,7 +34,8 @@
       <!-- INPUT SECTION -->
       <div class="Login-input-section">
       <label class="Login-label--block" for="password">Lösenord</label>
-      <input class="Login-input" type="password" name="password" />
+      <input class="Login-input Login-input-help--js" type="password" name="password" />
+        <div class="Error Error-password--js"></div>
       <div class="Login-toggle-help--js"></div>
       <div class="Login-help-box--js">
       <div class="Login-help-box">

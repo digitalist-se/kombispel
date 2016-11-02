@@ -83,7 +83,6 @@ transition: all 0.3s ease;
     height: 35px;
     outline: 0;
     background-color: $lighter-grey;
-    border: 1px solid $grey;
     box-sizing: border-box;
     width: 100%;
     transition: all 0.2s ease;
@@ -92,6 +91,14 @@ transition: all 0.3s ease;
       border: 1px solid $orange;
       background-color: white;
     }
+  }
+
+  .Login-input-help--js {
+    border: 1px solid $grey;
+  }
+
+  .Login-input-error--js {
+    border: 1px solid $red;
   }
 /////////////////////////////////////////////
 // TOGGLE HELP SECTION
@@ -118,6 +125,16 @@ transition: all 0.3s ease;
     font-size: 22px;
   }
 }
+
+  .Login-toggle-error--js {
+    width: 25px;
+    height: 25px;
+    background: url("../images/svg/login-error.svg") no-repeat center center;
+    position: absolute;
+    right: 5px;
+    top: 28px;
+    cursor: pointer;
+  }
 
 .Login-help-box--js {
   display: none;
@@ -245,8 +262,17 @@ transition: all 0.3s ease;
   button[type="submit"] {
     display: block;
     margin-top: 30px;
+    @include gradient-btn($red, $red_dark);
+    color: white;
+    margin-bottom: 40px;
   }
+}
 
+/////////////////////////////////////////////
+// ERROR DISPLAY
+/////////////////////////////////////////////
 
-
+.Error {
+  color: $red;
+  margin-top: 2px;
 }
