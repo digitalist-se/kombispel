@@ -11,7 +11,7 @@
         <label class="Login-label--block" for="username">Kundnummer eller e-postadress</label>
         <input class="Login-input Login-input-help--js" type="text" name="username" />
         <div class="Error Error-username--js"></div>
-        <div class="Login-toggle-help--js"></div>
+        <div class="Login-toggle--js Login-toggle-help--js"></div>
         <div class="Login-help-box--js">
         <div class="Login-help-box">
           <div class="Login-help-box-inner">
@@ -36,7 +36,7 @@
       <label class="Login-label--block" for="password">Lösenord</label>
       <input class="Login-input Login-input-help--js" type="password" name="password" />
         <div class="Error Error-password--js"></div>
-      <div class="Login-toggle-help--js"></div>
+      <div class="Login-toggle--js Login-toggle-help--js"></div>
       <div class="Login-help-box--js">
       <div class="Login-help-box">
         <div class="Login-help-box-inner">
