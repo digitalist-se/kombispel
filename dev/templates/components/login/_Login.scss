@@ -3,7 +3,7 @@
   height: 100%;
   width: 100%;
   z-index: 999;
-  background-color: rgba(0,0,0,0.7);
+  background-color: $transparent-grey;
   display: none;
 }
 //  CLICKAREA
@@ -281,7 +281,7 @@ transition: all 0.3s ease;
   button[type="submit"] {
     display: block;
     margin-top: 30px;
-    @include gradient-btn($red, $red_dark);
+    @include gradient-btn($red, $dark-red);
     color: white;
     margin-bottom: 40px;
   }

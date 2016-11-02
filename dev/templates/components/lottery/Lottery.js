@@ -4,7 +4,7 @@
 $(document).ready(function() {
 // The customers lotteryticket
 
-var userNumbers = [6,5,4,5,7]
+var userNumbers = [9,5,2,5,3]
 // All the correct numbers
 
 var winningNumbers = {

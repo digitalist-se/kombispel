@@ -48,7 +48,7 @@
     margin-bottom: 25px;
   }
   .Promo-box-button {
-    @include gradient-btn($red, $red_dark);
+    @include gradient-btn($red, $dark-red);
   }
   .Promo-box-image {
     margin-bottom: 20px;
@@ -90,10 +90,10 @@
     margin-bottom: 5px;
   }
   .Promo-box-text {
-    margin-bottom: 15px;
+    margin-bottom: 15px; 
   }
   .Promo-box-button {
-    @include gradient-btn($orange, $orange_dark);
+    @include gradient-btn($orange, $dark-orange);
   }
   .Promo-box-image {
     max-width:100%;

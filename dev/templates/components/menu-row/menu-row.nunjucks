@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="Menu-row-title">
-        <h3>MENY</h3>
+        <h3 class="Menu-row-title-title">meny</h3>
       </div>
     </div>
     <div class="Menu-row-profile--js">

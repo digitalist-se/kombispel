@@ -11,11 +11,19 @@
   {# <link rel="shortcut icon" href="images/icogreen.ico"> #}
 </head>
 <body>
+  {% include "components/menu/menu.nunjucks" %}
+
+  <div class="Site-container">
   {% include "components/header/header.nunjucks" %}
   <main>
+    {% include "components/logo-row/logo-row.nunjucks" %}
+
+
+
   {% block content %} {% endblock %}
   </main>
   {% include "components/footer/footer.nunjucks" %}
+  </div>
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/main.js"></script>
 </body>
