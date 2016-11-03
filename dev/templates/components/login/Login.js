@@ -1,4 +1,3 @@
-
 // Title text for the different state.
 $.DefaultTitle = 'Logga in på min sida';
 $.ErrorTitle = 'Inloggningen misslyckades!';
@@ -67,10 +66,12 @@ jQuery.fn.extend({
     );
   }
 });
-
+console.log($('form[name="Login-form"]'));
 // Pre-Validation function for the form.
 $(function() {
   $('form[name="Login-form"]').submit(function(e) {
+    e.preventDefault();
+    console.log('sdfsdfs');
     var username = $('input[name="username"]').val();
     var password = $('input[name="password"]').val();
     // Empty username.
