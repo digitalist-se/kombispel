@@ -1,0 +1,6 @@
+{% set pageName = "Om oss" %}
+{% extends "layout.nunjucks" %}
+{% block content %}
+<h1>GRATTIS DU ÄR INLOGGAD</h1>
+<a href="index.html">Tillbaka till startsidan</a>
+{% endblock %}
