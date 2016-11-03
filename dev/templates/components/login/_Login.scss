@@ -59,7 +59,7 @@ transition: all 0.3s ease;
   transform: rotate(225deg);
 }
 }
-.Login-header {
+.Login-header--js {
   color: $red;
   margin: 0;
   text-align: center;
@@ -81,26 +81,36 @@ transition: all 0.3s ease;
   .Login-input {
     position: relative;
     padding-left: 5px;
-    height: 35px;
+    height: 40px;
     outline: 0;
     background-color: $lighter-grey;
     box-sizing: border-box;
+    border: 1px solid $grey;
+
     width: 100%;
     transition: all 0.2s ease;
     &:focus {
       height: 50px;
       border: 1px solid $orange;
       background-color: white;
+      & + .Login-toggle--js {
+        top: 37px;
+      }
     }
   }
 
-  .Login-input-help--js {
-    border: 1px solid $grey;
-  }
 
   .Login-input-error--js {
-    border: 1px solid $red;
+    border: 1px solid red;
+    color: red;
   }
+  .Login-username-message,  .Login-password-message  {
+  display: none;
+  margin: 0;
+  padding: 10px 0 1px 0;
+  color: red;
+  }
+
 /////////////////////////////////////////////
 // TOGGLE HELP SECTION
 /////////////////////////////////////////////
@@ -108,71 +118,43 @@ transition: all 0.3s ease;
   position: relative;
 }
 
-.Login-toggle-help--js {
+// ICONS IN THE INPUT FIELD
+.Login-username-toggle--js,.Login-password-toggle--js {
   width: 25px;
   height: 25px;
-  background-color: $orange;
-  border-radius: 50%;
   position: absolute;
-  right: 10px;
-  top: 50%;
+  right: 5px;
+  top: 31px;
   cursor: pointer;
-  &:before {
-    content: "?";
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    color: white;
-    font-size: 22px;
-  }
+  transition: all .2s ease;
 }
-  .Login-forgot-button-wrapper {
-    margin: 0 auto;
-    margin-top: 25px;
-    text-align: center;
-  }
+.Login-question-icon--js {
+  background: url("../images/svg/login-question.svg") no-repeat center center;
+}
+.Login-error-icon--js {
+  background: url("../images/svg/login-error.svg") no-repeat center center;
+}
 
-  .Login-forgot-button {
+.Login-check-icon--js {
+  background: url("../images/svg/login-valid.svg") no-repeat center center;
+}
+
+  .Login-reset-password-btn--js {
     @include rounded-btn($orange, white, 100%);
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
   }
-
   .Login-user-email {
     font-weight: bold;
     font-size: 18px;
     font-style: italic;
   }
 
-  .Login-toggle-error--js {
-    width: 25px;
-    height: 25px;
-    background: url("../images/svg/login-error.svg") no-repeat center center;
-    position: absolute;
-    right: 5px;
-    top: 50%;
-    cursor: pointer;
-  }
-
-  .Login-toggle-valid--js {
-    width: 25px;
-    height: 25px;
-    background: url("../images/svg/login-valid.svg") no-repeat center center;
-    position: absolute;
-    right: 5px;
-    top: 50%;
-    cursor: pointer;
-  }
-
-.Login-help-box--js {
+// THE ORANGE SLIDE DOWN HELP-BOXES
+.Login-username-help-box--js,.Login-password-help-box--js {
   display: none;
 }
-
-
 .Login-help-box {
   position: relative;
   margin-top: 15px;
@@ -184,7 +166,7 @@ transition: all 0.3s ease;
   display: block;
   position: absolute;
   top: -10px;
-  right:15px;
+  right: 15px;
   width: 15px;
   height: 15px;
   background: white;
@@ -266,8 +248,6 @@ transition: all 0.3s ease;
         background-size: 90%;
       }
     }
-
-
   }
 
   .Login-forgot-password {
@@ -277,10 +257,11 @@ transition: all 0.3s ease;
     display: block;
     padding: 10px 0;
   }
-
-  button[type="submit"] {
+  .Login-form-submit-btn--js {
     display: block;
     margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
     @include gradient-btn($red, $dark-red);
     color: white;
     margin-bottom: 40px;
@@ -291,7 +272,18 @@ transition: all 0.3s ease;
 // ERROR DISPLAY
 /////////////////////////////////////////////
 
-.Error {
-  color: $red;
-  margin-top: 2px;
+.Login-header--error {
+  color: red;
+}
+
+
+/////////////////////////////////////////////
+// LOGIN PASSWORD BOXES
+/////////////////////////////////////////////
+.Login-password-reset-box--js, .Login-password-sent-box--js {
+display: none;
+}
+.Login-reset-email--js {
+  font-family: $gill-bold;
+  font-style: italic;
 }

@@ -1,116 +1,154 @@
-
-// Title text for the different state.
-$.DefaultTitle = 'Logga in på min sida';
-$.ErrorTitle = 'Inloggningen misslyckades!';
-
-// Value for help text state.
-$.DefaultHelp = '<div class="Login-help-box-top-text--js">' +
-    '<p>Du hittar information om ditt lösenord i ditt bekräftelsemail från oss.</p>' +
-    '</div>';
-
-$.ForgotHelp = '<div class="Login-help-box-top-text--js">' +
-    '<h2>Glömt ditt lösenord?</h2>' +
-    '<p>Klicka på återställ så skickar vi ett nytt lösernord till:</p>';
-
-$(".Login-toggle--js").click(function() {
-  $(this).next().slideToggle();
-});
-
-
+/////////////////////////////////////////////
+ // CLOSE MODAL
+ /////////////////////////////////////////////
 $(".Login-clickarea--js, .Login-close-form--js").click(function() {
-  $(".Login-overlay-container").fadeOut("fast");
+  $(".Login-overlay-container").fadeOut("fast")
+})
+
+
+$(".Login-username-toggle--js").click(function() {
+  $(".Login-username-help-box--js").slideToggle();
 });
 
-// Set the input state for error.
-jQuery.fn.extend({
-  setLoginError: function () {
-    $('.Login-header').text($.ErrorTitle );
-    $(this).addClass('Login-input-error--js');
-    $(this).removeClass('Login-input-help--js');
-
-    $(this).parent().find('.Login-toggle--js').addClass('Login-toggle-error--js');
-    $(this).parent().find('.Login-toggle--js').removeClass('Login-toggle-help--js');
-    $(this).parent().find('.Login-toggle--js').removeClass('Login-toggle-valid--js');
-  }
+$(".Login-password-toggle--js").click(function() {
+  $(".Login-password-help-box--js").slideToggle();
 });
 
-// Set the input state for valid.
-jQuery.fn.extend({
-  setLoginValid: function () {
-    $(this).removeClass('Login-input-error--js');
 
-    $(this).parent().find('.Login-toggle--js').addClass('Login-toggle-valid--js');
-    $(this).parent().find('.Login-toggle--js').removeClass('Login-toggle-help--js');
-    $(this).parent().find('.Login-toggle--js').removeClass('Login-toggle-error--js');
-  }
-});
+var state = {
+  userName: false, // IS CUSTOMERNUMBER OR EMAIL OK
+  passWord: false,
+  resetPassword: false,
+  loginFailed: false,
+  emailReg: false,
+  numberReg: false
+}
 
-// Set the input state for help (default).
-jQuery.fn.extend({
-  setLoginHelp: function () {
-    $(this).removeClass('Login-input-error--js');
-    $(this).addClass('Login-input-help--js');
-
-    $(this).parent().find('.Login-toggle--js').addClass('Login-toggle-help--js');
-    $(this).parent().find('.Login-toggle--js').removeClass('Login-toggle-valid--js');
-    $(this).parent().find('.Login-toggle--js').removeClass('Login-toggle-error--js');
-  }
-});
-
-// Set the help text for forgotten password.
-jQuery.fn.extend({
-  setLoginForgotText: function(email) {
-    $(this).html($.ForgotHelp +
-        '<span class="Login-user-email">' + email + '</span>' +
-        '<div class="Login-forgot-button-wrapper"><button class="Login-forgot-button">återställ</button></div>' +
-        '</div>'
-    );
-  }
-});
-
-// Pre-Validation function for the form.
-$(function() {
-  $('form[name="Login-form"]').submit(function(e) {
-    var username = $('input[name="username"]').val();
-    var password = $('input[name="password"]').val();
-    // Empty username.
-    if ( username == '') {
-      e.preventDefault();
-      $('input[name="username"]').setLoginError();
-      $('.Error-username--js').text('*Please enter a username*');
-    }
-    // Empty password.
-    if ( password == '') {
-      e.preventDefault();
-      $('input[name="password"]').setLoginError();
-      $('.Error-password--js').text('*Please enter a password*');
-    }
-  });
-});
-
-// Pre-check input value on the fly.
-$('input[name="username"]').on('input', function(e)  {
+/////////////////////////////////////////////
+// USERNAME CHECK
+/////////////////////////////////////////////
   // REGEX mail.
-  var emailReg = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+var emailReg = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
   // REGEX user number.
-  var userNumberReg = new RegExp('^[a-zA-Z][a-zA-Z][0-9]{6}');
+var userNumberReg = new RegExp('^[a-zA-Z]{2}[0-9]{6}$');
+var validUser;
 
-  // If any of the regex is true set input state to valid.
-  var valid = emailReg.test($(this).val()) | userNumberReg.test($(this).val());
-  if (valid) {
-    $(this).setLoginValid();
-  }
-  // If not reset it to help text display.
-  else {
-    $(this).setLoginHelp();
+var userNameMessage = "Du har inte angivet ett korrekt kundnummer eller e-postadress.";
+var passwordMessage = "Felaktigt lösenord.";
+
+
+$('.Login-input-username--js').on('input', function() {
+
+    if(emailReg.test($(this).val()) ) {
+      state.emailReg = true;
+      state.numberReg = false;
+    } else if(userNumberReg.test($(this).val() )) {
+      state.numberReg = true;
+      state.emailReg = false;
+    } else {
+      state.numberReg = false;
+      state.emailReg = false;
+    }
+
+    validUser = state.numberReg || state.emailReg;
+      if (validUser) {
+        state.userName = true;
+            // console.log("det där funkar");
+      }
+      else {
+        state.userName = false;
+        // console.log("det där funkar inte");
+      }
+});
+
+$('.Login-input-username--js').focusout(function() {
+  // console.log("Släppt");
+  if(state.userName == false) {
+    $(".Login-username-toggle--js").removeClass("Login-question-icon--js").removeClass("Login-check-icon--js").addClass("Login-error-icon--js")
+    $(this).addClass("Login-input-error--js")
+    $(".Login-username-message").show().html(userNameMessage)
+
+  } else {
+    $(".Login-username-toggle--js").removeClass("Login-question-icon--js").removeClass("Login-error-icon--js").addClass("Login-check-icon--js")
+    $(this).removeClass("Login-input-error--js")
+    $(".Login-username-message").hide().html("")
   }
 
-  // If its a valid email we change the help text.
-  if (emailReg.test($(this).val())) {
-    $('.Login-help-box-top-text--js').setLoginForgotText($(this).val());
+  // WHICH BOX SHOULD SHOW
+  if(state.emailReg) {
+    passwordBox("reset")
+    $(".Login-reset-email--js").html($('.Login-input-username--js').val()) // SET THE EMAIL IN THE MESSAGE TO WHATEVER IT IS IN THE INPUT IF IT IS VALID
+  } else {
+    passwordBox("default")
   }
-  // Reset the help text.
+})
+
+$(".Login-reset-password-btn--js").click(function(e) {
+   e.preventDefault();
+  passwordBox("sent")
+})
+
+/////////////////////////////////////////////
+// PASSWORD HELP BOX
+/////////////////////////////////////////////
+function passwordBox(box) {
+  if(box == "reset") {
+    $(".Login-password-reset-box--js").show();
+    $(".Login-password-sent-box--js").hide();
+    $(".Login-password-default-box--js").hide();
+  } else if(box == "sent") {
+    $(".Login-password-reset-box--js").hide();
+    $(".Login-password-sent-box--js").show();
+    $(".Login-password-default-box--js").hide();
+  } else if(box == "default") {
+    console.log("default");
+    $(".Login-password-reset-box--js").hide();
+    $(".Login-password-sent-box--js").hide();
+    $(".Login-password-default-box--js").show();
+  }
+}
+
+/////////////////////////////////////////////
+// PASSWORD INPUT FIELD
+/////////////////////////////////////////////
+
+
+$(".Login-input-password--js").on('input', function() {
+  if($(this).val() == "kombi") {
+    state.passWord = true
+  } else {
+    state.passWord = false
+  }
+ });
+
+
+/////////////////////////////////////////////
+// CHECK IF LOGIN PASSED (JUST FOR PROTOTYPE TESTING)
+/////////////////////////////////////////////
+$(".Login-form-submit-btn--js").click(function(e) {
+
+  e.preventDefault(e)
+
+  if(validUser && state.passWord) {
+    window.location.replace("account.html");
+  }
+  else if(validUser == true && state.passWord != true) {
+    $(".Login-password-toggle--js").removeClass("Login-question-icon--js").addClass("Login-error-icon--js")
+    $(".Login-header--js").addClass("Login-header--error").html("Inloggningen misslyckades")
+    $(".Login-input-password--js").addClass("")
+  }
   else {
-    $('.Login-help-box-top-text--js').html($.DefaultHelp);
+
+
+
+    $(".Login-header--js").addClass("Login-header--error").html("Inloggningen misslyckades")
+    $(".Login-input-password--js").addClass("Login-input-error--js")
+
+
+    $(".Login-username-toggle--js").removeClass("Login-question-icon--js").removeClass("Login-check-icon--js").addClass("Login-error-icon--js")
+    $(".Login-password-toggle--js").removeClass("Login-question-icon--js").addClass("Login-error-icon--js")
+
+    $(".Login-username-message").show().html(userNameMessage)
+    $(".Login-password-message").show().html(passwordMessage)
   }
 });
