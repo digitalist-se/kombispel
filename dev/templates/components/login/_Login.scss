@@ -4,7 +4,7 @@
   width: 100%;
   z-index: 999;
   background-color: $transparent-grey;
-  // display: none;
+  display: none;
 }
 //  CLICKAREA
 .Login-clickarea--js {
@@ -59,7 +59,7 @@ transition: all 0.3s ease;
   transform: rotate(225deg);
 }
 }
-.Login-header {
+.Login-header--js {
   color: $red;
   margin: 0;
   text-align: center;
@@ -102,6 +102,7 @@ transition: all 0.3s ease;
 
   .Login-input-error--js {
     border: 1px solid red;
+    color: red;
   }
   .Login-username-message,  .Login-password-message  {
   display: none;

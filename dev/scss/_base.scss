@@ -27,7 +27,6 @@ main {
       left: 0;
       content: "";
     }
-
     main {
       transform: translateX(100px);
     }
@@ -35,14 +34,9 @@ main {
   }
 }
 
-
-
-
-
 ::-webkit-scrollbar {
     width: 10px;
 }
-
 ::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: white;
@@ -51,9 +45,17 @@ main {
 ::-webkit-scrollbar-thumb {
     background-color: $red;
 }
-::selection {
-  background-color: $red;
-}
-::-moz-selection {
-  background-color: $red;
+
+
+
+/////////////////////////////////////////////
+//  TEMPORARY MY PAGE
+/////////////////////////////////////////////
+.Account-container {
+  @extend .Inner-container;
+
+  a {
+    color: $red;
+  }
+
 }

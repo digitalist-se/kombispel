@@ -53,16 +53,16 @@ $('.Login-input-username--js').on('input', function() {
     validUser = state.numberReg || state.emailReg;
       if (validUser) {
         state.userName = true;
-            console.log("det där funkar");
+            // console.log("det där funkar");
       }
       else {
         state.userName = false;
-        console.log("det där funkar inte");
+        // console.log("det där funkar inte");
       }
 });
 
 $('.Login-input-username--js').focusout(function() {
-  console.log("Släppt");
+  // console.log("Släppt");
   if(state.userName == false) {
     $(".Login-username-toggle--js").removeClass("Login-question-icon--js").removeClass("Login-check-icon--js").addClass("Login-error-icon--js")
     $(this).addClass("Login-input-error--js")
@@ -134,11 +134,15 @@ $(".Login-form-submit-btn--js").click(function(e) {
   }
   else if(validUser == true && state.passWord != true) {
     $(".Login-password-toggle--js").removeClass("Login-question-icon--js").addClass("Login-error-icon--js")
-    $(".Login-header").addClass("Login-header--error").html("Inloggningen misslyckades")
-
+    $(".Login-header--js").addClass("Login-header--error").html("Inloggningen misslyckades")
+    $(".Login-input-password--js").addClass("")
   }
   else {
-    $(".Login-header").addClass("Login-header--error").html("Inloggningen misslyckades")
+
+
+
+    $(".Login-header--js").addClass("Login-header--error").html("Inloggningen misslyckades")
+    $(".Login-input-password--js").addClass("Login-input-error--js")
 
 
     $(".Login-username-toggle--js").removeClass("Login-question-icon--js").removeClass("Login-check-icon--js").addClass("Login-error-icon--js")
