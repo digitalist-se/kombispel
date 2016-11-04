@@ -1,6 +1,14 @@
 .Lottery-container {
+  // width: 500px;
+  // margin: 50px auto;
+
+}
+.Lottery-inner-container {
+  @extend .Inner-container;
+}
+.Lottery-row {
   width: 500px;
-  margin: 0 auto;
+  margin: 80px auto;
   &:after {
     content: "";
     display: block;
@@ -8,10 +16,13 @@
   }
 }
 
+
+
+
 .Lottery-column {
   position: relative;
   overflow: hidden;
-  width: calc(20% - 2px);
+  width: calc(16.6666% - 2px);
   float: left;
   height: 60px;
   border: 1px solid blue;
@@ -57,13 +68,13 @@
 }
 .Lottery-correct, .Lottery-wrong {
 position: relative;
-// &:after {
-//   content:"";
-//   position: absolute;
-//   width: 60px;
-//   height: 60px;
-//   background-color: green;
-//   top: 50px;
-// }
+}
+
+.Start-lottery--js {
+  margin: 0 auto;
+  display: block;
+  @include rounded-btn($orange,white,200px);
+
+
 
 }
