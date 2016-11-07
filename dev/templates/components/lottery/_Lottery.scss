@@ -1,6 +1,7 @@
+$lotteryRowWidth:  500px;
+
 .Lottery-container {
   background-color: lighten($orange,10%);
-
 }
 .Lottery-inner-container {
   padding-top: 20px;
@@ -8,7 +9,7 @@
 }
 
 .Lottery-mynumber-container {
-  max-width: 500px;
+  max-width: $lotteryRowWidth;
   margin: 0 auto;
   width: 90%;
   height: 175px;
@@ -70,42 +71,40 @@ $mynumber-size: 80px;
 
   }
 }
-
-
-
-
-
-
 /////////////////////////////////////////////
 // THE LOTTERY ROW
 /////////////////////////////////////////////
 .Lottery-row {
-  max-width: 500px;
-  margin: 30px auto 80px auto;
+  max-width: $lotteryRowWidth;
+  margin: 30px auto 0 auto;
   &:after {
     content: "";
     display: block;
     clear: both;
   }
   h3 {
+    font-family: $gill-bold;
+    // font-weight: 1000;
+    // font-style: bold;
     margin: 10px 0;
     text-align: center;
     font-size: 40px;
     color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    text-shadow:
+     -1px -1px 0 #000,
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+     1px 1px 0 #000;
+     -webkit-text-stroke: 2px $grey;
+    // -webkit-text-stroke-width: 1px;
+    // -webkit-text-stroke-color: $grey;
   }
-
-
 }
-
-
-
-
 .Lottery-column {
+  background-color: $lighter-grey;
   position: relative;
   overflow: hidden;
-  width: calc(16.6666% - 12px);
+  width: calc(16.6666% - 7px);
   float: left;
   height: 60px;
   border-top: 6px solid $light-grey;
@@ -124,12 +123,11 @@ $mynumber-size: 80px;
   }
 }
 
-
-
-
-
 .Lottery-number--spinning {
-  animation: spinning 2.5s linear infinite;
+  animation: spinning 1.7s linear infinite;
+  div {
+    color: darken($grey,30%) !important;
+  }
 }
 
 .Lottery-number {
@@ -140,8 +138,7 @@ $mynumber-size: 80px;
   width: 100%;
 // THE NUMBER DIV
   div {
-    // background-color: white;
-    color: black;
+    color: darken($grey,30%);
     transition: all 0.2s ease;
     @extend .Flex-center;
     height: 60px;
@@ -169,12 +166,29 @@ $mynumber-size: 80px;
 .Lottery-correct, .Lottery-wrong {
 position: relative;
 }
+/////////////////////////////////////////////
+// Win and Lose message container
+/////////////////////////////////////////////
+.Lottery-message-container {
+  // padding: 30px;
+  max-width: $lotteryRowWidth;
+  margin: 0 auto;
+  background-color: rgba(195,195,195,0.3);
+  color: white;
+}
+.Lottery-message--js {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 20px;
+  font-family: $gill-light;
+}
 
-.Start-lottery--js {
+
+.Start-lottery-btn-container {
+    padding-bottom: 50px;
+}
+.Start-lottery-btn--js {
   margin: 0 auto;
   display: block;
-  @include rounded-btn($orange,white,200px);
-
-
-
+  @include rounded-btn($green,white,200px);
 }
