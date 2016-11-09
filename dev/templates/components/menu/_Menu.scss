@@ -3,10 +3,8 @@ $half-large: $full-large/2;
 $menu-width-small: 300px;
 $menu-width-medium: calc(10% + 372px);
 $menu-width-large: calc(#{$half-large} + 372px);
-
 $menu-margin: 15px;
 $menu-height: 90px;
-
 
 menu {
   margin: 0;
@@ -113,30 +111,17 @@ background-position: center center;
 .Menu-promos-item {
   background-color: white;
   height: 90px;
+  color: transparent;
   @include gtr-col(2,$menu-margin);
-  @extend .Flex-center;
-}
-$promo-size: 75px;
-
-div[class*='Menu-promos-item--'] {
   background-repeat: no-repeat;
   background-position: center center;
-  height: $promo-size;
-  width: $promo-size;
+  background-size: 85px;
+  &:hover {
+    background-color: $light-grey;
+  }
 }
-.Menu-promos-item--kombi {
-  background-image: url("../images/svg/kombi.svg");
-}
-.Menu-promos-item--dromrese {
-  background-image: url("../images/svg/dromrese.svg");
 
-}
-.Menu-promos-item--motor {
-  background-image: url("../images/svg/motor.svg");
-}
-.Menu-promos-item--skrap {
-  background-image: url("../images/svg/skrap.svg");
-}
+
 /////////////////////////////////////////////
 // MENU ITEMS WITH CHILDREN
 /////////////////////////////////////////////
@@ -167,7 +152,6 @@ div[class*='Menu-promos-item--'] {
 /////////////////////////////////////////////
 // LEVEL TWO MENU ITEMS
 /////////////////////////////////////////////
-
 .Menu-level-two {
   display: none;
   li a {
@@ -187,6 +171,4 @@ div[class*='Menu-promos-item--'] {
       border-bottom: none;
     }
   }
-
-
 }

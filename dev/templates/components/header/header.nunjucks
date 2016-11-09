@@ -7,12 +7,13 @@
       <div class="Header-menu-container--js Header-flex--one">
         <div class="Header-inner-grid">
           <div class="Header-menu-circle">
-            <div class="Header-menu-burger">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
+
+            <!-- START BURGER -->
+            <div class="Header-hamburger-outer">
+                  <div class="Header-hamburger-inner"></div>
             </div>
+            <!-- END BURGER -->
+
           </div>
           <div class="Header-title">
             <h3 class="Header-title--menu">meny</h3>

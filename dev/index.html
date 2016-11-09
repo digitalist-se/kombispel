@@ -38,10 +38,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="Menu-level-one-header">
             <span class="Menu-item-header">Våra spel</span>
               <div class="Menu-promos-row">
-                  <a class="Menu-promos-item" href="#"><div class="Menu-promos-item--kombi"></div></a>
-                  <a class="Menu-promos-item" href="#"><div class="Menu-promos-item--dromrese"></div></a>
-                  <a class="Menu-promos-item" href="#"><div class="Menu-promos-item--motor"></div></a>
-                  <a class="Menu-promos-item" href="#"><div class="Menu-promos-item--skrap"></div></a>
+                  <a class="Menu-promos-item" href="#" style="background-image: url('images/svg/kombi.svg')">Kombilotteriet</a>
+                  <a class="Menu-promos-item" href="#" style="background-image: url('images/svg/dromrese.svg')">Drömreselotteriet</a>
+                  <a class="Menu-promos-item" href="#" style="background-image: url('images/svg/motor.svg')">Motorlotteriet</a>
+                  <a class="Menu-promos-item" href="#" style="background-image: url('images/svg/skrap.svg')">Skraplotteriet</a>
               </div>
             </div>
           </li>
@@ -207,12 +207,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="Header-menu-container--js Header-flex--one">
         <div class="Header-inner-grid">
           <div class="Header-menu-circle">
-            <div class="Header-menu-burger">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
+
+            <!-- START BURGER -->
+            <div class="Header-hamburger-outer">
+                  <div class="Header-hamburger-inner"></div>
             </div>
+            <!-- END BURGER -->
+
           </div>
           <div class="Header-title">
             <h3 class="Header-title--menu">meny</h3>
@@ -268,7 +269,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="Logo-row-logo">
       <div class="Logo-row-logo-inner">
 
-      <a  href="#" class="Logo-row-logo--kombi"></a>
+        <a href="#" class="Logo-row-logo-icon" style="background-image: url('images/svg/kombi.svg')">Kombilotteriet</a>
       <h4>Kombilotteriet</h4>
       <p>Störst chans att bli miljonär</p>
       <div class="Logo-row-links">
@@ -281,8 +282,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="Logo-row-logo">
       <div class="Logo-row-logo-inner">
-
-      <a  href="#" class="Logo-row-logo--dromrese"></a>
+      <a  href="#" class="Logo-row-logo-icon" style="background-image: url('images/svg/dromrese.svg')">Drömreselotteriet</a>
       <h4>Drömreselotteriet</h4>
       <p>Motorer och miljoner!</p>
       <div class="Logo-row-links">
@@ -295,8 +295,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="Logo-row-logo">
       <div class="Logo-row-logo-inner">
-
-      <a  href="#" class="Logo-row-logo--motor"></a>
+      <a  href="#" class="Logo-row-logo-icon" style="background-image: url('images/svg/motor.svg')">Motorlotteriet</a>
       <h4>Motorlotteriet</h4>
       <p>Vinn resan och reskassan!</p>
       <div class="Logo-row-links">
@@ -309,8 +308,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="Logo-row-logo">
       <div class="Logo-row-logo-inner">
-
-      <a href="#" class="Logo-row-logo--skrap"></a>
+      <a href="#" class="Logo-row-logo-icon" style="background-image: url('images/svg/skrap.svg')">Skraplotter</a>
       <h4>Skraplotter</h4>
       <p>Störst chans att bli miljonär</p>
       <div class="Logo-row-links">
@@ -323,23 +321,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<div class="Promo-container">
+<section class="Promo-container">
     <div class="Promo-container-inner">
         <div class="Promo-item">
-            <div class="Promo-box Promo-box--first">
+            <div class="Promo-box Promo-box--correct-ticket">
                 <div class="Promo-box-title">Är du en vinnare?</div>
                 <img class="Promo-box-image" src="images/promo/promo1.png"></img>
                 <button class="Promo-box-button">RÄTTA DIN LOTT</button>
 
                 <div class="Promo-box-product">
-                    <span class="Promo-box-product-item Promo-box-product-item--kombi"></span>
-                    <span class="Promo-box-product-item Promo-box-product-item--dromrese"></span>
-                    <span class="Promo-box-product-item Promo-box-product-item--motor"></span>
+                    <a href="#" class="Promo-box-product-item" style="background-image: url('images/svg/kombi.svg')">Kombilotteriet</a>
+                    <a href="#" class="Promo-box-product-item" style="background-image: url('images/svg/dromrese.svg')">Drömreselotteriet</a>
+                    <a href="#" class="Promo-box-product-item" style="background-image: url('images/svg/skrap.svg')">Skraplotten</a>
                 </div>
             </div>
         </div>
         <div class="Promo-item">
-            <div class="Promo-box Promo-box--second">
+            <div class="Promo-box Promo-box--campaign">
                 <div class="Promo-box-title">Månadens kampanj!</div>
                 <div class="Promo-box-text">Prenie: Vettenkaraff och skraplottpaket på köpet när du skaffar en Kombilott.</div>
                 <img class="Promo-box-image" src="images/promo/promo2.png"></img>
@@ -347,7 +345,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
         <div class="Promo-item">
-            <div class="Promo-box Promo-box--third">
+            <div class="Promo-box Promo-box--winner">
                 <div class="Promo-box-image-big" style="background-image: url('images/promo/promo3.png')"></div>
                 <div class="Promo-box-band">
                     <div class="Promo-box-band-text">KOMBISPELS TUSENDE MILJONVINNARE</div>
@@ -357,7 +355,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 
   </main>
