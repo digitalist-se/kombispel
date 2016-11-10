@@ -201,11 +201,15 @@ setTimeout( function(){ correct(); }, spinnTime+ratio);
 // END STARTLOTTERY FUNCTION
 /////////////////////////////////////////////
 
-var lotteryBtn = $(".Start-lottery-btn--js");
-
-lotteryBtn.click(function() {
+// var lotteryBtn = $(".Start-lottery-btn--js");
+var lotteryBtn = document.getElementsByClassName("Start-lottery-btn--js")[0];
+lotteryBtn.addEventListener("click",function() {
   startLottery();
 })
+
+// lotteryBtn.click(function() {
+//   startLottery();
+// })
 
 /////////////////////////////////////////////
 // After the drawing is done
@@ -230,7 +234,7 @@ const drawingDone = () => {
     "Nu drar vi "+correctNumbers[objectCounter+1].header+" kr.";
   }
   objectCounter++;
-  lotteryBtn.html("Starta dragning för "+correctNumbers[objectCounter].header+" kr.");
+  lotteryBtn.innerHTML = "Starta dragning för "+correctNumbers[objectCounter].header+" kr.";
 
 
 }
