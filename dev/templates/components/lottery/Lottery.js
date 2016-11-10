@@ -1,7 +1,4 @@
-/////////////////////////////////////////////
- //////// START jQuery
- /////////////////////////////////////////////
-$(document).ready(function() {
+
 // The customers lotteryticket
 var numbers = [2,0,5,5,6,3];
 
@@ -237,7 +234,3 @@ const drawingDone = () => {
 
 
 }
-
-
-
-});
