@@ -1,10 +1,6 @@
 <section class="Tickets-container">
-  <nav class="Tickets-submenu">
-    <a class="Tickets-submenu-link is-active" href="#">Mina lotter</a>
-    <a class="Tickets-submenu-link" href="#">Mina uppgifter</a>
-    <a class="Tickets-submenu-link" href="#">Vinsthistorik</a>
-    <a class="Tickets-submenu-link" href="#">Andelar</a>
-  </nav>
+  {% include "components/submenu/submenu.nunjucks" %}
+  
   <div class="Tickets-header">
     <h1>Hej Tommy!</h1>
     <h3>Dina lotter</h3>

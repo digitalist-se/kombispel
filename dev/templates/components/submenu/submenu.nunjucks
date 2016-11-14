@@ -1,0 +1,6 @@
+<nav class="Submenu">
+  <a class="Submenu-link is-active" href="#">Mina lotter</a>
+  <a class="Submenu-link" href="#">Mina uppgifter</a>
+  <a class="Submenu-link" href="#">Vinsthistorik</a>
+  <a class="Submenu-link" href="#">Andelar</a>
+</nav>

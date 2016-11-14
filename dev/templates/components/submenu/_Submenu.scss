@@ -1,0 +1,24 @@
+/////////////////////////////////////////////
+// SUBMENU
+/////////////////////////////////////////////
+.Submenu {
+padding: 0;
+list-style-type: none;
+@include flex-row();
+background-color: rgb(206,66,72);
+}
+.Submenu-link {
+  @include flex-gtr-col (2, 1px);
+  margin-top: 0;
+  text-align: center;
+  padding: 15px 0;
+  text-transform: uppercase;
+  background-color: $red;
+  color: white;
+  @include breakpoint(1024px) {
+    @include flex-gtr-col (4, 1px);
+  }
+  &.is-active {
+  background-color: $darker-red;
+  }
+}
