@@ -1,77 +1,25 @@
-<section class="Tickets-container">
-  {% include "components/submenu/submenu.nunjucks" %}
-  
-  <div class="Tickets-header">
-    <h1>Hej Tommy!</h1>
-    <h3>Dina lotter</h3>
-    <p>Dragning vecka 12</p>
-    <p>(2016-04-11 - 2016-04-18)</p>
-  </div>
-  <div class="Tickets-ticket-container">
-    <!-- Kombi -->
-    <div class="Tickets-ticket-col">
-      <div class="Tickets-ticket Tickets--ticket--kombi">
-          <h4 class="Tickets-ticket-title">Kombilott</h4>
-            <h5 class="Tickets-ticket-number">024680</h5>
-          <a class="Tickets-ticket-link" href="#">Rätta lott</a>
-      </div>
-    </div>
-    <!-- Motorlott -->
-    <div class="Tickets-ticket-col">
-      <div class="Tickets-ticket Tickets--ticket--motor">
-        <h4 class="Tickets-ticket-title">Motorlotteriet</h4>
-            <h5 class="Tickets-ticket-number">024680</h5>
-          <a class="Tickets-ticket-link" href="#">Rätta lott</a>
-      </div>
-    </div>
-    <!-- Drömreselott -->
-    <div class="Tickets-ticket-col">
-      <div class="Tickets-ticket Tickets--ticket--dream ">
-        <h4 class="Tickets-ticket-title">Drömreselott</h4>
-            <h5 class="Tickets-ticket-number">024680</h5>
-          <a class="Tickets-ticket-link" href="#">Rätta lott</a>
-      </div>
-    </div>
-    <!-- Drömreselott Extralott -->
-    <div class="Tickets-ticket-col">
-      <div class="Tickets-ticket Tickets--ticket--dream">
-        <div class="Tickets-ticket-ribbon">Extralott</div>
-        <h4 class="Tickets-ticket-title">Drömreselott</h4>
-            <h5 class="Tickets-ticket-number">024680</h5>
-          <a class="Tickets-ticket-link" href="#">Rätta lott</a>
-      </div>
-    </div>
-    <!-- Motorlott Extralott-->
-    <div class="Tickets-ticket-col">
-      <div class="Tickets-ticket Tickets--ticket--motor">
-        <div class="Tickets-ticket-ribbon">Extralott</div>
-        <h4 class="Tickets-ticket-title">Motorlotteriet</h4>
-            <h5 class="Tickets-ticket-number">024680</h5>
-          <a class="Tickets-ticket-link" href="#">Rätta lott</a>
-      </div>
-    </div>
-    <!-- Motor vinstlott -->
-    <div class="Tickets-ticket-col">
-      <div class="Tickets-ticket Tickets--ticket--win">
-        <h4 class="Tickets-ticket-title">Motorlott</h4>
-            <h5 class="Tickets-ticket-number">024680</h5>
-      </div>
-    </div>
+{% include "components/submenu/submenu.nunjucks" %}
 
+<section class="Winnings-container">
 
-
-
-
-    <!-- Drömreselott  -->
-    <div class="Tickets-ticket Tickets--ticket--dromrese">
-
-    </div>
-    <!-- Ingen vinst -->
-    <!-- Kombilott -->
+  <div class="Winnings-header">
+    <h1 class="Heading-1">Mina vinster</h1>
+    <h3 class="Heading-3">Här hittar du alla dina vinster från de senaste 12 månaderna</h3>
   </div>
 
-
-
-
+  <div class="List">
+    <div class="List-item">
+      <img class="List-item-image" src="../images/list/ps4.jpg" alt="PS4" />
+      <p class="List-item-p List-item-p--uppercase">PLAYSTATION 4 PRO</p>
+      <p class="List-item-p">Kombilott - 025785</p>
+      <p class="List-item-p">Speldragning vecka 7</p>
+    </div>
+    <div class="List-item">
+      <img class="List-item-image" src="../images/list/candles.jpg" alt="Candles" />
+      <p class="List-item-p List-item-p--uppercase">Ljusstake Nordic Light</p>
+      <p class="List-item-p">Kombilott - 025785</p>
+      <p class="List-item-p">Speldragning vecka 2</p>
+    </div>
+  </div>
 
 </section>

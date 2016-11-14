@@ -2,7 +2,6 @@
   background-color: rgb(242, 242, 242);
 }
 .Promo-container-inner {
-  margin: 0 auto;
   @extend .Inner-container;
   @include flex-row();
 }

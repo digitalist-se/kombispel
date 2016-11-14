@@ -1,5 +1,5 @@
 {% set pageName = "Mina vinster" %}
 {% extends "layout.nunjucks" %}
 {% block content %}
-{% include "components/tickets/tickets.nunjucks" %}
+{% include "components/winnings/winnings.nunjucks" %}
 {% endblock %}

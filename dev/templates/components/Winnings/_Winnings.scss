@@ -1,0 +1,8 @@
+.Winnings-container {
+  @extend .Inner-container;
+}
+
+.Winnings-header {
+  text-align: center;
+  padding-top: $base-margin;
+}

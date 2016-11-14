@@ -1,0 +1,27 @@
+.List {
+  @include flex-row();
+}
+
+.List-item {
+  text-align: center;
+  margin-bottom: 10px;
+  @include flex-gtr-col (1, 10px);
+
+  @include breakpoint(1024px) {
+    @include flex-gtr-col (2, 15px);
+  }
+}
+
+.List-item-image {
+  margin-bottom: 10px;
+}
+
+.List-item-p {
+  margin: $base-margin/2 0;
+  color: $dark-grey;
+  font-family: $gill-regular;
+}
+
+.List-item-p--uppercase {
+  text-transform: uppercase;
+}
