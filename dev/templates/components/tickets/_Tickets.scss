@@ -1,0 +1,197 @@
+.Tickets-container {
+  margin: 0 auto;
+  @include respond-to(medium) {
+    width: 80%;
+    max-width: 1280px;
+  }
+
+}
+/////////////////////////////////////////////
+// SUBMENU
+/////////////////////////////////////////////
+.Tickets-submenu {
+padding: 0;
+list-style-type: none;
+@include flex-row();
+background-color: rgb(206,66,72);
+}
+.Tickets-submenu-link {
+  @include flex-gtr-col (2, 1px);
+  margin-top: 0;
+  text-align: center;
+  padding: 15px 0;
+  text-transform: uppercase;
+  background-color: $red;
+  color: white;
+  @include breakpoint(1024px) {
+    @include flex-gtr-col (4, 1px);
+  }
+  &.is-active {
+  background-color: $darker-red;
+  }
+}
+/////////////////////////////////////////////
+// HEADER
+/////////////////////////////////////////////
+.Tickets-header {
+  text-align: center;
+  padding-top: $base-margin;
+  h1 {
+    color: $red;
+    padding: 1.5*$base-margin 0;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    margin: $base-margin/2 0;
+    color: rgb(143,143,143);
+  }
+  h1,h3, p  {
+    font-family: $gill-regular;
+  }
+}
+/////////////////////////////////////////////
+// General for lottery-tickets
+/////////////////////////////////////////////
+.Tickets-ticket-container {
+  @include flex-row();
+}
+.Tickets-ticket-col {
+  @include flex-gtr-col (1, 10px);
+  @include breakpoint(1024px) {
+    @include flex-gtr-col (2, 15px);
+  }
+}
+
+.Tickets-ticket {
+  height: 150px;
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+  .Tickets-ticket-title {
+    padding: 20px 0 10px 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+  }
+  .Tickets-ticket-number {
+    font-family: $gill-bold;
+    position: absolute;
+    margin: 0;
+    right: 20%;
+    font-size: 32px;
+    top: calc(50% - 22px);
+  }
+  .Tickets-ticket-link {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid white;
+    width: 140px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: -2px 11px 22px -13px rgba(0,0,0,0.75);
+
+  }
+
+  @include breakpoint(420px) {
+    width: 350px;
+    height: 210px;
+    .Tickets-ticket-title {
+      padding-top: 40px;
+      font-size: 24px;
+    }
+    .Tickets-ticket-link {
+      bottom: 32px;
+      font-size: 16px;
+    }
+  }
+  @include breakpoint(600px) {
+    width: 415px;
+    .Tickets-ticket-title {
+      padding-top: 30px;
+    }
+    .Tickets-ticket-number {
+      right: 70px;
+      font-size: 50px;
+      top: calc(50% - 30px);
+    }
+    .Tickets-ticket-link {
+      bottom: 20px;
+      font-size: 16px;
+      width: 160px;
+    }
+  }
+}
+/////////////////////////////////////////////
+// VANLIGA LOTTER
+/////////////////////////////////////////////
+@mixin lottery-btn($color) {
+  background-color: $color;
+  &:hover {
+    color: $color;
+    background-color: white;
+  }
+}
+.Tickets--ticket--kombi {
+  background: url("../images/svg/tickets/ticket-kombi.svg") no-repeat center center;
+  .Tickets-ticket-number {
+    color: $lottery-blue;
+  }
+  .Tickets-ticket-link {
+    @include lottery-btn($orange);
+  }
+}
+.Tickets--ticket--motor {
+  background: url("../images/svg/tickets/ticket-motor.svg") no-repeat center center;
+  .Tickets-ticket-number {
+    color: black;
+  }
+  .Tickets-ticket-link {
+    @include lottery-btn(rgb(196,37,46));
+  }
+}
+.Tickets--ticket--dream {
+  background: url("../images/svg/tickets/ticket-dream.svg") no-repeat center center;
+  .Tickets-ticket-number {
+    color: $lottery-blue;
+  }
+  .Tickets-ticket-link {
+    @include lottery-btn($green);
+  }
+}
+/////////////////////////////////////////////
+// EXTRALOTTER RIBBON
+/////////////////////////////////////////////
+.Tickets-ticket-ribbon {
+  font-family: $gill-bold;
+  background-color: $lottery-blue;
+  color: white;
+  position: absolute;
+  transform: rotate(-35deg);
+  top: 30px;
+  left: -50px;
+  padding: 5px;
+  width: 240px;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+
+
+/////////////////////////////////////////////
+// VINSTLOTTER
+/////////////////////////////////////////////
+
+.Tickets--ticket--win {
+  background: url("../images/svg/tickets/vinst.svg") no-repeat center center;
+}
