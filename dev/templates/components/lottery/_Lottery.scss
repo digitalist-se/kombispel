@@ -1,10 +1,18 @@
 $lotteryRowWidth:  500px;
 
-.Lottery-container {
-  background-color: lighten($orange,10%);
+.Lottery-container--kombi {
+  background-color: $orange;
+
 }
+.Lottery-container--dream {
+  background-color: $green;
+}
+.Lottery-container--motor {
+  background-color: $red;
+}
+
 .Lottery-inner-container {
-  padding-top: 20px;
+  padding: 20px 0 40px 0;
   @extend .Inner-container;
 }
 
@@ -84,20 +92,11 @@ $mynumber-size: 80px;
   }
   h3 {
     font-family: $gill-bold;
-    // font-weight: 1000;
-    // font-style: bold;
     margin: 10px 0;
     text-align: center;
     font-size: 40px;
     color: white;
-    text-shadow:
-     -1px -1px 0 #000,
-     1px -1px 0 #000,
-     -1px 1px 0 #000,
-     1px 1px 0 #000;
-     -webkit-text-stroke: 2px $grey;
-    // -webkit-text-stroke-width: 1px;
-    // -webkit-text-stroke-color: $grey;
+
   }
 }
 .Lottery-column {
@@ -173,22 +172,28 @@ position: relative;
   // padding: 30px;
   max-width: $lotteryRowWidth;
   margin: 0 auto;
-  background-color: rgba(195,195,195,0.3);
+  // background-color: rgba(195,195,195,0.3);
   color: white;
 }
 .Lottery-message--js {
   text-align: center;
-  padding: 15px 0;
-  font-size: 20px;
-  font-family: $gill-light;
+  font-size: 28px;
+  color: white;
+  transition: all .2s ease;
 }
 
 
 .Start-lottery-btn-container {
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
 }
 .Start-lottery-btn--js {
-  margin: 0 auto;
-  display: block;
-  @include rounded-btn($green,white,200px);
+  color: white;
+  opacity: 1;
+  visibility: visible;
+  transition: all .2s ease;
+  @include gradient-btn($green,darken($green,10%));
+}
+.Hide-element {
+  opacity: 0;
+  visibility: hidden;
 }
