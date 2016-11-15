@@ -85,18 +85,19 @@
   }
   @include breakpoint(420px) {
     width: 350px;
-    height: 210px;
+    height: 175px;
     .Tickets-ticket-title {
-      padding-top: 40px;
-      font-size: 24px;
+      padding-top: 22px;
+      font-size: 22px;
     }
     .Tickets-ticket-link {
-      bottom: 32px;
+      bottom: 18px;
       font-size: 16px;
     }
   }
   @include breakpoint(600px) {
     width: 415px;
+    height: 210px;
     .Tickets-ticket-title {
       padding-top: 30px;
     }
