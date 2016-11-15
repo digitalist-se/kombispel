@@ -1,0 +1,45 @@
+{% include "components/submenu/submenu.nunjucks" %}
+
+<section class="MyPages">
+  <div class="MyPages-container">
+
+    <div class="MyPages-header">
+      <h1 class="Heading-1">Mina uppgifter</h1>
+    </div>
+
+    <div class="MyPages-information">
+      <div class="MyPages-block MyPages-block--basic">
+        <p><span class="u-uppercase">Grunduppgifter</span></p>
+        <p><span>Namn: </span><span class="u-bold">Tommy Nilsson</span></p>
+        <p><span>Personnummer: </span><span class="u-bold">700702-1458</span></p>
+        <p><span>Kundnummer: </span><span class="u-bold">AB17268763</span></p>
+        <button class="" type="submit">Ändra ditt lösenord</button>
+      </div>
+
+      <div class="MyPages-block MyPages-block--settings">
+        <h3 class="Heading-3">Dessa uppgifter kan du ändra:</h3>
+
+        <form name="MyPages-settingsForm" class="MyPages-settingsForm">
+          <div class="Login-input-section">
+            <label class="" for="phone">Mobiltelefon:</label>
+            <input class="" type="text" name="phone" required/>
+          </div>
+          <div class="Login-input-section">
+            <label class="" for="email">E-postadress:</label>
+            <input class="" type="email" name="email" required/>
+          </div>
+          <button class="" type="submit">Spara dina ändringar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="MyPages-header">
+      <h1 class="Heading-1">Betalningar</h1>
+    </div>
+
+    <div class="MyPages-block MyPages-block--settings">
+      Obetalda fakturor
+    </div>
+
+  </div>
+</section>

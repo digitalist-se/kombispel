@@ -1,0 +1,27 @@
+label {
+  margin: 25px 0 7.5px 0;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="textarea"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+  position: relative;
+  padding-left: 5px;
+  height: 40px;
+  outline: 0;
+  background-color: $lighter-grey;
+  border: 1px solid $grey;
+  width: 100%;
+  transition: all 0.2s ease;
+
+  &:focus {
+    height: 50px;
+    border: 1px solid $orange;
+    background-color: white;
+  }
+}

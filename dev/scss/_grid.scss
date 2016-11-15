@@ -46,7 +46,6 @@ margin-right: $gutter/2;
 @mixin flex-row() {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   flex-direction: row;
 }
 @mixin flex-gtr-col ($columns, $gutter) {
