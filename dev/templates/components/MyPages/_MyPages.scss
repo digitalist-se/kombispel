@@ -33,10 +33,23 @@
   @include breakpoint(1024px) {
     @include flex-gtr-col (2, 15px);
   }
+
+  button {
+    margin-top: 30px;
+    padding: 10px 40px;
+    font-family: $gill-regular;
+    @include rounded-btn($orange,white,100%);
+  }
 }
 
 .MyPages-block--basic {
   text-align: center;
+}
+
+.MyPages-settingsForm {
+  label {
+    display: block;
+  }
 }
 
 /////////////////////////////////////////////
