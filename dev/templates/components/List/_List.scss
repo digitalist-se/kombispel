@@ -3,16 +3,36 @@
 }
 
 .List-item {
+  position: relative;
   text-align: center;
-  margin-bottom: 10px;
   @include flex-gtr-col (1, 10px);
+  margin-bottom: 40px;
 
+  @include breakpoint(0, 1024px) {
+    padding-bottom: 40px;
+  }
   @include breakpoint(1024px) {
     @include flex-gtr-col (2, 15px);
+    margin-bottom: 40px;
+  }
+
+  &:after {
+    @include breakpoint(0, 1024px) {
+      content: "";
+      background-color: $dark-grey;
+      width: 80%;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin-left: 10%;
+    }
   }
 }
 
 .List-item-image {
+  max-width: 100%;
+  height: auto;
   margin-bottom: 10px;
 }
 
