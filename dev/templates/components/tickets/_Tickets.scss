@@ -1,10 +1,6 @@
 .Tickets-container {
-  margin: 0 auto;
+  @extend .Inner-container;
   background-color: $lighter-grey;
-  @include respond-to(medium) {
-    width: 80%;
-    max-width: 1280px;
-  }
   &:after {
     display: block;
     content: "";
@@ -18,18 +14,10 @@
 .Tickets-header {
   text-align: center;
   padding-top: $base-margin;
-  h1 {
-    color: $red;
-    padding: 1.5*$base-margin 0;
-  }
-  h3 {
-    font-size: 24px;
-  }
+
   p {
     margin: $base-margin/2 0;
-    color: rgb(143,143,143);
-  }
-  h1,h3, p  {
+    color: $dark-grey;
     font-family: $gill-regular;
   }
 }
