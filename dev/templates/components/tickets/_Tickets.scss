@@ -1,25 +1,3 @@
-.Tickets {
-  background-color: $lighter-grey;
-  padding-bottom: 100px;
-}
-
-.Tickets-container {
-  @extend .Inner-container;
-}
-
-/////////////////////////////////////////////
-// HEADER
-/////////////////////////////////////////////
-.Tickets-header {
-  text-align: center;
-  padding-top: $base-margin;
-
-  p {
-    margin: $base-margin/2 0;
-    color: $dark-grey;
-    font-family: $gill-regular;
-  }
-}
 /////////////////////////////////////////////
 // General for lottery-tickets
 /////////////////////////////////////////////

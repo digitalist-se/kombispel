@@ -1,14 +1,15 @@
 {% include "components/submenu/submenu.nunjucks" %}
 
-<section class="Tickets">
-  <div class="Tickets-container">
+<section class="MyPages">
+  <div class="MyPages-container">
 
-    <div class="Tickets-header">
+    <div class="MyPages-header">
       <h1 class="Heading-1">Hej Tommy!</h1>
       <h3 class="Heading-3">Dina lotter</h3>
       <p>Dragning vecka 12</p>
       <p>(2016-04-11 - 2016-04-18)</p>
     </div>
+    
     <div class="Tickets-ticket-container">
       <!-- Kombi -->
       <div class="Tickets-ticket-col">
