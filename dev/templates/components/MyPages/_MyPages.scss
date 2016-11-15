@@ -21,6 +21,24 @@
   }
 }
 
+.MyPages-information {
+  @include flex-row();
+}
+
+.MyPages-block {
+  background-color: #fff;
+  padding: 20px;
+  @include flex-gtr-col (1, 10px);
+
+  @include breakpoint(1024px) {
+    @include flex-gtr-col (2, 15px);
+  }
+}
+
+.MyPages-block--basic {
+  text-align: center;
+}
+
 /////////////////////////////////////////////
 // LINKS
 /////////////////////////////////////////////

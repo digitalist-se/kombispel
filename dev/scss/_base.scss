@@ -12,6 +12,11 @@ h1:not([class]), h2:not([class]), h3:not([class]), h4:not([class]), h5:not([clas
 main {
   transition: all .2s ease;
 }
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
 .Site-container {
   width: 100%;
   &.locked {

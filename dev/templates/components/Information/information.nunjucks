@@ -1,0 +1,36 @@
+{% include "components/submenu/submenu.nunjucks" %}
+
+<section class="MyPages">
+  <div class="MyPages-container">
+
+    <div class="MyPages-header">
+      <h1 class="Heading-1">Mina uppgifter</h1>
+    </div>
+
+    <div class="MyPages-information">
+      <div class="MyPages-block MyPages-block--basic">
+        <p><span class="u-uppercase">Grunduppgifter</span></p>
+        <p><span>Namn: </span><span class="u-bold">Tommy Nilsson</span></p>
+        <p><span>Personnummer: </span><span class="u-bold">700702-1458</span></p>
+        <p><span>Kundnummer: </span><span class="u-bold">AB17268763</span></p>
+      </div>
+
+      <div class="MyPages-block MyPages-block--settings">
+        <span class="">Dessa uppgifter kan du ändra:</span>
+
+        <form name="MyPages-settingsForm" class="MyPages-settingsForm">
+          <div class="Login-input-section">
+            <label class="Login-label--block" for="username">Mobiltelefon:</label>
+            <input class="Login-input Login-input-username--js" type="text" name="username" required/>
+          </div>
+          <button class="Login-form-submit-btn--js" type="submit">Logga in</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="MyPages-header">
+      <h1 class="Heading-1">Betalningar</h1>
+    </div>
+
+  </div>
+</section>
