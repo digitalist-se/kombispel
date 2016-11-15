@@ -1,0 +1,58 @@
+.MyPages {
+  background-color: $lighter-grey;
+  padding-bottom: 100px;
+}
+
+.MyPages-container {
+  @extend .Inner-container;
+}
+
+/////////////////////////////////////////////
+// HEADER
+/////////////////////////////////////////////
+.MyPages-header {
+  text-align: center;
+  padding-top: $base-margin;
+
+  p {
+    margin: $base-margin/2 0;
+    color: $dark-grey;
+    font-family: $gill-regular;
+  }
+}
+
+/////////////////////////////////////////////
+// LINKS
+/////////////////////////////////////////////
+.MyPages-show-list-link {
+  display: block;
+  text-align: center;
+  margin: 0 auto 40px;
+  width: 210px;
+  @extend .Arrow-link;
+  &:before {
+    left: -5px;
+  }
+}
+
+.MyPages-buy-link-container {
+  background-color: white;
+  padding: 30px 0;
+  @include flex-position(center);
+}
+
+.MyPages-buy-link {
+  @include gradient-btn($red,$dark-red);
+  color: white;
+  span {
+    display: block;
+    text-align: center;
+    &:first-of-type {
+      margin-bottom: 5px;
+      font-size: 15px;
+      font-family: $gill-light;
+    }
+    &:last-of-type {
+    }
+  }
+}
