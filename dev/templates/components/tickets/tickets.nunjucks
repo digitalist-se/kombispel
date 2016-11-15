@@ -1,6 +1,5 @@
 <section class="Tickets-container">
   {% include "components/submenu/submenu.nunjucks" %}
-  
   <div class="Tickets-header">
     <h1>Hej Tommy!</h1>
     <h3>Dina lotter</h3>
@@ -10,7 +9,7 @@
   <div class="Tickets-ticket-container">
     <!-- Kombi -->
     <div class="Tickets-ticket-col">
-      <div class="Tickets-ticket Tickets--ticket--kombi">
+      <div class="Tickets-ticket Tickets-ticket--kombi">
           <h4 class="Tickets-ticket-title">Kombilott</h4>
             <h5 class="Tickets-ticket-number">024680</h5>
           <a class="Tickets-ticket-link" href="#">Rätta lott</a>
@@ -18,7 +17,7 @@
     </div>
     <!-- Motorlott -->
     <div class="Tickets-ticket-col">
-      <div class="Tickets-ticket Tickets--ticket--motor">
+      <div class="Tickets-ticket Tickets-ticket--motor">
         <h4 class="Tickets-ticket-title">Motorlotteriet</h4>
             <h5 class="Tickets-ticket-number">024680</h5>
           <a class="Tickets-ticket-link" href="#">Rätta lott</a>
@@ -26,16 +25,25 @@
     </div>
     <!-- Drömreselott -->
     <div class="Tickets-ticket-col">
-      <div class="Tickets-ticket Tickets--ticket--dream ">
+      <div class="Tickets-ticket Tickets-ticket--dream ">
         <h4 class="Tickets-ticket-title">Drömreselott</h4>
+            <h5 class="Tickets-ticket-number">024680</h5>
+          <a class="Tickets-ticket-link" href="#">Rätta lott</a>
+      </div>
+    </div>
+    <!-- Kombilott Extralott -->
+    <div class="Tickets-ticket-col">
+      <div class="Tickets-ticket Tickets-ticket--kombi">
+        <div class="Tickets-ticket-ribbon"></div>
+        <h4 class="Tickets-ticket-title">Kombilott</h4>
             <h5 class="Tickets-ticket-number">024680</h5>
           <a class="Tickets-ticket-link" href="#">Rätta lott</a>
       </div>
     </div>
     <!-- Drömreselott Extralott -->
     <div class="Tickets-ticket-col">
-      <div class="Tickets-ticket Tickets--ticket--dream">
-        <div class="Tickets-ticket-ribbon">Extralott</div>
+      <div class="Tickets-ticket Tickets-ticket--dream">
+        <div class="Tickets-ticket-ribbon"></div>
         <h4 class="Tickets-ticket-title">Drömreselott</h4>
             <h5 class="Tickets-ticket-number">024680</h5>
           <a class="Tickets-ticket-link" href="#">Rätta lott</a>
@@ -43,35 +51,66 @@
     </div>
     <!-- Motorlott Extralott-->
     <div class="Tickets-ticket-col">
-      <div class="Tickets-ticket Tickets--ticket--motor">
-        <div class="Tickets-ticket-ribbon">Extralott</div>
+      <div class="Tickets-ticket Tickets-ticket--motor">
+        <div class="Tickets-ticket-ribbon"></div>
         <h4 class="Tickets-ticket-title">Motorlotteriet</h4>
-            <h5 class="Tickets-ticket-number">024680</h5>
+            <h5 class="Tickets-ticket-number">028424</h5>
           <a class="Tickets-ticket-link" href="#">Rätta lott</a>
+      </div>
+    </div>
+
+    <!-- Kombi vinstlott -->
+    <div class="Tickets-ticket-col">
+      <div class="Tickets-ticket Tickets-ticket--kombi-win">
+        <h4 class="Tickets-ticket-title">Kombilott</h4>
+            <h5 class="Tickets-ticket-number">223290</h5>
+      </div>
+    </div>
+    <!-- Dröm vinstlott -->
+    <div class="Tickets-ticket-col">
+      <div class="Tickets-ticket Tickets-ticket--dream-win">
+        <h4 class="Tickets-ticket-title">Drömreselott</h4>
+            <h5 class="Tickets-ticket-number">024680</h5>
       </div>
     </div>
     <!-- Motor vinstlott -->
     <div class="Tickets-ticket-col">
-      <div class="Tickets-ticket Tickets--ticket--win">
+      <div class="Tickets-ticket Tickets-ticket--motor-win">
         <h4 class="Tickets-ticket-title">Motorlott</h4>
             <h5 class="Tickets-ticket-number">024680</h5>
       </div>
     </div>
 
-
-
-
-
-    <!-- Drömreselott  -->
-    <div class="Tickets-ticket Tickets--ticket--dromrese">
-
+    <!-- Kombi nitlott -->
+    <div class="Tickets-ticket-col">
+      <div class="Tickets-ticket Tickets-ticket--kombi-lose">
+        <h4 class="Tickets-ticket-title">Kombilott</h4>
+            <h5 class="Tickets-ticket-number">223290</h5>
+      </div>
     </div>
-    <!-- Ingen vinst -->
-    <!-- Kombilott -->
+    <!-- Dröm nitlott -->
+    <div class="Tickets-ticket-col">
+      <div class="Tickets-ticket Tickets-ticket--dream-lose">
+        <h4 class="Tickets-ticket-title">Drömreselott</h4>
+            <h5 class="Tickets-ticket-number">024680</h5>
+      </div>
+    </div>
+    <!-- Motor nitlott -->
+    <div class="Tickets-ticket-col">
+      <div class="Tickets-ticket Tickets-ticket--motor-lose">
+        <h4 class="Tickets-ticket-title">Motorlott</h4>
+            <h5 class="Tickets-ticket-number">024680</h5>
+      </div>
+    </div>
   </div>
+  <a class="Tickets-show-list-link" href="#">Visa tidigare dragningslistor</a>
 
-
-
+  <div class="Tickets-buy-link-container">
+    <a class="Tickets-buy-link" href="#">
+      <span>Öka dina vinstchanser</span>
+      <span>Köp en lott till</span>
+    </a>
+  </div>
 
 
 </section>

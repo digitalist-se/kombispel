@@ -19,6 +19,10 @@
     color: $background;
   }
 }
+
+// $shadow-color:  rgba(77, 77, 77, .1);
+$shadow-color:  black;
+
 @mixin gradient-btn($color1, $color2) {
   border-radius: 10px;
   font-size: 20px;
@@ -26,6 +30,7 @@
   padding: 15px;
   width: 100%;
   text-transform: uppercase;
+  position: relative;
   font-family: $gill-light;
   max-width: 320px;
   margin: 0 auto;
@@ -36,4 +41,16 @@
   &:hover {
     background: linear-gradient(darken($color1,5%) 45%, darken($color2,5%) 54%);
   }
+  &:after {
+    background: url("../images/svg/shadow-border.svg") no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 10px;
+    bottom: -10px;
+    content: "";
+    left:0;
+    width: 100%;
+    right: 0;
+  }
+
 }

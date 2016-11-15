@@ -36,7 +36,7 @@
 <title>vinstlott_motor3</title>
 <g>
 	<g id="Layer_1">
-		
+
 			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-99.49" y1="443.12" x2="444.17" y2="443.12" gradientTransform="matrix(1 0 0 -1 115.99 589.59)">
 			<stop  offset="0.26" style="stop-color:#C49A2F"/>
 			<stop  offset="0.45" style="stop-color:#FAF394"/>
@@ -56,7 +56,7 @@
 				<use xlink:href="#SVGID_2_"  style="overflow:visible;"/>
 			</clipPath>
 			<g class="st1">
-				
+
 					<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="55.8888" y1="286.1891" x2="55.8888" y2="585.6291" gradientTransform="matrix(1.24 2.1477 1.9312 -1.115 -591.0955 533.3776)">
 					<stop  offset="0" style="stop-color:#A05C26"/>
 					<stop  offset="0.13" style="stop-color:#A05C26"/>
@@ -105,7 +105,7 @@
 		<mask maskUnits="userSpaceOnUse" x="58.6" y="81.6" width="137" height="122.9" id="mask">
 			<g class="st11">
 				<g transform="translate(115.99 254.35)">
-					
+
 						<image style="overflow:visible;enable-background:new    ;" width="142" height="128" xlink:href="CE94601CADCDB741.jpg"  transform="matrix(1 0 0 1 -60.08 -175.65)">
 					</image>
 				</g>
@@ -170,7 +170,7 @@
 		<path class="st15" d="M149.4,159.3l5.2-0.4l-0.4,2.4l-2.1,0.1l-0.4,2.3l2-0.1l-0.4,2.3l-2,0.1l-0.4,2.6l2.3-0.1l-0.4,2.4l-5.4,0.4
 			L149.4,159.3z"/>
 		<path class="st15" d="M162.6,158.4l-0.4,2.4l-1.9,0.1l-1.5,9.6l-3.1,0.2l1.5-9.6l-1.9,0.1l0.4-2.4L162.6,158.4z"/>
-		
+
 			<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="-46.0145" y1="479.204" x2="64.4283" y2="415.4382" gradientTransform="matrix(1 0 0 -1 115.99 589.59)">
 			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
 			<stop  offset="1" style="stop-color:#000000;stop-opacity:0.3"/>
@@ -188,14 +188,14 @@
 			<mask maskUnits="userSpaceOnUse" x="73" y="92.1" width="56.8" height="56.8" id="mask-2">
 				<g class="st19">
 					<g transform="translate(115.99 254.35)">
-						
+
 							<image style="overflow:visible;enable-background:new    ;" width="61" height="62" xlink:href="CE94601CADCDB743.jpg"  transform="matrix(1 0 0 1 -45.08 -164.65)">
 						</image>
 					</g>
 				</g>
 			</mask>
 			<g class="st20">
-				
+
 					<radialGradient id="SVGID_6_" cx="252.083" cy="711.3769" r="28.2275" gradientTransform="matrix(0.7071 -0.7071 -0.7071 -0.7071 419.528 795.1622)" gradientUnits="userSpaceOnUse">
 					<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.6"/>
 					<stop  offset="0.39" style="stop-color:#FFFFFF;stop-opacity:0.36"/>
