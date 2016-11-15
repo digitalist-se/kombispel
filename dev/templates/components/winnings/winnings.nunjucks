@@ -11,16 +11,20 @@
 
     <div class="List">
       <div class="List-item">
-        <img class="List-item-image" src="../images/list/ps4.jpg" alt="PS4" />
-        <p class="List-item-p List-item-p--uppercase">PLAYSTATION 4 PRO</p>
-        <p class="List-item-p">Kombilott - 025785</p>
-        <p class="List-item-p">Speldragning vecka 7</p>
+        <div class="List-item-inner">
+          <img class="List-item-image" src="../images/list/ps4.jpg" alt="PS4" />
+          <p class="List-item-p List-item-p--uppercase">PLAYSTATION 4 PRO</p>
+          <p class="List-item-p">Kombilott - 025785</p>
+          <p class="List-item-p">Speldragning vecka 7</p>
+        </div>
       </div>
       <div class="List-item">
-        <img class="List-item-image" src="../images/list/candles.jpg" alt="Candles" />
-        <p class="List-item-p List-item-p--uppercase">Ljusstake Nordic Light</p>
-        <p class="List-item-p">Kombilott - 025785</p>
-        <p class="List-item-p">Speldragning vecka 2</p>
+        <div class="List-item-inner">
+          <img class="List-item-image" src="../images/list/candles.jpg" alt="Candles" />
+          <p class="List-item-p List-item-p--uppercase">Ljusstake Nordic Light</p>
+          <p class="List-item-p">Kombilott - 025785</p>
+          <p class="List-item-p">Speldragning vecka 2</p>
+        </div>
       </div>
     </div>
 
