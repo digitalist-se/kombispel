@@ -11,7 +11,7 @@
 
     <!-- THE ACTUAL LOTTO -->
     <div class="Lottery-row">
-      <h3><span class="js-Lottery-price-header"></span> kr</h3>
+      <h3><span class="js-Lottery-price-header">Rätta lotten!</span></h3>
       <div class="Lottery-column">
         <div class="js-Lottery-number">
           <div>0</div>

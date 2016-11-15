@@ -15,16 +15,16 @@ var lotteryNumbers = {
         [0,1,1,1,1,1]
       ]
     }
-    // ,
-    // {
-    //   header: "30.000",
-    //   numbers: [
-    //     [3,4,5,3,4,5],
-    //     [1,3,4,5,6,3],
-    //     [3,3,6,7,8,2],
-    //     [0,5,2,8,4,9],
-    //   ]
-    // }
+    ,
+    {
+      header: "30.000",
+      numbers: [
+        [3,4,5,3,4,5],
+        [1,3,4,5,6,3],
+        [3,3,6,7,8,2],
+        [0,5,2,8,4,9],
+      ]
+    }
     // ,
     // {
     //   header: "10.000",
@@ -93,12 +93,12 @@ myLotteryNumber.innerHTML = myNumbers.toString().replace(/^[,]$|[,]+/g,"");
 // Set Lottery-row
 var lotteryNumbers = document.getElementsByClassName('js-Lottery-number');
 var lotteryHeader = document.getElementsByClassName("js-Lottery-price-header")[0];
-lotteryHeader.innerHTML = correctNumbers[objectCounter].header;
+// lotteryHeader.innerHTML = correctNumbers[objectCounter].header;
 
 const startLottery = () => {
   // Clear it after first iteration
-    console.log(objectCounter+" Är objectCounter");
-    console.log(correctNumbers.length+" Är winningNumbers.length");
+    // console.log(objectCounter+" Är objectCounter");
+    // console.log(correctNumbers.length+" Är winningNumbers.length");
     for (var i = 0; i < lotteryNumbers.length; i++) {
       lotteryNumbers[i].innerHTML = "";
     }
@@ -114,12 +114,11 @@ const startLottery = () => {
   }
 
  // CHANGE THE HEADER
-lotteryHeader.innerHTML = correctNumbers[objectCounter].header;
+lotteryHeader.innerHTML = correctNumbers[objectCounter].header+" kr!";
 lotteryMessage.innerHTML = "Dragning pågår";
 // Check how correct each array is in number. Eg
 // If an array matches by two digits the value will be two
 correctAmount = [];
-// var winning = false;
 // Function to push the value to the array
 checkArray = (winningNumbers) => {
   // console.log(winningNumbers);
@@ -127,7 +126,7 @@ checkArray = (winningNumbers) => {
 
   if(objectCounter == (correctNumbers.length-1)) {
     for (var i = 0; i < winningNumbers.length; i++) {
-        if(i < 3) {
+        if(i < 3) { // ALWAYS CORRECT FOR THE FIRST THREE
             correct++;
         } else {
           if(winningNumbers[i] === myNumbers[i]) {
@@ -136,22 +135,18 @@ checkArray = (winningNumbers) => {
         }
     }
   } else {
-    // console.log("Inte Sista");
     for (var i = 0; i < winningNumbers.length; i++) {
           if(winningNumbers[i] === myNumbers[i]) {
           correct++;
-          }
+        }
     }
   }
   correctAmount.push(correct);
 }
-
-
 // Call the function
 for (var i = 0; i < correctNumbers[objectCounter].numbers.length; i++) {
   checkArray(correctNumbers[objectCounter].numbers[i])
 }
-// console.log(correctAmount);
 // Check which number is the highest in the array
 getMaxOfArray = (numArray) =>  Math.max.apply(null, numArray);
 // Get the number
@@ -162,9 +157,6 @@ if(highestNumber === myNumbers.length) {
 } else {
   winning = false;
 }
-
-
-
 // The array that the drawing will be based on
 var drawArray = correctNumbers[objectCounter].numbers[correctAmount.indexOf(highestNumber)];
 /////////////////////////////////////////////
@@ -214,13 +206,12 @@ const correct = () => {
       startInterval ? stop = spinnInterval + (( diff * spinnTime )/10) : stop =  (( diff * spinnTime )/10);
 
       lotteryNumbers[y].className = "js-Lottery-number";
-
-      if(drawArray[y] === myNumbers[y]) {
+      // IF IT IS EITHER CORRECT OR IF ITS THE LAST ROUND
+      if(drawArray[y] === myNumbers[y] || objectCounter == (correctNumbers.length-1)) {
         lotteryNumbers[y].innerHTML = "<div class='Lottery-correct'>"+drawArray[y]+"</div>";
       } else {
         lotteryNumbers[y].innerHTML = "<div class='Lottery-wrong'>"+drawArray[y]+"</div>";
       }
-
       setTimeout(() =>
       {
         correct()
@@ -259,7 +250,7 @@ function drawingDone()  {
   // COUNTDOWN FUNCTIONALITY
   /////////////////////////////////////////////
   if(objectCounter < correctNumbers.length) {
-    var count = 5;
+    var count = 3;
     lotteryMessage.innerHTML =  "Nästa dragning för "+correctNumbers[objectCounter].header+" om "+count+" sekunder";
     var myVar;
     function myFunction() {
@@ -291,8 +282,6 @@ function drawingDone()  {
     lotteryMessage.style.display += "none";
   }
 
-
-
   // WINNING LIST
   var li = document.createElement("li");
   if(winning) {
@@ -301,6 +290,4 @@ function drawingDone()  {
     li.innerHTML = "Tyvärr ingen vinst på "+correctNumbers[objectCounter-1].header;
   }
   winningList.appendChild(li)
-
-
 }

@@ -1,8 +1,8 @@
 $full-large: calc(100% - 1280px);
 $half-large: $full-large/2;
 $menu-width-small: 300px;
-$menu-width-medium: calc(10% + 372px);
-$menu-width-large: calc(#{$half-large} + 372px);
+$menu-width-medium: calc(10% + 368px);
+$menu-width-large: calc(#{$half-large} + 368px);
 $menu-margin: 15px;
 $menu-height: 90px;
 
@@ -20,7 +20,7 @@ menu {
 
 .Menu-inner-container {
   height: 100%;
-  top: 120px;
+  top: 108px;
   bottom: 0;
   z-index: 9999;
   background-color: $red;
@@ -29,10 +29,10 @@ menu {
   transition: all .3s ease;
   width: 300px;
   @include breakpoint(768px, 1023px) {
-    top: 105px;
+    top: 90px;
   }
   @include breakpoint(1024px) {
-  top: 115px;
+  top: 110px;
     width: $menu-width-medium;
   }
   @include breakpoint(1600px) {
