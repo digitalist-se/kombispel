@@ -1,6 +1,5 @@
 <section class="Lottery-container Lottery-container--kombi">
     <div class="Lottery-inner-container">
-
       <!-- ########## INHERIT FROM TICKETS VIEW ########## -->
       <div class="Tickets-ticket-col">
         <div class="Tickets-ticket Tickets-ticket--kombi">
@@ -10,51 +9,54 @@
       </div>
       <!-- ########## INHERIT FROM TICKETS VIEW ########## -->
 
-
     <!-- THE ACTUAL LOTTO -->
     <div class="Lottery-row">
-      <h3><span class="Lottery-price-header"></span> kr</h3>
+      <h3><span class="js-Lottery-price-header"></span> kr</h3>
       <div class="Lottery-column">
-        <div class="Lottery-number">
+        <div class="js-Lottery-number">
           <div>0</div>
         </div>
       </div>
       <div class="Lottery-column">
-        <div class="Lottery-number">
+        <div class="js-Lottery-number">
           <div>0</div>
         </div>
       </div>
       <div class="Lottery-column">
-        <div class="Lottery-number">
+        <div class="js-Lottery-number">
           <div>0</div>
         </div>
       </div>
       <div class="Lottery-column">
-        <div class="Lottery-number">
+        <div class="js-Lottery-number">
           <div>0</div>
         </div>
       </div>
       <div class="Lottery-column">
-        <div class="Lottery-number">
+        <div class="js-Lottery-number">
           <div>0</div>
         </div>
       </div>
       <div class="Lottery-column">
-        <div class="Lottery-number">
+        <div class="js-Lottery-number">
           <div>0</div>
         </div>
       </div>
     </div>
     <div class="Lottery-message-container">
-      <p class="Lottery-message--js"></p>
-      <ul class="Lottery-list-winnings--js"></ul>
+      <p class="js-Lottery-message"></p>
+      <ul class="js-Lottery-winnings-list"></ul>
     </div>
     <div class="Start-lottery-btn-container">
-      <button class="Start-lottery-btn--js">Starta dragning</button>
-
-
+      <button class="js-Start-lottery-btn">Starta dragning</button>
     </div>
-
+    <!-- HÄMTA VINSTER LÄNKAR
+    Kommer vara där hela tiden men visas först när dragningen är klar.
+    Kan renderas från backenden men visas via JS först när dragningen är klar.
+    -->
+    <div class="js-Lottery-winnings-links">
+      <a href="#" class="">Hämta vinst för 30.000 kr</a>
+      <a href="#" class="">Hämta vinst för 10.000 kr</a>
+    </div>
   </div>
-
 </section>

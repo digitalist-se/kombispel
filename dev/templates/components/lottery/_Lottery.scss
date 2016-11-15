@@ -122,14 +122,14 @@ $mynumber-size: 80px;
   }
 }
 
-.Lottery-number--spinning {
+.js-Lottery-number--spinning {
   animation: spinning 1.7s linear infinite;
   div {
     color: darken($grey,30%) !important;
   }
 }
 
-.Lottery-number {
+.js-Lottery-number {
   background-color: $lighter-grey;
   position: absolute;
   z-index: 1;
@@ -154,7 +154,7 @@ $mynumber-size: 80px;
   }
 }
 
-.Lottery-number {
+.js-Lottery-number {
   .Lottery-correct {
     color: rgb(6,171,40);
   }
@@ -169,31 +169,45 @@ position: relative;
 // Win and Lose message container
 /////////////////////////////////////////////
 .Lottery-message-container {
-  // padding: 30px;
   max-width: $lotteryRowWidth;
   margin: 0 auto;
-  // background-color: rgba(195,195,195,0.3);
   color: white;
+  min-height: 40px;
 }
-.Lottery-message--js {
+.js-Lottery-message {
   text-align: center;
   font-size: 28px;
   color: white;
   transition: all .2s ease;
 }
 
-
-.Start-lottery-btn-container {
-    // padding-bottom: 50px;
-}
-.Start-lottery-btn--js {
-  color: white;
+.js-Start-lottery-btn {
   opacity: 1;
   visibility: visible;
   transition: all .2s ease;
   @include gradient-btn($green,darken($green,10%));
 }
 .Hide-element {
-  opacity: 0;
+
   visibility: hidden;
+  opacity: 0;
+
+}
+.Show-element {
+  visibility: visible;;
+  opacity: 1;
+}
+
+/////////////////////////////////////////////
+// COLLECT WINNINGS LINKS
+/////////////////////////////////////////////
+.js-Lottery-winnings-links {
+  margin: 0 auto;
+  width: 90%;
+  display: none;
+
+  a {
+    @include gradient-btn($red,darken($red,10%));
+    margin: 15px auto;
+  }
 }
