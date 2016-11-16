@@ -100,11 +100,10 @@ border-bottom: 15px solid $orange;
 /////////////////////////////////////////////
  //  MENU
  /////////////////////////////////////////////
-.Header-menu-container--js {
+.js-Header-menu-container {
   cursor: pointer;
   left: 0;
   position: relative;
-
   transition: all .2s ease;
   &:after, &:before {
     transition: all .2s ease;
@@ -141,7 +140,6 @@ border-bottom: 15px solid $orange;
     }
   }
 }
-
 .Header-menu-circle {
   width: $menuSize;
   height: $menuSize;
@@ -150,11 +148,6 @@ border-bottom: 15px solid $orange;
   border: 3px solid $red;
   @extend .Flex-center;
 }
-
-
-
-
-
 /////////////////////////////////////////////
 // MENU BURGER
 /////////////////////////////////////////////
@@ -231,18 +224,15 @@ $cubic-bezier2:        cubic-bezier(0.55, 0.055, 0.675, 0.19);
     }
   }
 }
-
-
 //  STATE OPEN
 .Burger--open {
 .Header-menu-circle {
   border: 3px solid white;
   }
-.Header-title--menu {
+.js-Header-title--menu {
   color: white;
 }
 }
-
 /////////////////////////////////////////////
 // LOGO
 /////////////////////////////////////////////
@@ -253,11 +243,10 @@ $cubic-bezier2:        cubic-bezier(0.55, 0.055, 0.675, 0.19);
   margin: 0 auto;
   display: block;
 }
-
 /////////////////////////////////////////////
 // PROFILE
 /////////////////////////////////////////////
-.Header-profile--js {
+.js-Header-profile {
   cursor: pointer;
   &:after {
     clear: both;

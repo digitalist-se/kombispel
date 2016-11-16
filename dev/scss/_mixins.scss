@@ -9,7 +9,7 @@
   color: $color;
   border-radius: 8px;
   font-size: 16px;
-  /*padding: 20px 25px;*/
+  padding: 15px 20px;
   max-width: $width;
   transition: all 0.2s ease;
   border: 2px solid $background;
@@ -39,7 +39,7 @@ $shadow-color:  black;
   cursor: pointer;
   color: white;
   text-align: center;
-  
+
   &:hover {
     background: linear-gradient(darken($color1,5%) 45%, darken($color2,5%) 54%);
     text-decoration: none;

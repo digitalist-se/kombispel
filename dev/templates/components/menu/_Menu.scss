@@ -53,7 +53,7 @@ menu {
     overflow-y: auto;
   }
 }
-.Menu-overlay--js {
+.js-Menu-overlay {
   background-color: transparent;
   transition: all .2s ease;
 }
@@ -63,7 +63,7 @@ menu {
     box-shadow: 3px 2px 3px -1px $transparent-grey;
   }
   //  OVERLAY
-  .Menu-overlay--js {
+  .js-Menu-overlay {
     z-index: 1;
     position: fixed;
     top: 115px;
@@ -130,7 +130,7 @@ background-position: center center;
     margin-top: 2px;
   }
 }
-.Menu-level-one-header,.Menu-level-one-header--js  {
+.Menu-level-one-header,.js-Menu-level-one-header  {
   padding: $menu-margin 0 $menu-margin $menu-margin;
   cursor: pointer;
   transition: all .2s ease;
@@ -138,7 +138,7 @@ background-position: center center;
     background-color: $dark-red;
   }
 }
-.Menu-level-one-header--js.children-open {
+.js-Menu-level-one-header.children-open {
   background-color: $darker-red;
   .Menu-icon--arrow {
     transform: rotate(90deg);
