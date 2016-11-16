@@ -24,7 +24,7 @@ var state = {
   passWord: false,
   emailReg: false,
   numberReg: false
-}
+} 
 
 /////////////////////////////////////////////
 // USERNAME CHECK
