@@ -56,7 +56,8 @@ transition: all 0.3s ease;
 
   .Login-label--block {
     display: block;
-    // font-size: 16px;
+
+    margin-top: 25px;
   }
   .Login-input {
     &:focus {
@@ -191,31 +192,7 @@ transition: all 0.3s ease;
   @include flex-position(flex-end);
 }
 
-  input[type="checkbox"] {
-    height: 15px;
-    width: 15px;
-    margin-right: 5px;
-    outline: 0;
-    position: relative;
-    &:after {
-    cursor: pointer;
-    position: absolute;
-    z-index: 2;
-    content: "";
-    height: 16px;
-    width: 16px;
-    left: 0;
-    top: 0;
-    background-color: white;
-    border: 1px solid $grey;
-    }
-    &:checked {
-      &:after {
-        background: $green url("../images/svg/check.svg") center center no-repeat;
-        background-size: 90%;
-      }
-    }
-  }
+
 
   .js-Login-forgot-password {
     color: $red;
