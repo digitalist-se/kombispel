@@ -206,17 +206,14 @@ function drawingDone()  {
     }
     myFunction();
     // END COUNTDOWN FUNCTIONALITY
-
     // ROTATE BACKGROUNDS
     rotatingBackgrounds[0].className += " Rotate-one";
     rotatingBackgrounds[1].className += " Rotate-two";
-
   }
   /////////////////////////////////////////////
   // WHEN ALL ROUNDS ARE DONE
   /////////////////////////////////////////////
   else {
-    console.log("KLART!!! DAGS ATT HÄMTA PRISER");
     winningLinks.style.display = "block";
     lotteryBtn.style.display = "none";
     lotteryMessage.style.display += "none";

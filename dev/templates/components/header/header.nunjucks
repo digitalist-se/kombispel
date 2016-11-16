@@ -1,10 +1,8 @@
 {% import 'macros/header-navigation.nunjucks' as nav %}
 <header class="Header-container">
-  {# <section class="Menu-row-container"> #}
     <div class="Header-inner-container">
-
       <!-- MENU -->
-      <div class="Header-menu-container--js Header-flex--one">
+      <div class="js-Header-menu-container Header-flex--one">
         <div class="Header-inner-grid">
           <div class="Header-menu-circle">
 
@@ -16,7 +14,7 @@
 
           </div>
           <div class="Header-title">
-            <h3 class="Header-title--menu">meny</h3>
+            <h3 class="js-Header-title--menu">meny</h3>
           </div>
         </div>
       </div>
@@ -26,7 +24,7 @@
       </div>
 
       <!-- MIN SIDA -->
-      <div class="Header-profile--js Header-flex--three">
+      <div class="js-Header-profile Header-flex--three">
         <div class="Header-inner-grid">
           <div class="Header-profile-image"></div>
           <div class="Header-title">
@@ -34,15 +32,9 @@
           </div>
         </div>
       </div>
-
-
       <!-- RÄTTA DIN LOTT -->
       <div class="Header-flex--four">
-        <button class="Header-correct-btn--js">Rätta din lott!</button>
+        <button class="js-Header-correct-btn">Rätta din lott!</button>
       </div>
-
     </div>
-
-
-
 </header>
