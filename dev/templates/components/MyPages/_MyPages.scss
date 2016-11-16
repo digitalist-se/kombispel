@@ -25,14 +25,17 @@
   @include flex-row();
 }
 
-.MyPages-block {
-  background-color: #fff;
-  padding: 20px;
+.MyPages-information-column {
   @include flex-gtr-col (1, 10px);
 
   @include breakpoint(1024px) {
     @include flex-gtr-col (2, 15px);
   }
+}
+
+.MyPages-block {
+  background-color: #fff;
+  padding: 20px;
 
   button {
     padding: 10px 40px;
@@ -42,6 +45,7 @@
 }
 
 .MyPages-block--basic {
+  margin-bottom: 30px;
   text-align: center;
 
   button {
@@ -69,6 +73,18 @@
   display: inline-block;
   border-bottom: 1px solid $dark-grey;
   padding-bottom: 10px;
+}
+
+.MyPages-checkbox {
+  position: relative;
+}
+
+.MyPages-block-section:first-child {
+  margin-bottom: 30px;
+}
+
+.MyPages-block-row {
+  margin-bottom: 10px;
 }
 
 /////////////////////////////////////////////
