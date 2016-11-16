@@ -1,5 +1,9 @@
 $lotteryRowWidth:  480px;
 
+[class*="Lottery-container--"] {
+  position: relative;
+  overflow: hidden;
+}
 .Lottery-container--kombi {
   background-color: $orange;
 
@@ -15,6 +19,52 @@ $lotteryRowWidth:  480px;
   padding: 20px 0 40px 0;
   @extend .Inner-container;
 }
+/////////////////////////////////////////////
+// Rotating backgrounds
+/////////////////////////////////////////////
+@keyframes rotating-one {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating-two {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+
+
+
+.js-Lottery-rotating-background {
+  position: absolute;
+  opacity: 0.2;
+  width: 200%;
+  height: 500%;
+  top: -200%;
+  left: -50%;
+  background:url("../images/svg/starburst.svg") no-repeat center center;
+  background-size: cover;
+  // animation: rotating 10s linear infinite;
+}
+
+$rotateSpeed: 16s;
+
+.Rotate-one {
+  animation: rotating-one $rotateSpeed linear infinite;
+}
+.Rotate-two {
+  animation: rotating-two $rotateSpeed linear infinite;
+
+}
+
+
 
 
 

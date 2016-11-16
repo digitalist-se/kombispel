@@ -1,88 +1,21 @@
-var lotteryNumbers = {
-  myNumbers: [2,0,5,5,6,3],
-  correctNumbers: [
-    {
-      header: "1.000.000",
-      numbers: [
-        [6,5,4,5,6,1]
-      ]
-    },
-    {
-      header: "300.000",
-      numbers: [
-        [2,0,5,6,6,2],
-        [1,3,4,5,6,3],
-        [0,1,1,1,1,1]
-      ]
-    }
-    ,
-    {
-      header: "30.000",
-      numbers: [
-        [3,4,5,3,4,5],
-        [1,3,4,5,6,3],
-        [3,3,6,7,8,2],
-        [0,5,2,8,4,9],
-      ]
-    }
-    // ,
-    // {
-    //   header: "10.000",
-    //   numbers: [
-    //     [3,4,5,3,4,5],
-    //     [1,3,4,9,2,3],
-    //     [3,3,6,7,8,2],
-    //     [0,5,2,8,4,9],
-    //     [2,3,3,7,8,2],
-    //     [0,5,2,9,9,9],
-    //   ]
-    // },
-    // {
-    //   header: "5.000",
-    //   numbers: [
-    //     [3,4,5,3,4,5],
-    //     [1,3,4,9,2,3],
-    //     [3,3,6,7,8,2],
-    //     [0,5,2,8,4,9],
-    //     [2,3,3,7,8,2],
-    //     [0,5,2,9,9,9],
-    //   ]
-    // },
-    // {
-    //   header: "500",
-    //   numbers: [
-    //     [3,4,5,3,4,5],
-    //     [1,3,4,9,2,3],
-    //     [3,3,6,7,8,2],
-    //     [0,5,2,8,4,9],
-    //     [2,3,3,7,8,2],
-    //     [0,5,2,9,9,9],
-    //   ]
-    // },
-    // {
-    //   header: "200",
-    //   numbers: [
-    //     [3,4,5,3,4,5],
-    //     [1,3,4,9,2,3],
-    //     [3,3,6,7,8,2],
-    //     [0,5,2,8,4,9],
-    //     [2,3,3,7,8,2],
-    //     [0,5,2,9,9,9],
-    //   ]
-    // }
-  ]
-}
+/////////////////////////////////////////////
+// API
+/////////////////////////////////////////////
+var xmlhttp = new XMLHttpRequest();
+var url = "api/test.json";
 
-
+xmlhttp.onreadystatechange = function() {
+  if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+    var lotteryNumbers = JSON.parse(xmlhttp.responseText);
+// Instances of api response
+    var correctNumbers = lotteryNumbers.correctNumbers;
+    var myNumbers = lotteryNumbers.myNumbers;
 /////////////////////////////////////////////
 // Variables which will be reset
 /////////////////////////////////////////////
-var winning = false;
-var objectCounter = 0;
-var correctAmount; // Will be an array
-var correctNumbers = lotteryNumbers.correctNumbers;
-var myNumbers = lotteryNumbers.myNumbers;
-
+    var winning = false;
+    var objectCounter = 0;
+    var correctAmount; // Will be an array
 /////////////////////////////////////////////
 // SET INITIAL STATE OF APPLICATION
 /////////////////////////////////////////////
@@ -93,12 +26,15 @@ myLotteryNumber.innerHTML = myNumbers.toString().replace(/^[,]$|[,]+/g,"");
 // Set Lottery-row
 var lotteryNumbers = document.getElementsByClassName('js-Lottery-number');
 var lotteryHeader = document.getElementsByClassName("js-Lottery-price-header")[0];
-// lotteryHeader.innerHTML = correctNumbers[objectCounter].header;
+// Backgrounds
+var rotatingBackgrounds = document.getElementsByClassName("js-Lottery-rotating-background");
 
 const startLottery = () => {
-  // Clear it after first iteration
-    // console.log(objectCounter+" Är objectCounter");
-    // console.log(correctNumbers.length+" Är winningNumbers.length");
+    // Stop background rotation
+    for (var i = 0; i < rotatingBackgrounds.length; i++) {
+      rotatingBackgrounds[i].className = "js-Lottery-rotating-background";
+    }
+  // Clear numbers after first iteration
     for (var i = 0; i < lotteryNumbers.length; i++) {
       lotteryNumbers[i].innerHTML = "";
     }
@@ -112,7 +48,6 @@ const startLottery = () => {
       }
     }
   }
-
  // CHANGE THE HEADER
 lotteryHeader.innerHTML = correctNumbers[objectCounter].header+" kr!";
 lotteryMessage.innerHTML = "Dragning pågår";
@@ -241,8 +176,8 @@ lotteryBtn.addEventListener("click",function() {
 /////////////////////////////////////////////
 var messageContainer = document.getElementsByClassName("Lottery-message-container")[0];
 var lotteryMessage = document.getElementsByClassName("js-Lottery-message")[0];
-var winningList = document.getElementsByClassName("js-Lottery-winnings-list")[0];
 var winningLinks = document.getElementsByClassName("js-Lottery-winnings-links")[0];
+
 
 function drawingDone()  {
   objectCounter++; // Counter for the iteration in the JSON RESPONSE
@@ -252,6 +187,7 @@ function drawingDone()  {
   if(objectCounter < correctNumbers.length) {
     var count = 3;
     lotteryMessage.innerHTML =  "Nästa dragning för "+correctNumbers[objectCounter].header+" om "+count+" sekunder";
+
     var myVar;
     function myFunction() {
       myVar = setInterval(function(){ countDown() }, 1000);
@@ -271,6 +207,10 @@ function drawingDone()  {
     myFunction();
     // END COUNTDOWN FUNCTIONALITY
 
+    // ROTATE BACKGROUNDS
+    rotatingBackgrounds[0].className += " Rotate-one";
+    rotatingBackgrounds[1].className += " Rotate-two";
+
   }
   /////////////////////////////////////////////
   // WHEN ALL ROUNDS ARE DONE
@@ -281,13 +221,15 @@ function drawingDone()  {
     lotteryBtn.style.display = "none";
     lotteryMessage.style.display += "none";
   }
-
-  // WINNING LIST
-  var li = document.createElement("li");
-  if(winning) {
-    li.innerHTML = "Du vann "+correctNumbers[objectCounter-1].header;
-  } else {
-    li.innerHTML = "Tyvärr ingen vinst på "+correctNumbers[objectCounter-1].header;
-  }
-  winningList.appendChild(li)
 }
+/////////////////////////////////////////////
+// ******************************************
+//           END API
+// ******************************************
+/////////////////////////////////////////////
+} else {
+  // console.log("Inget svar från API");
+}
+}
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
