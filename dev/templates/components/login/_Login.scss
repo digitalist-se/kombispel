@@ -57,6 +57,7 @@ transition: all 0.3s ease;
 
   .Login-label--block {
     display: block;
+    margin-top: 25px;
   }
 
   .Login-input {
@@ -196,7 +197,7 @@ transition: all 0.3s ease;
   @include col(50%);
 }
 
-  input[type="checkbox"] {
+  /*input[type="checkbox"] {
     height: 15px;
     width: 15px;
     margin-right: 5px;
@@ -220,7 +221,7 @@ transition: all 0.3s ease;
         background-size: 90%;
       }
     }
-  }
+  }*/
 
   .Login-forgot-password {
     color: $red;

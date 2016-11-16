@@ -267,7 +267,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="MyPages-information">
       <div class="MyPages-block MyPages-block--basic">
-        <p><span class="u-uppercase">Grunduppgifter</span></p>
+        <p><span class="MyPages-block-title u-uppercase">Grunduppgifter</span></p>
         <p><span>Namn: </span><span class="u-bold">Tommy Nilsson</span></p>
         <p><span>Personnummer: </span><span class="u-bold">700702-1458</span></p>
         <p><span>Kundnummer: </span><span class="u-bold">AB17268763</span></p>
@@ -278,15 +278,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h3 class="Heading-3">Dessa uppgifter kan du ändra:</h3>
 
         <form name="MyPages-settingsForm" class="MyPages-settingsForm">
-          <div class="Login-input-section">
-            <label class="" for="phone">Mobiltelefon:</label>
+          <div class="MyPages-input-section">
+            <label class="u-block" for="phone">Mobiltelefon:</label>
             <input class="" type="text" name="phone" required/>
+            <div class="">
+              <input type="checkbox" name="remember" checked/>
+              <label for="remember">Ja tack, vinstbevakning via SMS</label>
+            </div>
           </div>
-          <div class="Login-input-section">
-            <label class="" for="email">E-postadress:</label>
+          <div class="MyPages-input-section">
+            <label class="u-block" for="email">E-postadress:</label>
             <input class="" type="email" name="email" required/>
+            <div class="">
+              <input type="checkbox" name="remember" checked/>
+              <label for="remember">Ja tack, vinstbevakning via e-post</label>
+            </div>
           </div>
-          <button class="" type="submit">Spara dina ändringar</button>
+          <div class="u-center">
+            <button class="" type="submit">Spara dina ändringar</button>
+          </div>
         </form>
       </div>
     </div>
@@ -295,8 +305,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h1 class="Heading-1">Betalningar</h1>
     </div>
 
-    <div class="MyPages-block MyPages-block--settings">
-      Obetalda fakturor
+    <div class="MyPages-block MyPages-block--payments">
+      <label for="">Obetalda fakturor</label>
+      2016-01-25     200 SEK
+      <label for="">Betalda fakturor</label>
+      2015-12-25     200 SEK
     </div>
 
   </div>
