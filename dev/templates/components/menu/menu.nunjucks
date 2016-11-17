@@ -25,6 +25,21 @@
           <li class="Menu-item-has-children">
             <div class="js-Menu-level-one-header">
               <span class="Menu-icon--arrow"></span>
+              <span class="Menu-item-header">Färdiga sidor</span>
+            </div>
+            <ul class="Menu-level-two">
+              <li><a href="index.html">Startsida</a></li>
+              <li><a href="tickets.html">Mina lotter</a></li>
+              <li><a href="information.html">Mina uppgifter</a></li>
+              <li><a href="winnings.html">Vinsthistorik</a></li>
+              <li><a href="lottery.html">Rätta lotten</a></li>
+              <li><a href="lottery.html">Innehållssida</a></li>
+            </ul>
+          </li>
+          <!-- ITEM -->
+          <li class="Menu-item-has-children">
+            <div class="js-Menu-level-one-header">
+              <span class="Menu-icon--arrow"></span>
               <span class="Menu-item-header">Tävlingar och nöjen</span>
             </div>
             <ul class="Menu-level-two">

@@ -177,6 +177,25 @@
 .Tickets-ticket--motor-win {
   background-image: url("../images/svg/tickets/winning-ticket-motor.svg");
 }
+
+.Tickets-winning-ticket-header {
+  text-align: center;
+  text-transform: uppercase;
+}
+.Tickets-winning-ticket-link--kombi {
+  @include gradient-btn($orange, darken($orange,5%));
+}
+.Tickets-winning-ticket-link--motor {
+  @include gradient-btn($red, darken($red,5%));
+}
+.Tickets-winning-ticket-link--dream {
+  @include gradient-btn($green, darken($green,5%));
+}
+
+
+
+
+
 /////////////////////////////////////////////
 // NITLOTTER
 /////////////////////////////////////////////

@@ -5,7 +5,6 @@ $menu-width-medium: calc(10% + 368px);
 $menu-width-large: calc(#{$half-large} + 368px);
 $menu-margin: 15px;
 $menu-height: 90px;
-
 menu {
   margin: 0;
   padding: 0;
@@ -17,7 +16,6 @@ menu {
     text-transform: uppercase;
   }
 }
-
 .Menu-inner-container {
   height: 100%;
   top: 108px;

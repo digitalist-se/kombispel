@@ -9,7 +9,7 @@
       <p>Dragning vecka 12</p>
       <p>(2016-04-11 - 2016-04-18)</p>
     </div>
-    
+
     <div class="Tickets-ticket-container">
       <!-- Kombi -->
       <div class="Tickets-ticket-col">
@@ -69,6 +69,8 @@
           <h4 class="Tickets-ticket-title">Kombilott</h4>
               <h5 class="Tickets-ticket-number">223290</h5>
         </div>
+        <h3 class="Tickets-winning-ticket-header">Vinst på 30 000 kr!</h3>
+        <a href="#" class="Tickets-winning-ticket-link--kombi">Välj din vinst!</a>
       </div>
       <!-- Dröm vinstlott -->
       <div class="Tickets-ticket-col">
@@ -76,6 +78,8 @@
           <h4 class="Tickets-ticket-title">Drömreselott</h4>
               <h5 class="Tickets-ticket-number">024680</h5>
         </div>
+        <h3 class="Tickets-winning-ticket-header">Vinst på 300 000 kr!</h3>
+        <a href="#" class="Tickets-winning-ticket-link--dream">Välj din vinst!</a>
       </div>
       <!-- Motor vinstlott -->
       <div class="Tickets-ticket-col">
@@ -83,6 +87,8 @@
           <h4 class="Tickets-ticket-title">Motorlott</h4>
               <h5 class="Tickets-ticket-number">024680</h5>
         </div>
+        <h3 class="Tickets-winning-ticket-header">Vinst på 500 kr!</h3>
+        <a href="#" class="Tickets-winning-ticket-link--motor">Välj din vinst!</a>
       </div>
 
       <!-- Kombi nitlott -->
