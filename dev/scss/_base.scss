@@ -24,24 +24,26 @@ main {
   width: 100%;
   &.locked {
     position: fixed;
+    // overflow-y: hidden;
+    // overflow: hidden;
     height: 100%;
-    main {
-      transform: translateX(100px);
-    }
+    // main {
+    //   transform: translateX(100px);
+    // }
   }
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background-color: white;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: $red;
-}
+// ::-webkit-scrollbar {
+//     width: 10px;
+// }
+// ::-webkit-scrollbar-track {
+//     border-radius: 10px;
+//     background-color: white;
+// }
+//
+// ::-webkit-scrollbar-thumb {
+//     background-color: $red;
+// }
 
 a {
   text-decoration: none;
@@ -57,7 +59,7 @@ blockquote {
   color: #fff;
   font-family: $gill-bookItalic;
   font-size: 22px;
-  margin: 0;
+  margin: $base-margin 0;
   padding: 30px;
 }
 
@@ -75,19 +77,19 @@ img {
   text-align: center;
 }
 
+.Heading-2 {
+  font-size: 26px;
+  font-family: $gill-regular;
+  text-align: center;
+}
+.Heading-2--red {
+  font-size: 26px;
+  font-family: $gill-regular;
+  text-align: center;
+  color: $red;
+}
 .Heading-3 {
   font-size: 24px;
   font-family: $gill-regular;
-}
-
-/////////////////////////////////////////////
-//  TEMPORARY MY PAGE
-/////////////////////////////////////////////
-.Account-container {
-  @extend .Inner-container;
-
-  a {
-    color: $red;
-  }
-
+  text-align: center;
 }

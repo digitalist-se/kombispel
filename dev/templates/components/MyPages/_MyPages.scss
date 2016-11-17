@@ -121,7 +121,7 @@
 }
 
 .MyPages-buy-link {
-  @include gradient-btn($red,$dark-red);
+  @include gradient-btn($red);
   color: white;
   span {
     display: block;

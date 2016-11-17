@@ -81,7 +81,7 @@
     .Tickets-ticket-number {
       right: 70px;
       font-size: 50px;
-      top: calc(50% - 30px);
+      top: calc(50% - 35px);
     }
     .Tickets-ticket-link {
       bottom: 20px;
@@ -183,13 +183,13 @@
   text-transform: uppercase;
 }
 .Tickets-winning-ticket-link--kombi {
-  @include gradient-btn($orange, darken($orange,5%));
+  @include gradient-btn($orange);
 }
 .Tickets-winning-ticket-link--motor {
-  @include gradient-btn($red, darken($red,5%));
+  @include gradient-btn($red);
 }
 .Tickets-winning-ticket-link--dream {
-  @include gradient-btn($green, darken($green,5%));
+  @include gradient-btn($green);
 }
 
 

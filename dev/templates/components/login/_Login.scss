@@ -18,7 +18,7 @@
   max-height: calc(100vh - 70px);
   width: 90%;
   max-width: 600px;
-  margin-left: auto;
+  margin-left: auto; 
   margin-right: auto;
   margin-top: 50px;
   border-radius: 5px;
@@ -205,7 +205,7 @@ transition: all 0.3s ease;
     margin-top: 30px;
     text-align: center;
     text-decoration: none;
-    @include gradient-btn($red, $dark-red);
+    @include gradient-btn($red);
     color: white;
     margin-bottom: 40px;
   }
