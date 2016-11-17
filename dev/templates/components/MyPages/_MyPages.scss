@@ -29,7 +29,7 @@
   @include flex-gtr-col (1, 10px);
 
   @include breakpoint(1024px) {
-    @include flex-gtr-col (2, 15px);
+    @include flex-gtr-col (2, 30px);
   }
 }
 
@@ -79,12 +79,25 @@
   position: relative;
 }
 
-.MyPages-block-section:first-child {
-  margin-bottom: 30px;
+.MyPages-block-section {
+  &:first-child {
+    margin-bottom: 30px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
 
 .MyPages-block-row {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 10px;
+
+  a {
+    @extend .Arrow-link;
+  }
 }
 
 /////////////////////////////////////////////
