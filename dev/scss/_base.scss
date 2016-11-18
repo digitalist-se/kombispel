@@ -33,17 +33,7 @@ main {
   }
 }
 
-// ::-webkit-scrollbar {
-//     width: 10px;
-// }
-// ::-webkit-scrollbar-track {
-//     border-radius: 10px;
-//     background-color: white;
-// }
-//
-// ::-webkit-scrollbar-thumb {
-//     background-color: $red;
-// }
+
 
 a {
   text-decoration: none;
@@ -61,6 +51,17 @@ blockquote {
   font-size: 22px;
   margin: $base-margin 0;
   padding: 30px;
+  position: relative;
+  &:before {
+    background: url("../images/svg/quote.svg");
+    content: '';
+    position: absolute;
+    font-size: 40px;
+    // left: -10px;
+    background-repeat: no-repeat;
+  }
+
+
 }
 
 img {
