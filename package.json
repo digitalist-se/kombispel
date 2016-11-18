@@ -13,6 +13,7 @@
     "gulp-minify": "0.0.14",
     "gulp-nunjucks-render": "^2.0.0",
     "gulp-sass": "^2.3.2",
+    "gulp-shell": "^0.5.2",
     "gulp-sourcemaps": "^1.6.0",
     "run-sequence": "^1.2.2",
     "sassdoc": "^2.1.20"

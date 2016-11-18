@@ -9,7 +9,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var concat = require("gulp-concat");
 var cleanCSS = require('gulp-clean-css');
 var minify = require('gulp-minify');
-
+var shell = require('gulp-shell');
 
 // var data = require('gulp-data');
 /////////////////////////////////////////////
@@ -95,7 +95,7 @@ gulp.task('watch', function() {
 //////// DEFAULT GULP
 /////////////////////////////////////////////
 gulp.task('default', function(callback) {
-    runSequence(['sass','js','nunjucks', 'browserSync', 'watch'],
+    runSequence(['sass','js','nunjucks', 'browserSync', 'fml', 'watch'],
         callback
     )
 });
@@ -131,3 +131,5 @@ gulp.task('min-js', function() {
     }))
     .pipe(gulp.dest('dev/js/'))
 });
+
+gulp.task('fml', shell.task(['say -v Whisper “fuck my life”']));
