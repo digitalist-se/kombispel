@@ -1,4 +1,4 @@
-$menuSize: 36px;
+$menuSize: 33px;
 $menuBorder: 2px solid rgb(214,214,214);
 
 .Header-container {
@@ -81,7 +81,7 @@ border-bottom: 15px solid $orange;
     margin-left: 10px;
     @include flex-position(center);
   }
-  h3 {
+  h4 {
     text-transform: uppercase;
     font-family: $gill-regular;
     color: $red;
@@ -256,7 +256,7 @@ $cubic-bezier2:        cubic-bezier(0.55, 0.055, 0.675, 0.19);
 /////////////////////////////////////////////
 .Header-kombo-logo {
   background: url("../images/svg/logo.svg") no-repeat center center;
-  height: 50px;
+  height: 45px;
   width: 95%;
   margin: 0 auto;
   display: block;
@@ -277,7 +277,7 @@ margin: 0 auto;
 margin-top: 0px;
 background: url("../images/svg/profile-icon-red.svg") no-repeat center center;
 height: $menuSize+3px; //  Compensate for the menus 3+3px border
-width: 25px;
+width: 22px;
 // width: 100%;
 }
 /////////////////////////////////////////////

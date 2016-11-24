@@ -9,6 +9,9 @@
   @include breakpoint(1024px) {
     @include flex-gtr-col (2, 15px);
   }
+  @include breakpoint(1px, 374px) {
+    margin: 0 !important;
+  }
   padding: 2*$base-margin 0;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
@@ -34,6 +37,9 @@
   width: 300px;
   margin: 0 auto;
   position: relative;
+
+
+
   &:after {
     background: url("../images/svg/shadow-border.svg") no-repeat;
     background-size: contain;
@@ -41,7 +47,7 @@
     height: 10px;
     bottom: -10px;
     content: "";
-    left:10%;
+    left: 10%;
     right: 10%;
   }
   .Tickets-ticket-title {
@@ -75,7 +81,7 @@
     color: white;
     box-shadow: -2px 11px 22px -13px rgba(0,0,0,0.75);
   }
-  @include breakpoint(420px) {
+  @include breakpoint(375px) {
     width: 350px;
     height: 175px;
     .Tickets-ticket-title {
@@ -83,7 +89,7 @@
       font-size: 22px;
     }
     .Tickets-ticket-link {
-      bottom: 18px;
+      bottom: 14px;
       font-size: 16px;
     }
   }
@@ -151,7 +157,7 @@
   left: -12px;
   height: 95px;
   width: 150px;
-  @include breakpoint(420px) {
+  @include breakpoint(375px) {
     top: 5px;
     left: -10px;
     height: 120px;

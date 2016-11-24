@@ -19,7 +19,7 @@ border-bottom: 8px solid $green;
     padding: 20px 0;
     margin: 15px 0;
     flex-basis: calc(50% - 6px);
-    h4,p,.Logo-row-links {
+    h3,p,.Logo-row-links {
       display: none;
     }
     [class*="Logo-row-logo--"] {
@@ -54,7 +54,8 @@ border-bottom: 8px solid $green;
       border-right: $logoBorder;
     }
   }
-  h4 {
+  h3 {
+    font-size: 23px;
     margin: 15px 0 0 0;
     text-align: center;
      @include respond-to(large) {
@@ -62,6 +63,7 @@ border-bottom: 8px solid $green;
      }
   }
   p {
+    font-size: 18px;
     text-align: center;
     color: rgb(128,128,128);
     margin: 10px 0;
@@ -71,8 +73,13 @@ border-bottom: 8px solid $green;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  font-size: 18px;
   a {
     @extend .Arrow-link;
+    &:before {
+      top: 8px;
+    }
+
     &:first-of-type {
       margin-left: 18px;
     }
@@ -89,7 +96,8 @@ border-bottom: 8px solid $green;
   background-repeat: no-repeat;
   background-position: center center;
   display: block;
-  height: 75px;
-  background-size: 85px;
+  height: 85px;
+  width: 90px;
+  margin: 0 auto;
   color: transparent;
 }
