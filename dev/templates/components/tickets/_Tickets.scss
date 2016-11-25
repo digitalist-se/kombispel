@@ -13,8 +13,8 @@
     margin: 0 !important;
   }
   padding: 2*$base-margin 0;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  // margin-top: 0 !important;
+  // margin-bottom: 0 !important;
   position: relative;
   &:after {
     content: "";
@@ -26,7 +26,12 @@
     left: 20%;
     right: 20%;
   }
-
+  &.Tickets-ticket-col--win {
+    background-color: $gold;
+    &:after {
+      background-color: transparent;
+    }
+  }
 }
 [class*="Tickets-ticket"] {
   background-position: center center;
@@ -37,9 +42,6 @@
   width: 300px;
   margin: 0 auto;
   position: relative;
-
-
-
   &:after {
     background: url("../images/svg/shadow-border.svg") no-repeat;
     background-size: contain;

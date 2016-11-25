@@ -11,17 +11,21 @@
   text-align: center;
   box-shadow: 0px 5px 1px rgba(51, 51, 51, 0.08);
   position: relative;
+  margin-bottom: 30px;
+
+
   @include breakpoint(1px, 999px) {
     @include flex-gtr-col(1, 10px);
+    margin-top: 0;
+    &:first-of-type {
+      margin-top: 30px ;
+    }
   }
-
   @include breakpoint(1000px) {
     @include flex-gtr-col(3, 15px);
+    margin-top: 30px ;
   }
-  margin-top: 30px !important;
-  margin-bottom: 30px !important;
 }
-
 .Promo-box {
   position: relative;
   height: 100%;
@@ -113,10 +117,12 @@
     font-size: 32px;
   }
   .Promo-box-link {
+    padding: $base-margin;
+
     @include breakpoint(1000px) {
       position: absolute;
+      padding: 0;
     }
-
     left: 0;
     right: 0;
     bottom: 2*$base-margin;

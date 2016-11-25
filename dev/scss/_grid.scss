@@ -10,18 +10,18 @@
  }
 }
 
-////////////////////////////////
-//  NORMAL-COLUMNS
-///////////////////////////////
+// ////////////////////////////////
+// //  NORMAL-COLUMNS
+// ///////////////////////////////
 @mixin col($width) {
 float: left;
 width: $width;
 }
 
-////////////////////////////////
-//  GUTTER-COLUMNS
-// (Number of columns, gutter)
-///////////////////////////////
+// ////////////////////////////////
+// //  GUTTER-COLUMNS
+// // (Number of columns, gutter)
+// ///////////////////////////////
 @mixin gtr-col($columns, $gutter) {
 $percentage: percentage(1/$columns);
 $width: (($columns - 1)*$gutter)/$columns;
@@ -52,7 +52,6 @@ margin-right: $gutter/2;
   $percentage: percentage(1/$columns);
   $width: (($columns - 1)*$gutter)/$columns;
   flex-basis: calc(#{$percentage} - #{$width});
-  margin: $gutter;
   margin-top: $gutter;
   margin-left: $gutter/2;
   margin-right: $gutter/2;

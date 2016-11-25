@@ -1,6 +1,9 @@
 label {
   margin-bottom: 7.5px;
-  font-size: 20px;
+  font-size: 16px;
+  @include breakpoint(768px) {
+    font-size: 20px;
+  }
 }
 
 /////////////////////////////////////////////

@@ -17,13 +17,8 @@ padding-bottom: 2*$base-margin;
   background-color: white;
   @include flex-row();
   @extend .Inner-container;
-  padding: $base-margin 1*$base-margin 0;
-  @include respond-to(medium) {
-    padding: $base-margin 2*$base-margin 0;
-  }
-  @include respond-to(large) {
-    padding: $base-margin 3*$base-margin 0;
-  }
+  @include page-inner();
+
 }
 
 @include respond-to(large) {

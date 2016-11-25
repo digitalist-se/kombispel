@@ -85,12 +85,15 @@ border-bottom: 15px solid $orange;
     text-transform: uppercase;
     font-family: $gill-regular;
     color: $red;
-    font-size: 18px;
     @include breakpoint(1px, 767px) {
       margin: 10px 0 0 0;
+      font-size: 14px;
+
     }
     @include breakpoint(768px) {
       margin: 0;
+      font-size: 18px;
+
     }
   }
 }
@@ -290,6 +293,7 @@ width: 22px;
       @include rounded-btn($orange,white,300px);
       margin: 0 auto;
       display: block;
+      font-size: 16px;
     }
   }
 }

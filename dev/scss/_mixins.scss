@@ -72,3 +72,15 @@ $shadow-color:  black;
   margin-top: $m;
   margin-bottom: $m;
 }
+/////////////////////////////////////////////
+ // Inner page container
+ /////////////////////////////////////////////
+@mixin page-inner() {
+  padding: $base-margin 1*$base-margin 0;
+  @include respond-to(medium) {
+    padding: $base-margin 2*$base-margin 0;
+  }
+  @include respond-to(large) {
+    padding: $base-margin 3*$base-margin 0;
+  }
+}
