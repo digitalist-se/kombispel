@@ -3,6 +3,9 @@ $lotteryRowWidth:  480px;
 [class*="Lottery-container--"] {
   position: relative;
   overflow: hidden;
+  .Tickets-ticket-col:after {
+    background-color: transparent;
+  }
 }
 .Lottery-container--kombi {
   background-color: $orange;
@@ -273,6 +276,12 @@ position: relative;
 .Show-element {
   visibility: visible;;
   opacity: 1;
+}
+/////////////////////////////////////////////
+// PULSATING: LETTERS;
+/////////////////////////////////////////////
+.Pulse {
+
 }
 
 /////////////////////////////////////////////

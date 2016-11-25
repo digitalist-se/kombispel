@@ -186,7 +186,7 @@ function drawingDone()  {
   /////////////////////////////////////////////
   if(objectCounter < correctNumbers.length) {
     var count = 3;
-    lotteryMessage.innerHTML =  "Nästa dragning för "+correctNumbers[objectCounter].header+" om "+count+" sekunder";
+    lotteryMessage.innerHTML =  "Nästa dragning för "+correctNumbers[objectCounter].header+" om "+"<span class='Pulse'>"+count+"</span>"+" sekunder";
 
     var myVar;
     function myFunction() {
@@ -198,7 +198,7 @@ function drawingDone()  {
     function countDown() {
       count--;
 
-      lotteryMessage.innerHTML =  "Nästa dragning för "+correctNumbers[objectCounter].header+" om "+count+" sekunder";
+      lotteryMessage.innerHTML =  "Nästa dragning för "+correctNumbers[objectCounter].header+" om "+"<span class='Pulse'>"+count+"</span>"+" sekunder";
       if(count < 0) {
         startLottery();
         myStopFunction();
