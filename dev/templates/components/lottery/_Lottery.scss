@@ -1,5 +1,12 @@
 $lotteryRowWidth:  480px;
-
+@keyframes lottery-spinner {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 [class*="Lottery-container--"] {
   position: relative;
   overflow: hidden;
@@ -23,6 +30,39 @@ $lotteryRowWidth:  480px;
   @extend .Inner-container;
 }
 /////////////////////////////////////////////
+// DRAGNING PÅGÅR
+/////////////////////////////////////////////
+$small-spinner: 35px;
+
+.js-Lottery-ongoing {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 280px;
+  text-transform: uppercase;
+  text-align: center;
+  span {
+    display: inline-block;
+    height: $small-spinner;
+    vertical-align: top;
+  }
+}
+.js-Lottery-ongoing-message {
+  font-size: 26px;
+  margin-right: 10px;
+}
+.js-Lottery-spinner--small {
+  animation: lottery-spinner 1s linear infinite;
+  width: $small-spinner;
+  background-size: cover;
+  background:url("../images/svg/spinners/spinner-small.svg") no-repeat center center;
+}
+
+
+/////////////////////////////////////////////
 // Rotating backgrounds
 /////////////////////////////////////////////
 @keyframes rotating-one {
@@ -42,9 +82,6 @@ $lotteryRowWidth:  480px;
   }
 }
 
-
-
-
 .js-Lottery-rotating-background {
   position: absolute;
   opacity: 0.2;
@@ -54,9 +91,7 @@ $lotteryRowWidth:  480px;
   left: -50%;
   background:url("../images/svg/starburst.svg") no-repeat center center;
   background-size: cover;
-  // animation: rotating 10s linear infinite;
 }
-
 $rotateSpeed: 16s;
 
 .Rotate-one {
@@ -278,12 +313,38 @@ position: relative;
   opacity: 1;
 }
 /////////////////////////////////////////////
-// PULSATING: LETTERS;
+// CINEMA COUNTDOWN BETWEEN
 /////////////////////////////////////////////
-.Pulse {
 
+.js-Lottery-countdown-c {
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 90px;
+  margin-top: $base-margin;
+}
+.js-Lottery-countdown {
+  display: block;
+  width: 50px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  font-size: 60px;
+  right: 0;
+  top: 0;
 }
 
+.js-Lottery-spinner--big {
+  position: absolute;
+  animation: lottery-spinner 1s linear infinite;
+  height: 100%;
+  width: 90px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-size: cover;
+  background:url("../images/svg/spinners/spinner-big.svg") no-repeat center center;
+}
 /////////////////////////////////////////////
 // COLLECT WINNINGS LINKS
 /////////////////////////////////////////////

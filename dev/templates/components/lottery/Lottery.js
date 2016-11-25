@@ -29,7 +29,7 @@ var lotteryHeader = document.getElementsByClassName("js-Lottery-price-header")[0
 // Backgrounds
 var rotatingBackgrounds = document.getElementsByClassName("js-Lottery-rotating-background");
 
-const startLottery = () => {
+function startLottery () {
     // Stop background rotation
     for (var i = 0; i < rotatingBackgrounds.length; i++) {
       rotatingBackgrounds[i].className = "js-Lottery-rotating-background";
@@ -50,12 +50,12 @@ const startLottery = () => {
   }
  // CHANGE THE HEADER
 lotteryHeader.innerHTML = correctNumbers[objectCounter].header+" kr!";
-lotteryMessage.innerHTML = "Dragning pågår";
+lotteryMessage.innerHTML = "";
 // Check how correct each array is in number. Eg
 // If an array matches by two digits the value will be two
 correctAmount = [];
 // Function to push the value to the array
-checkArray = (winningNumbers) => {
+function checkArray(winningNumbers) {
   // console.log(winningNumbers);
   let correct = 0;
 
@@ -83,7 +83,7 @@ for (var i = 0; i < correctNumbers[objectCounter].numbers.length; i++) {
   checkArray(correctNumbers[objectCounter].numbers[i])
 }
 // Check which number is the highest in the array
-getMaxOfArray = (numArray) =>  Math.max.apply(null, numArray);
+ function getMaxOfArray(numArray) { return  Math.max.apply(null, numArray) };
 // Get the number
 var highestNumber = getMaxOfArray(correctAmount);
 
@@ -105,7 +105,7 @@ var spinnInterval = 100; // Interval for spinn start for each number
 /////////////////////////////////////////////
 var counter = 0;
 var startInterval = true; // Set to true if the spinner should start at the same time
-const rollNumbers = () => {
+function rollNumbers () {
 if(startInterval) {
     if(counter<lotteryNumbers.length)
       {
@@ -126,7 +126,7 @@ if(startInterval) {
 var y = 0;
 var spinnTime = 1700; // HOW LONG DOES THE ANIMATION, SYNC WITH CSS FILE
 var ratio = spinnTime * ( drawArray[0] / 10);
-const correct = () => {
+function correct () {
   var stop = 2000; // INITIAL VALUE (Kinda pointless)
   var diff = 0;
 
@@ -147,7 +147,7 @@ const correct = () => {
       } else {
         lotteryNumbers[y].innerHTML = "<div class='Lottery-wrong'>"+drawArray[y]+"</div>";
       }
-      setTimeout(() =>
+      setTimeout( function()
       {
         correct()
       },
@@ -185,9 +185,8 @@ function drawingDone()  {
   // COUNTDOWN FUNCTIONALITY
   /////////////////////////////////////////////
   if(objectCounter < correctNumbers.length) {
-    var count = 3;
-    lotteryMessage.innerHTML =  "Nästa dragning för "+correctNumbers[objectCounter].header+" om "+"<span class='Pulse'>"+count+"</span>"+" sekunder";
-
+    var count = 5;
+    lotteryMessage.innerHTML = "Nästa dragning för "+correctNumbers[objectCounter].header+"<span class='js-Lottery-countdown-c'><span class='js-Lottery-spinner--big'></span><span class='js-Lottery-countdown'>"+count+"</span></span>";
     var myVar;
     function myFunction() {
       myVar = setInterval(function(){ countDown() }, 1000);
@@ -198,7 +197,8 @@ function drawingDone()  {
     function countDown() {
       count--;
 
-      lotteryMessage.innerHTML =  "Nästa dragning för "+correctNumbers[objectCounter].header+" om "+"<span class='Pulse'>"+count+"</span>"+" sekunder";
+      lotteryMessage.innerHTML = "Nästa dragning för "+correctNumbers[objectCounter].header+"<span class='js-Lottery-countdown-c'><span class='js-Lottery-spinner--big'></span><span class='js-Lottery-countdown'>"+count+"</span></span>";
+
       if(count < 0) {
         startLottery();
         myStopFunction();
@@ -207,8 +207,8 @@ function drawingDone()  {
     myFunction();
     // END COUNTDOWN FUNCTIONALITY
     // ROTATE BACKGROUNDS
-    rotatingBackgrounds[0].className += " Rotate-one";
-    rotatingBackgrounds[1].className += " Rotate-two";
+    // rotatingBackgrounds[0].className += " Rotate-one";
+    // rotatingBackgrounds[1].className += " Rotate-two";
   }
   /////////////////////////////////////////////
   // WHEN ALL ROUNDS ARE DONE

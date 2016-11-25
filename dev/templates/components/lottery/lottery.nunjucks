@@ -7,10 +7,13 @@
         <div class="Tickets-ticket Tickets-ticket--kombi">
             <h4 class="Tickets-ticket-title">Kombilott</h4>
               <h5 class="Tickets-ticket-number Lottery-mynumber--js"></h5>
+              <div class="js-Lottery-ongoing">
+                <span class="js-Lottery-ongoing-message">Dragning pågår</span>
+                <span class="js-Lottery-spinner--small"></span>
+              </div>
         </div>
       </div>
       <!-- ########## INHERIT FROM TICKETS VIEW ########## -->
-
     <!-- THE ACTUAL LOTTO -->
     <div class="Lottery-row">
       <h3><span class="js-Lottery-price-header">Rätta lotten!</span></h3>
@@ -47,6 +50,7 @@
     </div>
     <div class="Lottery-message-container">
       <p class="js-Lottery-message"></p>
+
     </div>
     <div class="Start-lottery-btn-container">
       <button class="js-Start-lottery-btn">Starta dragning</button>
