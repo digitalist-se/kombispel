@@ -1,5 +1,5 @@
 <section class="Lottery-container Lottery-container--kombi">
-  <div class="js-Lottery-rotating-background"></div>
+  <div class="js-Lottery-rotating-background Rotate-one"></div>
   <div class="js-Lottery-rotating-background"></div>
     <div class="Lottery-inner-container">
       <!-- ########## INHERIT FROM TICKETS VIEW ########## -->
@@ -7,9 +7,11 @@
         <div class="Tickets-ticket Tickets-ticket--kombi">
             <h4 class="Tickets-ticket-title">Kombilott</h4>
               <h5 class="Tickets-ticket-number Lottery-mynumber--js"></h5>
-              <div class="js-Lottery-ongoing">
-                <span class="js-Lottery-ongoing-message">Dragning pågår</span>
-                <span class="js-Lottery-spinner--small"></span>
+              <div class="js-Lottery-status">
+                {# <span class="js-Lottery-ongoing">Dragning pågår</span>
+                <span class="js-Lottery-spinner--small"></span> #}
+                {# <span class="js-Lottery-nowinning">Ingen vinst</span> #}
+
               </div>
         </div>
       </div>

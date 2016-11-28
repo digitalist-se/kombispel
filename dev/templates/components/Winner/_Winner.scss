@@ -1,4 +1,12 @@
+.Winner-container {
+  position: relative;
+  background-color: $content-grey;
+  padding-bottom: 2*$base-margin;
+}
+
 .Winner-inner-container {
+  background-color: white;
+  padding-top: $base-margin;
   @extend .Inner-container;
 }
 .Winner-back-link {
@@ -6,7 +14,7 @@
   font-size: 14px;
   text-align: center;
   display: block;
-  margin: $base-margin auto 3*$base-margin auto;
+  margin: 0 auto 3*$base-margin auto;
   span {
     display: inline-block;
     vertical-align: top;
@@ -16,13 +24,14 @@
 .Winner-header {
   color: $lottery-blue;
   width: 90%;
-  max-width: 500px;
+  max-width: 780px;
   margin: 0 auto 2*$base-margin auto;
   text-align: center;
 }
 .Winner-hero {
   height: auto;
   width: 100%;
+  margin-bottom: -25px;
 }
 /////////////////////////////////////////////
 // THE BLOCKQUOTE
@@ -55,15 +64,6 @@
 /////////////////////////////////////////////
 // CONTENT
 /////////////////////////////////////////////
-.Winner-content {
-  background-color: $content-grey;
-  padding-bottom: 4*$base-margin;
-  margin-top: -22px;
-}
-.Winner-content-inner {
-  @include page-inner();
-  padding-bottom: 2*$base-margin;
-}
 .Winner-intro {
   font-family: $gill-bold;
   font-size: 18px;
@@ -71,6 +71,17 @@
 .Winner-subheader {
   color: $lottery-blue;
 }
+.Winner-inner-container {
+  h2,h3,p {
+    @include page-inner();
+  }
+}
+
+
+
+
+
+
 /////////////////////////////////////////////
 // WINNER DETAIL LIST
 /////////////////////////////////////////////

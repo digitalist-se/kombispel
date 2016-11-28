@@ -32,11 +32,11 @@ $lotteryRowWidth:  480px;
 /////////////////////////////////////////////
 // DRAGNING PÅGÅR
 /////////////////////////////////////////////
-$small-spinner: 35px;
+$small-spinner: 25px;
 
-.js-Lottery-ongoing {
+.js-Lottery-status {
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   color: white;
   left: 0;
   right: 0;
@@ -48,10 +48,11 @@ $small-spinner: 35px;
     display: inline-block;
     height: $small-spinner;
     vertical-align: top;
+    font-size: 22px;
+
   }
 }
-.js-Lottery-ongoing-message {
-  font-size: 26px;
+.js-Lottery-ongoing {
   margin-right: 10px;
 }
 .js-Lottery-spinner--small {
@@ -88,11 +89,11 @@ $small-spinner: 35px;
   width: 200%;
   height: 500%;
   top: -200%;
-  left: -50%;
+  left: 0;
   background:url("../images/svg/starburst.svg") no-repeat center center;
   background-size: cover;
 }
-$rotateSpeed: 16s;
+$rotateSpeed: 20s;
 
 .Rotate-one {
   animation: rotating-one $rotateSpeed linear infinite;
@@ -174,6 +175,7 @@ $mynumber-size: 80px;
 
 
 .js-Lottery-price-header {
+  transition: all 1s ease;
   font-family: $gill-bold;
   margin: 20px 0;
   text-align: center;
@@ -285,9 +287,10 @@ position: relative;
 /////////////////////////////////////////////
 .Lottery-message-container {
   max-width: $lotteryRowWidth;
+  // min-height: 150px;
   margin: 0 auto;
   color: white;
-  min-height: 40px;
+  // min-height: 40px;
 }
 .js-Lottery-message {
   text-align: center;
