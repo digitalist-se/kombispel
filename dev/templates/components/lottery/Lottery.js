@@ -31,14 +31,11 @@ var lotteryStatus = document.getElementsByClassName("js-Lottery-status")[0];
 var lotteryNumbers = document.getElementsByClassName('js-Lottery-number');
 var lotteryHeader = document.getElementsByClassName("js-Lottery-price-header")[0];
 // Backgrounds
-var rotatingBackgrounds = document.getElementsByClassName("js-Lottery-rotating-background");
+var rotateBG = document.getElementsByClassName("js-Lottery-starburst-bg")[0];
 
 function startLottery () {
-    // Stop background rotation
-    // for (var i = 0; i < rotatingBackgrounds.length; i++) {
-    //   rotatingBackgrounds[i].className = "js-Lottery-rotating-background";
-    // }
   lotteryStatus.innerHTML = "<span class='js-Lottery-ongoing'>Dragning pågår</span><span class='js-Lottery-spinner--small'></span>";
+  rotateBG.className = "js-Lottery-starburst-bg"
 
   // Clear numbers after first iteration
     for (var i = 0; i < lotteryNumbers.length; i++) {
@@ -208,14 +205,23 @@ var status = "";
 /////////////////////////////////////////////
 function drawingDone()  {
   // Let the numberheader fadeout
-  lotteryHeader.className += " Hide-element";
-  lotteryStatus.innerHTML = "<span>Ingen vinst</span>";
+  // lotteryHeader.className += " Hide-element";
+
+  if(winning) {
+    status = "Vinst!"
+    rotateBG.className += " Lottery-rotate-bg"
+  } else {
+    status = "Ingen vinst!"
+  }
+  lotteryHeader.innerHTML = status;
+
+
   /////////////////////////////////////////////
   // COUNTDOWN FUNCTIONALITY
   /////////////////////////////////////////////
+
   objectCounter++; // Counter for the iteration in the JSON RESPONSE
   if(objectCounter < correctNumbers.length) {
-    winning ? status = "Vinst!" : status = "Ingen vinst";
 
     var count = 5;
     lotteryMessage.innerHTML = "Nästa dragning för <span class='u-bold'>"+correctNumbers[objectCounter].header+" kr</span> om:<span class='js-Lottery-countdown-c'><span class='js-Lottery-spinner--big'></span><span class='js-Lottery-countdown'>"+count+"</span></span>";
@@ -238,11 +244,7 @@ function drawingDone()  {
     }
     myFunction();
     // END COUNTDOWN FUNCTIONALITY
-    // ROTATE BACKGROUNDS
-    // rotatingBackgrounds[0].className += " Rotate-one";
-    // rotatingBackgrounds[1].className += " Rotate-two";
-    lotteryStatus.innerHTML = "<span>"+status+"</span>";
-
+    lotteryStatus.innerHTML = "";
   }
   /////////////////////////////////////////////
   // WHEN ALL ROUNDS ARE DONE
@@ -251,8 +253,11 @@ function drawingDone()  {
   lotteryStatus.innerHTML = "";
 
   if(winningsOnTicket > 0){
+    lotteryHeader.innerHTML = "Dragning klar, du vann!";
     ticket.className += "-win";
+    rotateBG.className += " Lottery-rotate-bg"
   } else {
+    lotteryHeader.innerHTML = "Dragning klar, tyvärr ingen vinst.";
     ticket.className += "-lose";
   }
 
