@@ -143,12 +143,8 @@ $mynumber-size: 80px;
       color: $lottery-blue;
       margin: 0;
     }
-
   }
 }
-
-
-
 .js-Lottery-price-header {
   transition: all 1s ease;
   font-family: $gill-bold;
@@ -159,8 +155,6 @@ $mynumber-size: 80px;
   min-height: 46px;
   display: block;
 }
-
-
 /////////////////////////////////////////////
 // THE LOTTERY ROW
 /////////////////////////////////////////////
@@ -168,7 +162,6 @@ $mynumber-size: 80px;
   max-width: $lotteryRowWidth;
   margin: 30px auto 0 auto;
   position: relative;
-
   &:after {
     content: "";
     display: block;
@@ -180,7 +173,6 @@ $mynumber-size: 80px;
     text-align: center;
     font-size: 40px;
     color: white;
-
   }
 }
 .Lottery-column {
@@ -262,10 +254,8 @@ position: relative;
 /////////////////////////////////////////////
 .Lottery-message-container {
   max-width: $lotteryRowWidth;
-  // min-height: 150px;
   margin: 0 auto;
   color: white;
-  // min-height: 40px;
 }
 .js-Lottery-message {
   text-align: center;
@@ -281,10 +271,8 @@ position: relative;
   @include gradient-btn($green);
 }
 .Hide-element {
-
   visibility: hidden;
   opacity: 0;
-
 }
 .Show-element {
   visibility: visible;;
@@ -361,27 +349,25 @@ position: relative;
 /////////////////////////////////////////////
 // BACKGROUND AND VARIANTS
 /////////////////////////////////////////////
-@mixin gradient($color) {
-  background: radial-gradient(lighten($color,20%) 10%,lighten($color,15%) 25%, $color 80%);
-}
+
 .Lottery-container--kombi {
   //  background-color: $orange;
-   @include gradient($orange);
+   @include gradient-bg($orange);
  }
  .Lottery-container--kombi-win {
-  @include gradient($orange);
+  @include gradient-bg($orange);
  }
  .Lottery-container--dream {
   //  background-color: $green;
-  @include gradient($green);
+  @include gradient-bg($green);
  }
  .Lottery-container--dream-win {
-  @include gradient($green);
+  @include gradient-bg($green);
  }
  .Lottery-container--motor {
   //  background-color: $red;
-   @include gradient($red);
+   @include gradient-bg($red);
  }
  .Lottery-container--motor-win {
-  @include gradient($red);
+  @include gradient-bg($red);
  }

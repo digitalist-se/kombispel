@@ -99,7 +99,6 @@ if(highestNumber === myNumbers.length) {
 }
 // The array that the drawing will be based on
 var drawArray = correctNumbers[objectCounter].numbers[correctAmount.indexOf(highestNumber)];
-
 var spinnInterval = 100; // Interval for spinn start for each number
 var counter = 0;
 var startInterval = true; // Set to true if the spinner should start at the same time
@@ -260,12 +259,10 @@ function drawingDone()  {
     lotteryHeader.innerHTML = "Dragning klar, tyvärr ingen vinst.";
     ticket.className += "-lose";
   }
-
     winningLinks.style.display = "block";
     lotteryBtn.style.display = "none";
     lotteryMessage.style.display += "none";
   }
-
 }
 /////////////////////////////////////////////
 // ******************************************
