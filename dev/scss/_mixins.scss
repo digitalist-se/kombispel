@@ -84,3 +84,9 @@ $shadow-color:  black;
     padding: $base-margin 3*$base-margin 0;
   }
 }
+/////////////////////////////////////////////
+// Gradient background
+/////////////////////////////////////////////
+ @mixin gradient-bg($color) {
+   background: radial-gradient(lighten($color,20%) 10%,lighten($color,15%) 25%, $color 80%);
+}
