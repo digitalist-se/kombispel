@@ -9,7 +9,7 @@
       <h1 class="Heading-1">Här är en rubrik utanför kolumnerna.</h1>
       <!-- KOLUMN NUMMER 1 -->
       <article class="Page-two-col-main">
-      <h2 class="Heading-2">Här är en H2 rubrik innanför första kolumnen</h2>
+      <h2>Här är en H2 rubrik innanför första kolumnen</h2>
       <p>
         Mauris vitae ex non massa venenatis semper eu at odio. Vivamus eu sem ipsum. Vivamus eget tellus placerat, efficitur sapien sit amet, bibendum tortor. Phasellus ut arcu convallis, fermentum lorem et, aliquet nisl. Maecenas eu condimentum diam. Aliquam varius odio a condimentum lobortis.
       </p>
