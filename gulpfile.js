@@ -73,6 +73,7 @@ gulp.task('js', function() {
  'dev/templates/components/MyPages/MyPages.js',
  // 'dev/templates/components/lottery/Lottery.js',
  'dev/templates/components/login/Login.js',
+ 'dev/templates/components/Browser/Browser.js',
  'dev/templates/components/menu/Menu.js',
  'dev/templates/components/header/Header.js'
  // 'dev/js/app/firebase.js',
