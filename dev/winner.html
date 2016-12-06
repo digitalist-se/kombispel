@@ -1,9 +1,5 @@
 <!-- layout.nunjucks -->
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html> <!--<![endif]-->    
 <html lang="se">
 <head>
   <meta charset="UTF-8">
@@ -25,12 +21,47 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTHCKR"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-  <section class="Browser">
+  <!-- Start Site information -->
+  <!--[if lt IE 7]>
+<div class="Browser">
   <div class="Browser-inner">
-    <p>Din webbläsare stödjs tyvärr inte. Vänligen uppdatera till en nyare version.</p>
+    <p>Din webbläsare stödjs tyvärr inte. Vänligen uppdatera till en nyare version. Kombispel.se stödjer de senaste versionerna av Google Chrome, Firefox, Safari och Internet Explorer 11 och framåt.</p>
+  </div>
+</div>
+<![endif]-->
+<!--[if IE 7]>
+<div class="Browser">
+  <div class="Browser-inner">
+    <p>Din webbläsare stödjs tyvärr inte. Vänligen uppdatera till en nyare version. Kombispel.se stödjer de senaste versionerna av Google Chrome, Firefox, Safari och Internet Explorer 11 och framåt.</p>
+  </div>
+</div>
+<![endif]-->
+<!--[if IE 8]>
+<div class="Browser">
+  <div class="Browser-inner">
+    <p>Din webbläsare stödjs tyvärr inte. Vänligen uppdatera till en nyare version. Kombispel.se stödjer de senaste versionerna av Google Chrome, Firefox, Safari och Internet Explorer 11 och framåt.</p>
+  </div>
+</div>
+<![endif]-->
+<!--[if gt IE 8]>
+<div class="Browser">
+  <div class="Browser-inner">
+    <p>Din webbläsare stödjs tyvärr inte. Vänligen uppdatera till en nyare version. Kombispel.se stödjer de senaste versionerna av Google Chrome, Firefox, Safari och Internet Explorer 11 och framåt.</p>
+  </div>
+</div>
+<![endif]-->
+
+
+  <section class="Cookie-container">
+  <div class="Cookie-inner">
+    <p>
+      Den här sidan använder sig av cookies. Genom att fortsätta använda den här sidan godkänner du att vi lagrar en cookie i din
+      webbläsare för att förbättra upplevelsen för dig som besökare. <a href="https://www.pts.se/cookies" target="_blank">Läs mer om vad cookies innebär.</a> </p>
+      <button class="js-Cookies-approve-btn">Jag förstår</button>
   </div>
 </section>
 
+  <!-- End Site information -->
   <section class="js-Menu-container">
     <menu class="Menu-inner-container">
       <nav>
@@ -227,7 +258,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
   <div class="js-Site-container">
-  <header class="Header-container Header-container--tight"> 
+  <header class="Header-container">
+
 
     <div class="Header-inner-container">
       <!-- MENU -->
@@ -395,5 +427,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 </html>
