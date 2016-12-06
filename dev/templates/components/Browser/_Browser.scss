@@ -1,7 +1,6 @@
-.Browser {
-  background-color: $dark-red;
-}
+
 .Browser-inner {
+  display: none;
   margin: 0 auto;
   color: white;
   text-align: center;
@@ -12,5 +11,12 @@
     text-align: center;
     color: white;
     font-size: 26px;
+  }
+}
+.Browser-warning-IE {
+  display: block;
+  background-color: $dark-red;
+  .Browser-inner {
+    display: block !important;
   }
 }
