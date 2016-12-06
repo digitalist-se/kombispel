@@ -74,8 +74,9 @@ gulp.task('js', function() {
  'dev/templates/components/Login/Login.js',
  'dev/templates/components/Cookies/Cookies.js',
  'dev/templates/components/Browser/Browser.js',
- 'dev/templates/components/menu/Menu.js',
- 'dev/templates/components/header/Header.js'
+ 'dev/templates/components/Menu/Menu.js',
+ 'dev/templates/components/Header/Header.js',
+ 'dev/templates/components/Forms/Forms.js'
  // 'dev/templates/components/lottery/Lottery.js',
 ])
     .pipe(sourcemaps.init())
