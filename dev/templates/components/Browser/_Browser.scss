@@ -1,9 +1,9 @@
 .Browser {
   background-color: $dark-red;
-  @include flex-position(center);
   display: none;
 }
 .Browser-inner {
+  margin: 0 auto;
   color: white;
   padding: 2*$base-margin;
   width: 90%;

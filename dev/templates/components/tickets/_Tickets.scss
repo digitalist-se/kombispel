@@ -218,19 +218,19 @@
 /////////////////////////////////////////////
 // NITLOTTER
 /////////////////////////////////////////////
-.Tickets-ticket--kombi-lose {
+.Tickets-ticket--kombi-lose, .Tickets-ticket--kombi-extra-lose {
   background-image: url("../images/svg/tickets/lose-ticket-kombi.svg");
   .Tickets-ticket-number {
     color: white;
   }
 }
-.Tickets-ticket--dream-lose {
+.Tickets-ticket--dream-lose, .Tickets-ticket--dream-extra-lose {
   background-image: url("../images/svg/tickets/lose-ticket-dream.svg");
   .Tickets-ticket-number {
     color: white;
   }
 }
-.Tickets-ticket--motor-lose {
+.Tickets-ticket--motor-lose, .Tickets-ticket--motor-extra-lose  {
   background-image: url("../images/svg/tickets/lose-ticket-motor.svg");
   .Tickets-ticket-number {
     color: white;

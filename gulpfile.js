@@ -71,12 +71,12 @@ gulp.task('nunjucks', function() {
 gulp.task('js', function() {
 	return gulp.src([
  'dev/templates/components/MyPages/MyPages.js',
- // 'dev/templates/components/lottery/Lottery.js',
- 'dev/templates/components/login/Login.js',
+ 'dev/templates/components/Login/Login.js',
+ 'dev/templates/components/Cookies/Cookies.js',
  'dev/templates/components/Browser/Browser.js',
  'dev/templates/components/menu/Menu.js',
  'dev/templates/components/header/Header.js'
- // 'dev/js/app/firebase.js',
+ // 'dev/templates/components/lottery/Lottery.js',
 ])
     .pipe(sourcemaps.init())
 		.pipe(concat('main.js'))
