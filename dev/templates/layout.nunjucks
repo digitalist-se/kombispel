@@ -22,7 +22,10 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   <!-- Start Site information -->
+
+  <!-- CHECK FOR OLD IE -->
   {% include "components/Browser/browser.nunjucks" %}
+  <!-- END CHECK FOR OLD IE -->
 
   {% include "components/Cookies/cookies.nunjucks" %}
   <!-- End Site information -->
