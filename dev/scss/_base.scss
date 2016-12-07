@@ -13,6 +13,11 @@ body {
 h1:not([class]), h2:not([class]), h3:not([class]), h4:not([class]), h5:not([class]), h6:not([class]) {
   font-family: $gill-bold, "sans-serif";
 }
+h1,h2,h3,h4,h5,h6,p {
+  // max-width: $max-inner;
+  // margin-left: auto;
+  // margin-right: auto;
+}
 main {
   transition: all .2s ease;
 }
@@ -24,13 +29,8 @@ main {
 .js-Site-container {
   width: 100%;
   &.locked {
-    // position: fixed;
-    top: 0; left: 0; top: 0; bottom: 0;
+    position: fixed;
 
-    // height: 500px;
-    // overflow-x: hidden;
-    // overflow-y: auto;
-    // position: absolute; width: 100%; height: 100vh;
   }
 }
 a {
