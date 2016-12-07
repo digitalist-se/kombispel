@@ -32,11 +32,13 @@ $red: rgb(196,37,46); //  Motorlotteriet
 $orange: rgb(255,161,0); // Kombilotteriet
 
 /////////////////////////////////////////////
-// Margin and offsets
+// Margin, widths and offsets
 /////////////////////////////////////////////
 $base-margin: 15px;
 $inner-width: 95%;
-$page-gtr: 25px;
+$max-inner: 760px; // Width for inner stuff like page with one col, vinstval etc.
+
+
 /////////////////////////////////////////////
 // FONTS
 /////////////////////////////////////////////

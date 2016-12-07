@@ -92,8 +92,8 @@
 <section class="Page">
   <div class="Page-inner">
     <article class="Page-one-col">
-      <h1 class="Heading-1">Rubrik till sidan som bara har en kolumn. Förövrigt max 900px bred</h1>
-
+      <h1 class="Heading-1">Rubrik till sidan som bara har en kolumn.</h1>
+      <h2 class="Heading-2">Det här är en H2 rubrik. Allt text förrutom blockquotes på den här sidan är max 760px brett och centrerat</h2>
       <div class="Page-image">
         <img class="Page-image-image" src="../images/content/beach.jpg" alt="Strand" />
         <span class="Page-image-caption">Foto: Jacob Henriksson</span>
