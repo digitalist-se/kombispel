@@ -1,6 +1,6 @@
 <header class="Header-container">
 {# <header class="Header-container Header-container--tight">  #}
-{# <header class="Header-container Header-container--MyPages"> #}
+{# <header class="Header-container Header-container--MyPages">  #}
     <div class="Header-inner-container">
       <!-- MENU -->
       <div class="js-Header-menu-container Header-flex--one">

@@ -44,6 +44,20 @@ border-bottom: 15px solid $orange;
     flex-basis: 100%;
     order: 4;
   }
+@include breakpoint(1px, 340px) {
+  .Header-flex--one {
+    flex-basis: 60px;
+  }
+  .Header-flex--two {
+    flex-basis: calc(100%  - 130px);
+  }
+  .Header-flex--three {
+    flex-basis: 70px;
+  }
+}
+
+
+
 // TABLET AND LARGER
 @include respond-to(large) {
     //  MENU

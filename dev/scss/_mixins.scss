@@ -61,10 +61,9 @@
   }
 
 }
-
-//-----------------------------------------
+////////////////////////////////////////////////////
 // Calculate percentage - in honor of Vesslan
-//-----------------------------------------
+///////////////////////////////////////////////////
 @mixin vesslan($span, $col, $margin: 0) {
   $percentage: percentage($span/$col);
   width: calc(#{$percentage} - #{$margin});
@@ -94,4 +93,35 @@
 /////////////////////////////////////////////
  @mixin gradient-bg($color) {
    background: radial-gradient(lighten($color,20%) 10%,lighten($color,15%) 25%, $color 80%);
+}
+/////////////////////////////////////////////
+// Mixins for page prices or "Det här kan du vinna"
+/////////////////////////////////////////////
+@mixin prices-variants($color,$lottery-col) {
+  .Prices-lottery-row {
+    border-bottom: 10px solid $color;
+    transition: all .2s ease;
+    .#{$lottery-col} {
+      @include prices-col($color);
+    }
+    &:hover {
+      border-bottom: 10px solid darken($color, 15%);
+    }
+  }
+  .Prices-number {
+    background-color: $color;
+  }
+  .Prices-buy-link {
+    a {
+      @include gradient-btn($color);
+    }
+  }
+}
+
+@mixin prices-col($color) {
+  transition: all .2s ease;
+  background-color: $color;
+  &:hover {
+    background-color: darken($color, 15%);
+  }
 }
