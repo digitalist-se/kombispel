@@ -1,10 +1,13 @@
 .Footer-inner {
-  @include page-inner();
   @extend .Inner-container;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  @include breakpoint(1px, 767px) {
+    padding-left: $base-margin;
+    padding-right: $base-margin;
+  }
+  padding-top: $base-margin;
 }
 .Footer-box {
   @include flex-gtr-col(1,15px);

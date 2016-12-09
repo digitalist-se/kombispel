@@ -15,6 +15,12 @@
   padding: 2*$base-margin 0;
   position: relative;
 }
+.Tickets-ticket-col--single {
+  @include flex-gtr-col (1, 10px);
+  background-color: none;
+}
+
+
 .Tickets-ticket-container {
   .Tickets-ticket-col {
     background-color: white;
