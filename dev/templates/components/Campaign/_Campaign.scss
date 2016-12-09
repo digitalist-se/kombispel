@@ -32,7 +32,7 @@
   }
   &.Campaign-hero-list--check li:before {
     background:url("../images/svg/lists/check.svg") no-repeat center center;
-  } 
+  }
   &.Campaign-hero-list--ball li:before {
     background:url("../images/svg/lists/ball.svg") no-repeat center center;
   }
@@ -126,22 +126,35 @@
   }
 }
 
-.Campaign-form-checkbox {
-  padding-top: $base-margin;
-  span {
-    display: inline-block;
-    width: 25px;
-    vertical-align: top;
-    &:last-of-type {
-      width: calc(100% - 30px)
-    }
-  }
-}
+// .Campaign-form-checkbox {
+//   padding-top: $base-margin;
+//   span {
+//     display: inline-block;
+//     width: 25px;
+//     vertical-align: top;
+//     &:last-of-type {
+//       width: calc(100% - 30px)
+//     }
+//   }
+//   a {
+//     color: inherit;
+//     text-decoration: underline;
+//   }
+// }
+// .Campaign-form-checkbox--center {
+//   text-align: center;
+//   max-width: 360px;
+//   margin: 0 auto;
+//   > div {
+//     display: inline-block;
+//   }
+//   span {
+//     text-align: left;
+//   }
+// }
 .Campaign-form-submit {
   margin: 2*$base-margin auto !important;
 }
-
-
 
 // Campaign-form-info-block (Kundnummer, Adress, etc.)
 .Campaign-form-info-block {

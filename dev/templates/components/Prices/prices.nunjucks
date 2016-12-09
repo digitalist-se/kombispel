@@ -1,6 +1,6 @@
 <section class="Prices-container Prices-container--dream">
   <div class="Prices-inner-container">
-    <div class="Prices-header">
+    <header class="Prices-header">
       <h1 class="Heading-1">Det här kan du vinna!</h1>
       <p>
         Vestibulum vitae nisi in velit
@@ -13,7 +13,7 @@
         sagittis urna non, venenatis leo. Mauris at laoreet
         ligula, placerat congue ante.
       </p>
-    </div>
+    </header>
     <h4 >Välj lotteri här</h4>
     <div class="Prices-lottery-row">
       <div class="Prices-lottery-col Prices-lottery-col--kombi"></div>
@@ -31,7 +31,7 @@
       <a href="#">200</a>
     </div>
     <!-- //////////// 1.000.000  ////////////// -->
-    <div id="level-1" class="Prices-price-level">
+    <section id="level-1" class="Prices-price-level">
       <h2 class="Heading-2">Vinstnivå: 1.000.000 kr</h2>
       <div class="Prices-price-inner">
         <div class="Prices-price-image">
@@ -44,9 +44,9 @@
       <div class="Prices-buy-link">
         <a href="#">Köp en kombilott</a>
       </div>
-    </div>
+    </section>
     <!-- //////////// 300.000 //////////// -->
-    <div id="level-2" class="Prices-price-level">
+    <section id="level-2" class="Prices-price-level">
       <h2 class="Heading-2">Vinstnivå: 300.000 kr</h2>
       <!-- Pris -->
       <div class="Prices-price-inner">
@@ -93,10 +93,10 @@
       <div class="Prices-buy-link">
         <a href="#">Köp en kombilott</a>
       </div>
-    </div>
+    </section>
 
     <!-- //////////// 50.000 Stor bild + 2 kolumner //////////// -->
-    <div id="level-3" class="Prices-price-level Prices-price-level--cols">
+    <section id="level-3" class="Prices-price-level Prices-price-level--cols">
       <h2 class="Heading-2">Vinstnivå: 50.000 kr</h2>
       <!-- Pris -->
       <div class="Prices-price-inner">
@@ -152,7 +152,7 @@
       <div class="Prices-buy-link">
         <a href="#">Köp en kombilott</a>
       </div>
-    </div>
+    </section>
     <!-- END Prices-level -->
   </div>
 </section>

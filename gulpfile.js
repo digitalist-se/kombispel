@@ -74,8 +74,10 @@ gulp.task('js', function() {
  'dev/templates/components/MyPages/MyPages.js',
  'dev/templates/components/Login/Login.js',
  'dev/templates/components/Cookies/Cookies.js',
+ 'dev/templates/components/Choices/Choices.js',
  'dev/templates/components/Browser/Browser.js',
  'dev/templates/components/Menu/Menu.js',
+ 'dev/templates/components/Information/Information.js',
  'dev/templates/components/Header/Header.js',
  'dev/templates/components/Forms/Forms.js',
  'dev/templates/components/Prices/Prices.js'

@@ -20,9 +20,11 @@
     </div>
   </div>
 
-  <div class="Campaign-form-checkbox">
-    <span><input type="checkbox" name="signup-check" checked/></span>
-    <span><label for="signup-check">Ja, jag vill beställa en lott, är över 18 år och godkänner <a href="#">villkoren.</a></label></span>
+  <div class="Form-checkbox Form-checkbox--center">
+    <div>
+      <span><input type="checkbox" name="signup-check" checked/></span>
+      <span><label for="signup-check">Ja, jag vill beställa en lott, är över 18 år och godkänner <a href="#">villkoren.</a></label></span>
+    </div>
   </div>
 
   <button type="" class="Campaign-form-submit" name="button">Beställ</button>

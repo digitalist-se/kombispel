@@ -32,7 +32,14 @@
           <img src="images/campaign/bestick.png" alt=""/>
         </div>
         <h4>Bestick</h4>
-        <a class="Choices-others-readmore" href="#">Läs mer</a>
+        <span class="js-Choices-others-readmore" href="#">Läs mer</span>
+        <div class="js-Choices-others-info">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
+        </div>
         <a class="Choices-others-choose" href="#">Välj</a>
       </div>
       <div class="Choices-others-col">
@@ -40,7 +47,14 @@
           <img src="images/campaign/hygien.png" alt=""/>
         </div>
         <h4>Nessesär</h4>
-        <a class="Choices-others-readmore" href="#">Läs mer</a>
+        <span class="js-Choices-others-readmore" href="#">Läs mer</span>
+        <div class="js-Choices-others-info">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
+        </div>
         <a class="Choices-others-choose" href="#">Välj</a>
       </div>
       <div class="Choices-others-col">
@@ -48,7 +62,14 @@
           <img src="images/campaign/killingdvd.png" alt=""/>
         </div>
         <h4>Killing DVD-box</h4>
-        <a class="Choices-others-readmore" href="#">Läs mer</a>
+        <span class="js-Choices-others-readmore" href="#">Läs mer</span>
+        <div class="js-Choices-others-info">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
+        </div>
         <a class="Choices-others-choose" href="#">Välj</a>
       </div>
       <div class="Choices-others-col">
@@ -56,7 +77,17 @@
           <img src="images/campaign/fotoram.png" alt=""/>
         </div>
         <h4>Digital fotoram</h4>
-        <a class="Choices-others-readmore" href="#">Läs mer</a>
+        <span class="js-Choices-others-readmore" href="#">Läs mer</span>
+
+
+        <div class="js-Choices-others-info">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
+        </div>
+
         <a class="Choices-others-choose" href="#">Välj</a>
       </div>
       <div class="Choices-others-col">
@@ -65,7 +96,14 @@
         </div>
 
         <h4>Digital fotoram</h4>
-        <a class="Choices-others-readmore" href="#">Läs mer</a>
+        <span class="js-Choices-others-readmore" href="#">Läs mer</span>
+        <div class="js-Choices-others-info">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
+        </div>
         <a class="Choices-others-choose" href="#">Välj</a>
       </div>
       <div class="Choices-others-col">
@@ -73,7 +111,14 @@
           <img src="images/campaign/extrachansen.png" alt=""/>
         </div>
         <h4>Digital fotoram</h4>
-        <a class="Choices-others-readmore" href="#">Läs mer</a>
+        <span class="js-Choices-others-readmore" href="#">Läs mer</span>
+        <div class="js-Choices-others-info">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
+        </div>
         <a class="Choices-others-choose" href="#">Välj</a>
       </div>
 
