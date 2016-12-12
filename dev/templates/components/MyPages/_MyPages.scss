@@ -1,8 +1,8 @@
-.MyPages {
+.MyPages-container {
   background-color: $lighter-grey;
   padding-bottom: 100px;
 }
-.MyPages-container {
+.MyPages-inner-container {
   @extend .Inner-container;
 }
 /////////////////////////////////////////////
