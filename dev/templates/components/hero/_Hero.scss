@@ -1,8 +1,6 @@
 /////////////////////////////////////////////
 // HERO FROM INDEX PAGE
 /////////////////////////////////////////////
-
-
 .Hero {
   background: no-repeat center center;
   background-size: cover;
@@ -10,38 +8,34 @@
 }
 .Hero-inner {
   @extend .Inner-container;
-
   height: 300px;
   display: flex;
 
   @include breakpoint(1px,767px) {
-    height: 450px;
+    height: 550px;
     justify-content:center;
-    align-items:center;
+    align-items: flex-end;
   }
   @include breakpoint(768px) {
-    height: 450px;
+    height: 500px;
     justify-content: flex-end;
     align-items:center;
-
     .Hero-box {
       margin-top: 100px;
     }
-
-
   }
   @include breakpoint(1300px) {
     height: 650px;
     .Hero-box {
       margin-top: 200px;
-
     }
   }
-
 }
 
 .Hero-box {
+  max-height: 245px;
   max-width: 400px;
+  width: 90%;
   background-color: white;
   border-radius: 5px;
   padding: 20px;

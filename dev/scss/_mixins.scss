@@ -1,7 +1,7 @@
 ////////////////////////////////
 // BUTTONS
 ///////////////////////////////
-@mixin rounded-btn($background,$color,$width) {
+@mixin rounded-btn($background,$color,$width:null) {
   text-transform: uppercase;
   cursor: pointer;
   background-color: $background;
