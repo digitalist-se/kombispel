@@ -54,6 +54,9 @@
         </div>
       </div>
     </div>
+
+
+
     <div class="Lottery-message-container">
       <p class="js-Lottery-message"></p>
 

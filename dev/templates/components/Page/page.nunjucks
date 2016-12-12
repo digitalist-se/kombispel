@@ -43,7 +43,7 @@
 
       <p>Phasellus ut arcu convallis, fermentum lorem et, aliquet nisl. Maecenas eu condimentum diam:</p>
 
-      <ul>
+      <ul class="Page-list">
         <li>Aliquam varius odio a</li>
         <li>Condimentum lobortis.</li>
         <li>Duis id sem a neque viverra</li>
@@ -134,7 +134,7 @@
 
       <p>Phasellus ut arcu convallis, fermentum lorem et, aliquet nisl. Maecenas eu condimentum diam:</p>
 
-      <ul>
+      <ul class="Page-list">
         <li>Aliquam varius odio a</li>
         <li>Condimentum lobortis.</li>
         <li>Duis id sem a neque viverra</li>

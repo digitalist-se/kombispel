@@ -5,7 +5,7 @@ if (document.cookie.indexOf("_ga") == -1) {
    $(".Cookie-container").show();
 }
 
-
+ 
 /////////////////////////////////////////////
 // Approve hide cookie info
 /////////////////////////////////////////////
