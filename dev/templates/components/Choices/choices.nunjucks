@@ -1,8 +1,8 @@
 <section class="Choices-container">
   <div class="Choices-inner-container">
     <div class="Choices-header">
-      <h1 class="Heading-1">Stort grattis till vinsten Ann-Charlotte!</h1>
-      <h3 class="Heading-3">Vinstnivå: 300 kr</h3>
+      <h1 class="Heading-1">Stort grattis till vinsten Tommy!</h1>
+      <h3 class="Heading-3">Vinstnivå: 500 kr</h3>
     </div>
     <!-- ########## INHERIT FROM TICKETS VIEW ########## -->
     <div class="Tickets-ticket-col">
@@ -32,7 +32,7 @@
           <img src="images/campaign/bestick.png" alt=""/>
         </div>
         <h4>Bestick</h4>
-        <span class="js-Choices-others-readmore" href="#">Läs mer</span>
+        <span class="js-Choices-others-readmore">Läs mer</span>
         <div class="js-Choices-others-info">
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -47,7 +47,7 @@
           <img src="images/campaign/hygien.png" alt=""/>
         </div>
         <h4>Nessesär</h4>
-        <span class="js-Choices-others-readmore" href="#">Läs mer</span>
+        <span class="js-Choices-others-readmore" >Läs mer</span>
         <div class="js-Choices-others-info">
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -62,7 +62,7 @@
           <img src="images/campaign/killingdvd.png" alt=""/>
         </div>
         <h4>Killing DVD-box</h4>
-        <span class="js-Choices-others-readmore" href="#">Läs mer</span>
+        <span class="js-Choices-others-readmore" >Läs mer</span>
         <div class="js-Choices-others-info">
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -77,7 +77,7 @@
           <img src="images/campaign/fotoram.png" alt=""/>
         </div>
         <h4>Digital fotoram</h4>
-        <span class="js-Choices-others-readmore" href="#">Läs mer</span>
+        <span class="js-Choices-others-readmore" >Läs mer</span>
 
 
         <div class="js-Choices-others-info">
@@ -96,7 +96,7 @@
         </div>
 
         <h4>Digital fotoram</h4>
-        <span class="js-Choices-others-readmore" href="#">Läs mer</span>
+        <span class="js-Choices-others-readmore">Läs mer</span>
         <div class="js-Choices-others-info">
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -108,10 +108,10 @@
       </div>
       <div class="Choices-others-col">
         <div class="Choices-others-image">
-          <img src="images/campaign/extrachansen.png" alt=""/>
+          <img src="images/campaign/mobler-vinst.png" alt="Mysigt överkast från Mio"/>
         </div>
-        <h4>Digital fotoram</h4>
-        <span class="js-Choices-others-readmore" href="#">Läs mer</span>
+        <h4>Mysigt överkast</h4>
+        <span class="js-Choices-others-readmore">Läs mer</span>
         <div class="js-Choices-others-info">
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -119,7 +119,7 @@
             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </p>
         </div>
-        <a class="Choices-others-choose" href="#">Välj</a>
+        <a class="Choices-others-choose" href="choice.html">Välj</a>
       </div>
 
 

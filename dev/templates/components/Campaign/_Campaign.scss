@@ -125,37 +125,9 @@
     margin-bottom: 5px;
   }
 }
-
-// .Campaign-form-checkbox {
-//   padding-top: $base-margin;
-//   span {
-//     display: inline-block;
-//     width: 25px;
-//     vertical-align: top;
-//     &:last-of-type {
-//       width: calc(100% - 30px)
-//     }
-//   }
-//   a {
-//     color: inherit;
-//     text-decoration: underline;
-//   }
-// }
-// .Campaign-form-checkbox--center {
-//   text-align: center;
-//   max-width: 360px;
-//   margin: 0 auto;
-//   > div {
-//     display: inline-block;
-//   }
-//   span {
-//     text-align: left;
-//   }
-// }
 .Campaign-form-submit {
   margin: 2*$base-margin auto !important;
 }
-
 // Campaign-form-info-block (Kundnummer, Adress, etc.)
 .Campaign-form-info-block {
   text-align: center;
@@ -235,6 +207,9 @@
 // VARIANTER
 /////////////////////////////////////////////
 .Campaign--kombi {
+  .Campaign-hero-no-image {
+    @include gradient-bg($orange);
+  }
   .Campaign-hero-right-logo {
     background-image: url("../images/svg/logos/kombi.svg");
   }
@@ -246,6 +221,9 @@
   }
 }
 .Campaign--dream {
+  .Campaign-hero-no-image {
+    @include gradient-bg($green);
+  }
   .Campaign-hero-right-logo {
     background-image: url("../images/svg/logos/dromrese.svg");
   }
@@ -257,6 +235,9 @@
   }
 }
 .Campaign--motor {
+  .Campaign-hero-no-image {
+    @include gradient-bg($red);
+  }
   .Campaign-hero-right-logo {
     background-image: url("../images/svg/logos/motor.svg");
   }
