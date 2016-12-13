@@ -112,40 +112,48 @@
       <!-- 2 Columns -->
       <div class="Prices-cols-container">
         <div class="Prices-col">
-          <div class="Prices-price-image">
-            <span class="Prices-number">1</span>
-            <img src="images/campaign/hygien.png" alt="Husvagn"/>
+          <div class="Prices-col-inner">
+            <div class="Prices-price-image">
+              <span class="Prices-number">1</span>
+              <img src="images/campaign/hygien.png" alt="Husvagn"/>
+            </div>
+            <p>
+              Mon Amie kanna + handdukar
+            </p>
           </div>
-          <p>
-            Mon Amie kanna + handdukar
-          </p>
         </div>
         <div class="Prices-col">
-          <div class="Prices-price-image">
-            <span class="Prices-number">2</span>
-            <img src="images/campaign/fotoram.png" alt="Husvagn"/>
-          </div>
-          <p>
-            Strömlinjeformade Caravisio husvagn
-          </p>
+          <div class="Prices-col-inner">
+            <div class="Prices-price-image">
+              <span class="Prices-number">2</span>
+              <img src="images/campaign/fotoram.png" alt="Husvagn"/>
+            </div>
+            <p>
+              Strömlinjeformade Caravisio husvagn
+            </p>
+        </div>
         </div>
         <div class="Prices-col">
-          <div class="Prices-price-image">
-            <span class="Prices-number">3</span>
-            <img src="images/campaign/foundue.png" alt="Husvagn"/>
+          <div class="Prices-col-inner">
+            <div class="Prices-price-image">
+              <span class="Prices-number">3</span>
+              <img src="images/campaign/foundue.png" alt="Husvagn"/>
+            </div>
+            <p>
+              Strömlinjeformade Caravisio husvagn
+            </p>
           </div>
-          <p>
-            Strömlinjeformade Caravisio husvagn
-          </p>
         </div>
         <div class="Prices-col">
-          <div class="Prices-price-image">
-            <span class="Prices-number">4</span>
-            <img src="images/campaign/killingdvd.png" alt="Husvagn"/>
+          <div class="Prices-col-inner">
+            <div class="Prices-price-image">
+              <span class="Prices-number">4</span>
+              <img src="images/campaign/killingdvd.png" alt="Husvagn"/>
+            </div>
+            <p>
+              Strömlinjeformade Caravisio husvagn
+            </p>
           </div>
-          <p>
-            Strömlinjeformade Caravisio husvagn
-          </p>
         </div>
       </div>
       <!-- END 2 Columns -->

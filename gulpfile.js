@@ -9,7 +9,6 @@ var sourcemaps = require('gulp-sourcemaps');
 var concat = require("gulp-concat");
 var cleanCSS = require('gulp-clean-css');
 var minify = require('gulp-minify');
-var shell = require('gulp-shell');
 
 // var data = require('gulp-data');
 /////////////////////////////////////////////
@@ -71,17 +70,19 @@ gulp.task('nunjucks', function() {
 /////////////////////////////////////////////
 gulp.task('js', function() {
 	return gulp.src([
- 'dev/templates/components/MyPages/MyPages.js',
- 'dev/templates/components/Login/Login.js',
- 'dev/templates/components/Cookies/Cookies.js',
- 'dev/templates/components/Choices/Choices.js',
- 'dev/templates/components/Browser/Browser.js',
- 'dev/templates/components/Menu/Menu.js',
- 'dev/templates/components/Information/Information.js',
- 'dev/templates/components/Header/Header.js',
- 'dev/templates/components/Forms/Forms.js',
- 'dev/templates/components/Prices/Prices.js'
- // 'dev/templates/components/lottery/Lottery.js',
+ 'dev/templates/components/JS-wrapper/Start.js',
+   'dev/templates/components/MyPages/MyPages.js',
+   'dev/templates/components/Login/Login.js',
+   'dev/templates/components/Hero/Hero.js',
+   'dev/templates/components/Cookies/Cookies.js',
+   'dev/templates/components/Choices/Choices.js',
+   'dev/templates/components/Browser/Browser.js',
+   'dev/templates/components/Menu/Menu.js',
+   'dev/templates/components/Information/Information.js',
+   'dev/templates/components/Header/Header.js',
+   'dev/templates/components/Forms/Forms.js',
+   'dev/templates/components/Prices/Prices.js',
+ 'dev/templates/components/JS-wrapper/End.js'
 ])
     .pipe(sourcemaps.init())
 		.pipe(concat('main.js'))
@@ -102,7 +103,7 @@ gulp.task('watch', function() {
 //////// DEFAULT GULP
 /////////////////////////////////////////////
 gulp.task('default', function(callback) {
-    runSequence(['sass','js','nunjucks', 'browserSync', 'fml', 'watch'],
+    runSequence(['sass','js','nunjucks', 'browserSync', 'watch'],
         callback
     )
 });
@@ -138,5 +139,3 @@ gulp.task('min-js', function() {
     }))
     .pipe(gulp.dest('dev/js/'))
 });
-
-gulp.task('fml', shell.task(['say -v Whisper “fuck my life”']));

@@ -1,6 +1,6 @@
 {% include "components/submenu/submenu.nunjucks" %}
-<section class="MyPages">
-  <div class="MyPages-container">
+<section class="MyPages-container">
+  <div class="MyPages-inner-container">
 
     <div class="MyPages-header">
       <h1 class="Heading-1">Mina vinster</h1>

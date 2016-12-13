@@ -15,24 +15,30 @@
   h3 {
     text-align: left;
     margin-top: 0;
-  }
+  } 
 }
 .Information-form-block-inner {
   max-width: 560px;
   margin: 0 auto;
 }
 .Information-input-row {
-  @include flex-row();
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
 }
 .Information-input-section {
   margin-bottom: 30px;
-  input {
-    flex-basis: calc(100% - #{4*$base-margin});
+  .Information-input--has-helpbox {
+    float: left;
+    width: calc(100% - #{4*$base-margin})
   }
   .Information-toggle-helpbox {
+    float: left;
     position: relative;
     height: 40px;
-    flex-basis: 50px; //  IE FIX
+    width: 50px;
     @include flex-position(center);
   }
 }
@@ -41,13 +47,13 @@
   margin-top: $base-margin;
 }
 .Information-input-inline {
-  margin-top: $base-margin;
+  float: left;
   &:first-of-type {
-    flex-basis: 120px;
+    width: 120px;
   }
   &:last-of-type {
     margin-left: $base-margin;
-    flex-basis: calc(100% - 135px);
+    width: calc(100% - 135px);
   }
 }
 /////////////////////////////////////////////
