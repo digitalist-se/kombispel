@@ -42,13 +42,11 @@
       <h2>Glöm aldrig dessa tre punkter.</h2>
 
       <p>Phasellus ut arcu convallis, fermentum lorem et, aliquet nisl. Maecenas eu condimentum diam:</p>
-
       <ul class="Page-list">
         <li>Aliquam varius odio a</li>
         <li>Condimentum lobortis.</li>
         <li>Duis id sem a neque viverra</li>
       </ul>
-
       <p>
         Mauris vitae ex non massa venenatis semper eu at odio. Vivamus eu sem ipsum. Vivamus eget tellus placerat, efficitur sapien sit amet, bibendum tortor. Phasellus ut arcu convallis, fermentum lorem et, aliquet nisl. Maecenas eu condimentum diam. Aliquam varius odio a condimentum lobortis.
       </p>
@@ -139,9 +137,6 @@
         <li>Condimentum lobortis.</li>
         <li>Duis id sem a neque viverra</li>
       </ul>
-
-
-
     </article>
     </div>
 </section>
