@@ -40,9 +40,6 @@ blockquote {
     }
   }
 }
-
-
-
 }
 .Page-inner {
   background-color: white;
@@ -50,25 +47,29 @@ blockquote {
   @extend .Inner-container;
   @include page-inner();
 }
-@include respond-to(large) {
-  .Page-two-col-main {
-    @include flex-col(2, 3, 2*$base-margin);
-    margin-right: 2*$base-margin;
-  }
-  .Page-two-col-side {
-    @include flex-col(1, 3, 2*$base-margin);
-    margin-left: 2*$base-margin;
+.Page-content {
+  margin: 0 auto;
+}
+
+/////////////////////////////////////////////
+// RESPONSIVE Page two-col
+/////////////////////////////////////////////
+.Page-two-col {
+  @include respond-to(large) {
+    .Page-content:first-of-type {
+      @include flex-col(2, 3, 2*$base-margin);
+      margin-right: 2*$base-margin;
+    }
+    .Page-content:last-of-type {
+      @include flex-col(1, 3, 2*$base-margin);
+      margin-left: 2*$base-margin;
+    }
   }
 }
 /////////////////////////////////////////////
 // Page Grid One column
 /////////////////////////////////////////////
 .Page-one-col {
-  @include flex-col(1, 1, 0);
-  margin: 0 auto;
-  // max-width: 900px;
-}
-.Page {
   h1 {
     font-size: 40px;
     display: block;

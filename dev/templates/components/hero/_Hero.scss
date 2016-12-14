@@ -2,7 +2,6 @@
 // HERO FROM INDEX PAGE
 /////////////////////////////////////////////
 .Hero {
-  // background: no-repeat center center;
   @include breakpoint(768px) {
     background-position: center center;
     background-size: cover;
@@ -145,9 +144,6 @@
   }
 }
 @include breakpoint(1024px) {
-
-
-
   .Hero-inner {
     height: 650px;
     justify-content:flex-end;
@@ -167,20 +163,8 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /////////////////////////////////////////////
-// LOTTERY VARIANTS
+// HERO VARIANTS
 /////////////////////////////////////////////
 .Hero-box--kombi {
   .Hero-box-title {

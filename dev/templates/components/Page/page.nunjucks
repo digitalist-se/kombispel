@@ -4,11 +4,11 @@
 ####  Varje kolumn ska wrappas innanför en article tag
 ##############################################################
 -->
-<section class="Page">
+<section class="Page Page-two-col">
       <div class="Page-inner">
       <h1 class="Heading-1">Här är en rubrik utanför kolumnerna.</h1>
       <!-- KOLUMN NUMMER 1 -->
-      <article class="Page-two-col-main">
+      <article class="Page-content">
       <h2>Här är en H2 rubrik innanför första kolumnen</h2>
       <p>
         Mauris vitae ex non massa venenatis semper eu at odio. Vivamus eu sem ipsum. Vivamus eget tellus placerat, efficitur sapien sit amet, bibendum tortor. Phasellus ut arcu convallis, fermentum lorem et, aliquet nisl. Maecenas eu condimentum diam. Aliquam varius odio a condimentum lobortis.
@@ -52,7 +52,7 @@
       </p>
       </article>
       <!-- KOLUMN NUMMER 2 -->
-      <article class="Page-two-col-side">
+      <article class="Page-content">
       <form class="Standard-form">
         <h3>Kontakta oss</h3>
         <label for="name">Ditt namn</label>
@@ -90,9 +90,9 @@
 ####  SIDA MED EN KOLUMN!
 ##############################################################
 -->
-<section class="Page">
+<section class="Page Page-one-col">
   <div class="Page-inner">
-    <article class="Page-one-col">
+    <article class="Page-content">
       <h1 class="Heading-1">Rubrik till sidan som bara har en kolumn.</h1>
       <h2 class="Heading-2">Det här är en H2 rubrik. Allt text förrutom blockquotes på den här sidan är max 760px brett och centrerat</h2>
       <div class="Page-image">
