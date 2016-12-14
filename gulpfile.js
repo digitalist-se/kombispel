@@ -73,7 +73,6 @@ gulp.task('js', function() {
  'dev/templates/components/JS-wrapper/Start.js',
    'dev/templates/components/MyPages/MyPages.js',
    'dev/templates/components/Login/Login.js',
-   'dev/templates/components/Hero/Hero.js',
    'dev/templates/components/Cookies/Cookies.js',
    'dev/templates/components/Choices/Choices.js',
    'dev/templates/components/Browser/Browser.js',

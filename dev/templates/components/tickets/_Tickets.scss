@@ -237,10 +237,6 @@
   @include gradient-btn($green);
 }
 
-
-
-
-
 /////////////////////////////////////////////
 // NITLOTTER
 /////////////////////////////////////////////
@@ -261,4 +257,16 @@
   .Tickets-ticket-number {
     color: white;
   }
+}
+
+
+/////////////////////////////////////////////
+// LINK/BUTTON TO CORRECT ALL TICKETS
+/////////////////////////////////////////////
+.Tickets-correct-all-container {
+  margin-top: $base-margin;
+  @extend .Fullwidth-buy-link-container;
+}
+.Tickets-correct-all-link  {
+  @include gradient-btn($red);
 }
