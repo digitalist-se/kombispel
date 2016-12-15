@@ -1,7 +1,7 @@
 {
-  "name": "Kombispel Front end",
+  "name": "kombispel",
   "version": "1.0.0",
-  "description": "Kombispel Front end",
+  "description": "kombispel",
   "main": "gulpfile.js",
   "devDependencies": {
     "browser-sync": "^2.17.0",
