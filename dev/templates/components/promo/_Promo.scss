@@ -3,7 +3,14 @@
 }
 .Promo-container-inner {
   @extend .Inner-container;
-  @include flex-row();
+  @include breakpoint(1px,999px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  @include breakpoint(1000px) {
+    @include flex-row();
+  }
 }
 .Promo-item {
   background-color: white;
@@ -26,13 +33,14 @@
     margin-top: 30px ;
   }
 }
-
 .Promo-box-title {
   color: $red;
   font-size: 32px;
 }
-.Promo-box--correct-ticket, .Promo-box--campaign {
-  padding: 25px 15px;
+.Promo-item--correct-ticket, [class*="Promo-item--campaign"]  {
+  .Promo-box {
+    padding: 25px 15px;
+  }
 }
 .Promo-box-button {
   color: white;
@@ -40,7 +48,7 @@
 /////////////////////////////////////////////
 // PROMO CORRECT TICKET
 /////////////////////////////////////////////
-.Promo-box--correct-ticket {
+.Promo-item--correct-ticket {
   .Promo-box-title {
     margin-bottom: 25px;
   }
@@ -53,13 +61,19 @@
     max-height:100%;
   }
   .Promo-box-product {
-    margin: 2*$base-margin auto;
-    @include breakpoint(1000px) {
-      position: absolute;
+
+    @include breakpoint(1px,999px) {
+      margin: 30px auto $base-margin auto;
     }
-    right: 0;
-    left: 0;
-    bottom: 2*$base-margin;
+
+    @include breakpoint(1000px) {
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 2*$base-margin;
+    }
+
     @include flex-row();
   }
   .Promo-box-product-item {
@@ -74,55 +88,80 @@
 /////////////////////////////////////////////
 // PROMO CAMPAIGN
 /////////////////////////////////////////////
-.Promo-box--campaign {
-  background: url("../images/promo/promo_background.png") no-repeat center center;
-  background-color: white;
-  .Promo-box-title {
-    margin-bottom: $base-margin/3;
+[class*="Promo-item--campaign"] {
+  background: white url("../images/promo/promo_background.png") no-repeat center center;
+  background-size: cover;
+  .Promo-box {
+    padding-bottom: 2 * $base-margin;
+    .Promo-box-title {
+      margin-bottom: $base-margin/3;
+    }
+    .Promo-box-text {
+      margin-bottom: $base-margin;
+      font-size: 20px;
+    }
+    .Promo-box-image {
+      padding: $base-margin;
+      width: auto;
+      min-height: 200px;
+      max-height: 300px;
+    }
   }
-  .Promo-box-text {
-    margin-bottom: $base-margin;
-    font-size: 20px;
+}
+// Variants
+.Promo-item--campaign-kombi {
+  .Promo-box-title {
+    color: $lottery-blue;
   }
   .Promo-box-button {
     @include gradient-btn($orange);
   }
-  .Promo-box-image {
-    max-width:100%;
-    max-height:100%;
+}
+.Promo-item--campaign-dream {
+  .Promo-box-title {
+    color: $lottery-blue;
+  }
+  .Promo-box-button {
+    @include gradient-btn($green);
   }
 }
-
+.Promo-item--campaign-motor {
+  .Promo-box-title {
+    color: $red;
+  }
+  .Promo-box-button {
+    @include gradient-btn($red);
+  }
+}
 /////////////////////////////////////////////
 // PROMO WINNER
 /////////////////////////////////////////////
-.Promo-box--winner {
-  .Promo-box-image-big {
-    background: no-repeat center center;
-    background-size: cover;
-    height: 280px;
+[class*="Promo-item--winner"] {
+  @include breakpoint(1px,999px) {
+    padding-bottom: 80px;
   }
-  .Promo-box-band {
-    background-color: $orange;
+
+
+  img {
+    width: 100%;
+  }
+  .Promo-box-caption {
     padding: $base-margin;
     color: white;
   }
-  .Promo-box-band-text {
+  .Promo-box-caption-text {
     font-size: 18px;
   }
-  .Promo-box-band-text--big {
+  .Promo-box-caption-text--big {
     font-size: 32px;
   }
   .Promo-box-link {
-    padding: $base-margin;
-
-    @include breakpoint(1000px) {
-      position: absolute;
-      padding: 0;
-    }
+    padding: $base-margin 0 2*$base-margin;
+    background-color: white;
+    position: absolute;
     left: 0;
     right: 0;
-    bottom: 2*$base-margin;
+    bottom: 0;
     a {
       font-size: 18px;
       @extend .Arrow-link;
@@ -131,4 +170,19 @@
       }
     }
   }
+}
+
+//  Variants
+.Promo-item--winner-kombi {
+  background-color: $orange;
+
+}
+
+.Promo-item--winner-dream {
+  background-color: $green;
+
+}
+.Promo-item--winner-motor {
+  background-color: $red;
+
 }

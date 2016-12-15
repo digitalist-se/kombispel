@@ -9,6 +9,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var concat = require("gulp-concat");
 var cleanCSS = require('gulp-clean-css');
 var minify = require('gulp-minify');
+var rename = require('gulp-rename');
 
 // var data = require('gulp-data');
 /////////////////////////////////////////////
@@ -114,27 +115,18 @@ gulp.task('build', function(callback) {
   runSequence(["min-css","min-js"], callback)
 });
 
-
 gulp.task("min-css", function() {
   return gulp.src('dev/css/stylesheet.css')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('src/css/'));
-})
-gulp.task("min-css", function() {
-  return gulp.src('dev/css/stylesheet.css')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('src/css/'));
+    .pipe(cleanCSS({compatibility: 'ie11'}))
+    .pipe(rename({
+          suffix: '.min'
+      }))
+    .pipe(gulp.dest('prod/css/'));
 })
 
 gulp.task('min-js', function() {
   gulp.src('dev/js/main.js')
-    .pipe(minify({
-        ext:{
-            src:'.js',
-            min:'-min.js'
-        },
-        exclude: ['tasks'],
-        ignoreFiles: ['.combo.js', '-min.js']
+    .pipe(minify({ 
     }))
-    .pipe(gulp.dest('dev/js/'))
+    .pipe(gulp.dest('prod/js/'))
 });
