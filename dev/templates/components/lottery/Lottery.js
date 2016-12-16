@@ -247,7 +247,7 @@ function drawingDone()  {
 
       lotteryMessage.innerHTML = "Nästa dragning för <span class='u-bold'>"+correctNumbers[objectCounter].header+" kr</span> om:<span class='js-Lottery-countdown-c'><span class='js-Lottery-spinner--big'></span><span class='js-Lottery-countdown'>"+count+"</span></span>";
 
-      if(count < 0) {
+      if(count < 1) {
         startLottery();
         myStopFunction();
       }

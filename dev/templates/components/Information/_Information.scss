@@ -15,7 +15,7 @@
   h3 {
     text-align: left;
     margin-top: 0;
-  } 
+  }
 }
 .Information-form-block-inner {
   max-width: 560px;
@@ -59,11 +59,15 @@
 /////////////////////////////////////////////
 // HELP BOXES
 /////////////////////////////////////////////
-.js-Information-toggle-mail,.js-Information-toggle-phone {
+.js-Information-toggle-mail,
+.js-Information-toggle-phone,
+.js-Information-toggle-mobile  {
   top: 8px !important;
   right: 2px !important;
 }
-.js-Information-help-box--mail, .js-Information-help-box--phone {
+.js-Information-help-box--mail,
+.js-Information-help-box--phone,
+.js-Information-help-box--mobile {
   display: none;
 }
 /////////////////////////////////////////////

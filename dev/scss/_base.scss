@@ -8,14 +8,9 @@ body {
   font-family: $gill-regular, "sans-serif";
   overflow-x: hidden;
   color: $text;
-  // letter-spacing: 1px
 }
 h1:not([class]), h2:not([class]), h3:not([class]), h4:not([class]), h5:not([class]), h6:not([class]) {
   font-family: $gill-bold, "sans-serif";
-}
-
-main {
-  transition: all .2s ease;
 }
 *,
 *:before,
@@ -24,9 +19,9 @@ main {
 }
 .js-Site-container {
   width: 100%;
+  // min-height: 100vh;
   &.locked {
     position: fixed;
-
   }
 }
 a {
@@ -65,8 +60,6 @@ blockquote {
     }
   }
 }
-
-
 
 img {
   max-width: 100%;
@@ -118,7 +111,6 @@ img {
    background-color: white;
    padding: 30px 0;
  }
-
  .Fullwidth-buy-link {
    @include gradient-btn($red);
    color: white;
