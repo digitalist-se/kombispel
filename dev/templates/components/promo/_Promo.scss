@@ -20,7 +20,6 @@
   position: relative;
   margin-bottom: 30px;
 
-
   @include breakpoint(1px, 999px) {
     @include flex-gtr-col(1, 10px);
     margin-top: 0;
@@ -31,6 +30,7 @@
   @include breakpoint(1000px) {
     @include flex-gtr-col(3, 15px);
     margin-top: 30px ;
+    min-height: 450px;
   }
 }
 .Promo-box-title {
@@ -156,7 +156,7 @@
     font-size: 32px;
   }
   .Promo-box-link {
-    padding: $base-margin 0 2*$base-margin;
+    padding: $base-margin 0;
     background-color: white;
     position: absolute;
     left: 0;

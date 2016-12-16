@@ -1,5 +1,5 @@
 /////////////////////////////////////////////
-// Page Grid Two columns
+// Page General
 /////////////////////////////////////////////
 .Page {
 background-color: #F2F2F2;
@@ -10,6 +10,37 @@ padding-bottom: 2*$base-margin;
   width: 100%;
   background-color: red;
 }
+.Page-inner {
+  background-color: white;
+  @extend .Inner-container;
+  @include page-inner();
+}
+.Page-content {
+  margin: 0 auto;
+  @include flex-row();
+}
+/////////////////////////////////////////////
+// Page grid
+/////////////////////////////////////////////
+.Page-two-col {
+  @include flex-col(1, 1, 2*$base-margin);
+  @include breakpoint(1024px) {
+    &:nth-of-type(odd) {
+    @include flex-col(2, 3, 2*$base-margin);
+    margin-right: 4*$base-margin;
+    }
+    &:nth-of-type(even) {
+    @include flex-col(1, 3, 2*$base-margin);
+    }
+  }
+}
+.Page-one-col {
+  width: 100%;
+  margin: 0 auto;
+}
+/////////////////////////////////////////////
+// Text and Stuff
+/////////////////////////////////////////////
 h1,h2,h3,h4,h5,h6,p,ul {
   max-width: $max-inner;
   margin-left: auto;
@@ -18,7 +49,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
 blockquote {
   &:before {
     background: none; // Get rid of the inital
-  } 
+  }
   text-align: center;
   padding-top: 45px;
   padding-bottom: 45px;
@@ -41,35 +72,7 @@ blockquote {
   }
 }
 }
-.Page-inner {
-  background-color: white;
-  @include flex-row();
-  @extend .Inner-container;
-  @include page-inner();
-}
-.Page-content {
-  margin: 0 auto;
-}
-
-/////////////////////////////////////////////
-// RESPONSIVE Page two-col
-/////////////////////////////////////////////
-.Page-two-col {
-  @include respond-to(large) {
-    .Page-content:first-of-type {
-      @include flex-col(2, 3, 2*$base-margin);
-      margin-right: 2*$base-margin;
-    }
-    .Page-content:last-of-type {
-      @include flex-col(1, 3, 2*$base-margin);
-      margin-left: 2*$base-margin;
-    }
-  }
-}
-/////////////////////////////////////////////
-// Page Grid One column
-/////////////////////////////////////////////
-.Page-one-col {
+.Page {
   h1 {
     font-size: 40px;
     display: block;
@@ -80,11 +83,14 @@ blockquote {
     font-size: 32px;
     margin-bottom: $base-margin;
     @extend .Heading-2;
+    text-align: left;
   }
   h3 {
     font-size: 23px;
     margin-bottom: $base-margin;
     @extend .Heading-3;
+    text-align: left;
+
   }
   p {
     margin: $base-margin auto;
@@ -109,9 +115,6 @@ blockquote {
     }
   }
 }
-
-
-
 .Page-image {
   margin-bottom: 2*$base-margin;
   img {
@@ -127,8 +130,6 @@ blockquote {
   font-size: 23px;
   padding: 2*$base-margin;
 }
-
-
 .Page-video {
   max-width: $max-inner;
   width: 100%;
@@ -151,5 +152,4 @@ blockquote {
 .Page-buy-ticket {
   @include gradient-btn($red);
   margin: 2*$base-margin auto;
-
 }
