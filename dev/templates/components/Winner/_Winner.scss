@@ -42,14 +42,19 @@
 /////////////////////////////////////////////
 .Winner-intro {
   font-family: $gill-bold;
+}
+p {
   font-size: 18px;
 }
+ 
+
 
 .Winner-inner-container {
   h2,h3,p {
     @include page-inner();
   }
 }
+
 
 /////////////////////////////////////////////
 // WINNER DETAIL LIST
