@@ -6,14 +6,10 @@
 -->
 <article class="Page">
     <div class="Page-inner">
-
       <!-- Fast innehåll, bara rubrik är obligatoriskt -->
-      <h1 class="Heading-1">Här är en rubrik utanför kolumnerna.</h1>
-
+      <h1>Här är en rubrik utanför kolumnerna.</h1>
         <div class="Page-content"> <!-- Här kommer innehåll från Grid. Här sker kolumnindelningen -->
           <section class="Page-two-col"> <!-- KOLUMN 1 av 2. Kolumner wrappas i section taggar för semantik och läslighet -->
-
-
           <h2>Här är en H2 rubrik innanför första kolumnen</h2>
           <p>
             Mauris vitae ex non massa venenatis semper eu at odio. Vivamus eu sem ipsum. Vivamus eget tellus placerat, efficitur sapien sit amet, bibendum tortor. Phasellus ut arcu convallis, fermentum lorem et, aliquet nisl. Maecenas eu condimentum diam. Aliquam varius odio a condimentum lobortis.
@@ -47,7 +43,7 @@
           <h2>Glöm aldrig dessa tre punkter.</h2>
 
           <p>Phasellus ut arcu convallis, fermentum lorem et, aliquet nisl. Maecenas eu condimentum diam:</p>
-          <ul class="Page-list">
+          <ul>
             <li>Aliquam varius odio a</li>
             <li>Condimentum lobortis.</li>
             <li>Duis id sem a neque viverra</li>
@@ -66,10 +62,7 @@
             <input type="email" name="email" required/>
             <label for="phone">Ditt telefonnummer</label>
             <input type="tel" name="phone" required/>
-            <!-- PERSON-NUMMER -->
-            <label for="person-number" >Ditt personnummer</label>
-            <input type="text" data-id="person-number" class="person-number" name="person-number" value="ÅÅMMDD-XXXX" required/>
-            <!-- END PERSON-NUMMER -->
+      
             <label for="">Meddelande:</label>
             <textarea name="message"></textarea>
             <button type="submit" name="button">Skicka</button>
@@ -91,13 +84,14 @@
         ###############################################################
         -->
         <section class="Page-one-col"> <!-- START  KOLUMN 1 av 1 -->
-          <h1 class="Heading-1">Rubrik till sidan som bara har en kolumn.</h1>
-          <h2 class="Heading-2">Det här är en H2 rubrik. Allt text förrutom blockquotes på den här sidan är max 760px brett och centrerat</h2>
+          <h1>Rubrik till sidan som bara har en kolumn!</h1>
+          <h2>Det här är en H2 rubrik. Allt förrutom bilden är max 760 px brett</h2>
           <div class="Page-image">
             <img class="Page-image-image" src="./images/content/beach.jpg" alt="Strand" />
             <span class="Page-image-caption">Foto: Jacob Henriksson</span>
           </div>
-          <h2 class="Heading-2">Det här är en H2 rubrik. Allt text förrutom blockquotes på den här sidan är max 760px brett och centrerat</h2>
+          <div class="Page-lead">Ända sedan starten 1956 har vår målsättning varit densamma – spännande underhållning för alla. Nu har vi samlat alla våra varumärken på ett ställe och fortsätter vår vision att roa och ge spänning.</div>
+          <h2>En till H2 rubrik. Köp en lott och bli vår nästa vinnare!</h2>
           <p>
             Morbi sit amet rhoncus orci, vitae rhoncus ex.
             Mauris pretium lorem consectetur lacus interdum interdum. Pellentesque eget orci finibus,
@@ -119,13 +113,12 @@
           </p>
           <a class="Page-buy-ticket" href="#">Köp en lott!</a>
           <h2>Glöm aldrig dessa tre punkter.</h2>
-          <ul class="Page-list">
+          <ul>
             <li>Aliquam varius odio a</li>
             <li>Condimentum lobortis.</li>
             <li>Duis id sem a neque viverra</li>
           </ul>
         </section> <!-- END KOLUMN 1 av 1 -->
-
     </div> <!-- END Page-content -->
   </div> <!-- END Page-inner -->
 </article> <!-- END Page -->

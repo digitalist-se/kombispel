@@ -37,6 +37,11 @@ padding-bottom: 2*$base-margin;
 .Page-one-col {
   width: 100%;
   margin: 0 auto;
+  .Page-lead {
+    max-width: $max-inner;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /////////////////////////////////////////////
 // Text and Stuff
@@ -78,6 +83,7 @@ blockquote {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    @extend .Heading-1;
   }
   h2 {
     font-size: 32px;
@@ -96,25 +102,11 @@ blockquote {
     margin: $base-margin auto;
     font-size: 18px;
   }
-}
-.Page-list {
-  padding-left: 2*$base-margin;
-  list-style-type: none;
-  li {
-    position: relative;
-    padding-bottom: $base-margin;
-    &:before {
-      content: "";
-      background-color: $red;
-      height: $base-margin;
-      width: $base-margin;
-      border-radius: 50%;
-      position: absolute;
-      left: -30px;
-      top: 3.5px;
-    }
+  ul {
+    @extend .u-Dots-list;
   }
 }
+
 .Page-image {
   margin-bottom: 2*$base-margin;
   img {
