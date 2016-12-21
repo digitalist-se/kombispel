@@ -126,6 +126,21 @@
 // Mixins for page prices or "Det här kan du vinna"
 /////////////////////////////////////////////
 @mixin prices-variants($color,$lottery-col) {
+  @if ($color == $orange ) {
+    .Heading-1 {
+      color: $lottery-blue;
+    }
+  }
+  @else if ($color == $green) {
+    .Heading-1 {
+      color: $lottery-blue;
+    }
+  }
+  @else if ($color == $red) {
+    .Heading-1 {
+      color: $red;
+    }
+  }
   .Prices-lottery-row {
     border-bottom: 10px solid $color;
     transition: all .2s ease;
