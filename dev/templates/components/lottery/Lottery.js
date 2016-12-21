@@ -20,22 +20,16 @@ xmlhttp.onreadystatechange = function() {
 /////////////////////////////////////////////
 // SET INITIAL STATE OF APPLICATION
 /////////////////////////////////////////////
-
 // Get single element by classname
 function getClass(className) {
   return document.getElementsByClassName(className)[0];
 }
-
 // Set My Lottery-number
 var myLotteryNumber = getClass("Lottery-mynumber--js")
-
 myLotteryNumber.innerHTML = myNumbers.toString().replace(/^[,]$|[,]+/g,"");
-
 // Lottery status
 var lotteryStatus = getClass("js-Lottery-status")
-
 var lotteryRow = getClass("js-Lottery-row");
-
 // Set Lottery-row
 var lotteryNumbers = document.getElementsByClassName('js-Lottery-number');
 var lotteryHeader = getClass("js-Lottery-price-header");
@@ -70,7 +64,7 @@ correctAmount = [];
 // Function to push the value to the array
 function checkArray(winningNumbers) {
   // console.log(winningNumbers);
-  let correct = 0;
+  var correct = 0;
 
   if(objectCounter == (correctNumbers.length-1)) {
     for (var i = 0; i < winningNumbers.length; i++) {
