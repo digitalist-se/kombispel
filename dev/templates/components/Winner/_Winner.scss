@@ -13,7 +13,7 @@
     display: block;
     height: auto;
     width: 100%;
-    margin-bottom: 2*-$base-margin; 
+    margin-bottom: 2*-$base-margin;
   }
 }
 .Page-winner {
@@ -58,7 +58,7 @@
   h1, h2, h3 {
     color: $blue;
   }
-  .Fullwidth-buy-link {
+  .Cta-btn {
     @include gradient-btn($orange);
   }
   .Page-winner-back-link {
@@ -77,9 +77,10 @@
   h1, h2, h3 {
     color: $blue;
   }
-  .Fullwidth-buy-link {
+  .Cta-btn {
     @include gradient-btn($green);
   }
+
   .Page-winner-back-link {
     @include rounded-btn($blue,white, 300px);
   }
@@ -96,7 +97,7 @@
   h1, h2, h3 {
     color: $red;
   }
-  .Fullwidth-buy-link {
+  .Cta-btn {
     @include gradient-btn($red);
   }
   .Page-winner-back-link {
