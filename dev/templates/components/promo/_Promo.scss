@@ -28,7 +28,7 @@
     }
   }
   @include breakpoint(1000px) {
-    @include flex-gtr-col(3, 15px);
+    @include flex-gtr-col(3, $base-margin);
     margin-top: 30px ;
     min-height: 450px;
   }
@@ -40,11 +40,11 @@
 
 .Promo-item--correct-ticket, [class*="Promo-item--campaign"]  {
   .Promo-box {
-    padding: 25px 15px;
+    padding: 25px $base-margin;
   }
   img {
     padding: $base-margin;
-    width: auto;
+    width: 100%;
   }
 }
 /////////////////////////////////////////////
