@@ -19,7 +19,6 @@ h1:not([class]), h2:not([class]), h3:not([class]), h4:not([class]), h5:not([clas
 }
 .js-Site-container {
   width: 100%;
-  // min-height: 100vh;
   &.locked {
     position: fixed;
   }
@@ -42,7 +41,6 @@ blockquote {
   padding: 30px 30px 30px 60px;
   position: relative;
   font-size: 25px;
-
   span {
     position: relative;
     text-align: left;
@@ -60,12 +58,10 @@ blockquote {
     }
   }
 }
-
 img {
   max-width: 100%;
   height: auto;
 }
-
 /////////////////////////////////////////////
 //  Headings
 /////////////////////////////////////////////
@@ -105,15 +101,25 @@ img {
   }
 }
 /////////////////////////////////////////////
-// FULLWIDTH BUY LINK
+// CTA block
 /////////////////////////////////////////////
- .Fullwidth-buy-link-container {
+ .Cta-block {
    background-color: white;
    padding: 30px 0;
  }
- .Fullwidth-buy-link {
-   @include gradient-btn($red);
-   color: white;
+ .Cta-btn {
+   &.Cta-btn--red {
+     @include gradient-btn($red);
+   }
+   &.Cta-btn--green {
+     @include gradient-btn($green);
+   }
+   &.Cta-btn--orange {
+     @include gradient-btn($orange);
+   }
+   &.Cta-btn--blue {
+     @include gradient-btn($blue);
+   }
    span {
      display: block;
      text-align: center;

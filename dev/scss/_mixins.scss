@@ -96,7 +96,6 @@
   $percentage: percentage($span/$col);
   width: calc(#{$percentage} - #{$margin});
 }
-
 ////////////////////////////////
 // Margin
 ///////////////////////////////
@@ -128,12 +127,12 @@
 @mixin prices-variants($color,$lottery-col) {
   @if ($color == $orange ) {
     .Heading-1 {
-      color: $lottery-blue;
+      color: $blue;
     }
   }
   @else if ($color == $green) {
     .Heading-1 {
-      color: $lottery-blue;
+      color: $blue;
     }
   }
   @else if ($color == $red) {
