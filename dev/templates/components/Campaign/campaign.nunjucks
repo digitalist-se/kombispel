@@ -22,10 +22,13 @@
         <div class="Campaign-hero-right">
           <div class="Campaign-hero-right-inner">
             <span class="Campaign-hero-right-logo"></span>
-            <!-- Different Forms -->
+
+            <!-- De olika kampanjstegen.
+                 Kommentera och avkommentera för att se. -->
+
             {# {% include "components/Campaign/campaign-form-1.nunjucks" %} #}
-            {# {% include "components/Campaign/campaign-form-2.nunjucks" %} #}
-            {% include "components/Campaign/campaign-form-3.nunjucks" %}
+            {% include "components/Campaign/campaign-form-2.nunjucks" %}
+            {# {% include "components/Campaign/campaign-form-3.nunjucks" %} #}
             {# {% include "components/Campaign/campaign-form-confirm.nunjucks" %} #}
           </div>
         </div>

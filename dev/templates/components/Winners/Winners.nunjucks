@@ -2,7 +2,10 @@
 <article class="Page Page-winners">
   <div class="Page-inner">
     <h1>Träffa våra vinnare</h1>
-    <p >Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia aliquet sapien id convallis.</p>
+    {# <p >Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia aliquet sapien id convallis.</p> #}
+      <div class="Page-lead">
+  		Här ser ni våra vinnare, hej hej!
+  	</div>
     <div class="Page-content">
 
       <section class="Winners-row"> <!-- START WINNERS-ROW -->
