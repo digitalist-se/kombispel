@@ -2,25 +2,6 @@ $winners-gtr-small: 15px;
 $winners-gtr-medium: 30px;
 $winners-gtr-large: 30px;
 
-// .Winners-container {
-//   padding: 2*$base-margin 0;
-//   background-color: #F2F2F2;
-// }
-// .Winners-inner-container {
-//   @extend .Inner-container;
-// }
-// .Winners-header {
-//   text-align: center;
-//   color: $red;
-// }
-// .Winners-intro {
-//   width: 90%;
-//   max-width: 700px;
-//   font-size: 24px;
-//   margin: 0 auto;
-//   padding-bottom: 4*$base-margin;
-// }
-
 
 .Page-winners {
 
@@ -47,6 +28,18 @@ $winners-gtr-large: 30px;
     @include flex-row();
     @extend .Inner-container;
   }
+
+  // Tillagt efter senaste feedback
+  .Page-lead {
+    padding-left: $base-margin;
+    padding-right: $base-margin;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    font-size: 18px;
+  }
+
 }
 
 .Winners-winner {

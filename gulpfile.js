@@ -74,7 +74,7 @@ gulp.task('js', function() {
  'dev/templates/components/JS-wrapper/Start.js',
    'dev/templates/components/MyPages/MyPages.js',
    'dev/templates/components/Login/Login.js',
-   'dev/templates/components/Promo/Promo.js', 
+   'dev/templates/components/Promo/Promo.js',
    'dev/templates/components/Cookies/Cookies.js',
    'dev/templates/components/Choices/Choices.js',
    'dev/templates/components/Browser/Browser.js',
@@ -83,6 +83,7 @@ gulp.task('js', function() {
    'dev/templates/components/Header/Header.js',
    'dev/templates/components/Forms/Forms.js',
    'dev/templates/components/Prices/Prices.js',
+   'dev/templates/components/Campaign/Campaign.js',
  'dev/templates/components/JS-wrapper/End.js'
 ])
     .pipe(sourcemaps.init())
