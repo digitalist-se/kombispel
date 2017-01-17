@@ -24,9 +24,6 @@
     margin-left: $base-margin;
   }
 }
-.Information-form-block-inner h4 {
-  margin-left: 15px;    
-}
 .Information-input-row {
   &:after {
     display: block;
@@ -80,9 +77,8 @@
 // KONTAKTVÄG BLOCK
 /////////////////////////////////////////////
 .Information-contact-list {
-  margin-left: 15px;
   @extend .u-Dots-list--grey;
-  margin-left: $base-margin*2; 
+  margin-left: $base-margin*2;
 }
 .Form-checkbox {
   label {
