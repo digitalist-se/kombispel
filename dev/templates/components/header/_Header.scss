@@ -3,8 +3,8 @@ $menuBorder: 2px solid rgb(214,214,214);
 .Header-container {
 width: 100%;
 background-color: white;
-border-top: 10px solid $red;
-border-bottom: 15px solid $orange;
+border-top: 5px solid $red;
+border-bottom: 5px solid $orange;
 @include respond-to(large) {
   border-top: 10px solid $red;
   border-bottom: 5px solid $orange;
@@ -55,9 +55,6 @@ border-bottom: 15px solid $orange;
     flex-basis: 70px;
   }
 }
-
-
-
 // TABLET AND LARGER
 @include respond-to(large) {
     //  MENU
@@ -97,7 +94,7 @@ border-bottom: 15px solid $orange;
     font-family: $gill-regular;
     color: $red;
     @include breakpoint(1px, 767px) {
-      margin: 10px 0 0 0;
+      margin: 2px 0 0 0;
       font-size: 14px;
 
     }
@@ -276,9 +273,14 @@ width: 22px;
 /////////////////////////////////////////////
 // RÄTTA DIN LOTT
 /////////////////////////////////////////////
+.Header-flex--four {
+  padding-top: 0.5*$base-margin;
+  @include breakpoint(768px,1023px) {
+    padding-top: 1.5*$base-margin;
+  }
+}
 @include breakpoint(1px, 1023px) {
   .Header-flex--four {
-    padding-top: 1.5*$base-margin;
     button {
       @include rounded-btn($orange,white,300px);
       margin: 0 auto;

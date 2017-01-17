@@ -95,11 +95,13 @@ blockquote {
     margin-bottom: $base-margin;
     @extend .Heading-3;
     text-align: left;
-
   }
   p {
     margin: $base-margin auto;
     font-size: 18px;
+    @include breakpoint(1px, 767px) {
+      text-align: justify;
+    }
   }
   ul {
     @extend .u-Dots-list;

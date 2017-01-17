@@ -15,7 +15,6 @@ border-bottom: 8px solid $green;
 /////////////////////////////////////////////
 .Logo-row-logo {
   letter-spacing: 0px;
-
   @include breakpoint(1px, 1139px) {
     position: relative;
     padding: 20px 0;
@@ -64,6 +63,9 @@ border-bottom: 8px solid $green;
     font-size: 16px;
     margin: 15px 0 0 0;
     text-align: center;
+    @include breakpoint(1px, 400px) {
+      font-size: 14px;
+    }
      @include respond-to(large) {
        word-spacing: 9999em;
      }

@@ -22,7 +22,7 @@ menu {
 }
 .Menu-inner-container {
   height: 100%;
-  top: 105px;
+  top: 95px;
   bottom: 0;
   z-index: 9999;
   background-color: $red;
@@ -31,10 +31,10 @@ menu {
   transition: all .3s ease;
   width: 300px;
   @include breakpoint(768px, 1023px) {
-    top: 85px;
+    top: 80px;
   }
   @include breakpoint(1024px) {
-  top: 110px;
+    top: 115px;
     width: $menu-width-medium;
   }
   @include breakpoint(1600px) {

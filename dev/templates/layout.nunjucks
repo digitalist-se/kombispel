@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>{{ pageName }}</title>
   <link type="text/css" rel="stylesheet" href="https://fast.fonts.net/cssapi/4bcec19c-38b0-4aad-80ee-edf74d86feee.css"/>
-  <link rel="stylesheet" href="css/stylesheet.css"> 
+  <link rel="stylesheet" href="css/stylesheet.css">
   <link rel="icon" href="images/favicon/kombi.ico" type="image/icon">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
   <!-- Google Tag Manager -->
@@ -22,11 +22,9 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   <!-- Start Site information -->
-
   <!-- CHECK FOR OLD IE -->
   {% include "components/Browser/browser.nunjucks" %}
   <!-- END CHECK FOR OLD IE -->
-
   {% include "components/Cookies/cookies.nunjucks" %}
   <!-- End Site information -->
   {% include "components/Menu/menu.nunjucks" %}
@@ -40,6 +38,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/main.js"></script>
-
 </body>
 </html>
