@@ -20,6 +20,9 @@
 .Information-form-block-inner {
   max-width: 560px;
   margin: 0 auto;
+  h4 {
+    margin-left: $base-margin;
+  }
 }
 .Information-input-row {
   &:after {
@@ -75,7 +78,7 @@
 /////////////////////////////////////////////
 .Information-contact-list {
   @extend .u-Dots-list--grey;
-  margin-left: $base-margin*2;
+  margin-left: $base-margin*2; 
 }
 .Form-checkbox {
   label {

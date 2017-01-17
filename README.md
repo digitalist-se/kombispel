@@ -1,3 +1,6 @@
+# To run the Prototype go to:
+https://nodeone.github.io/kombispel/dev/
+
 # Front-End resources for Kombispel
 
 1. Install Node.js version 6.2 or higher.
