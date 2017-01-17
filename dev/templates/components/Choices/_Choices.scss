@@ -81,6 +81,7 @@ padding-bottom: 4*$base-margin;
   background-color: white;
   text-align: center;
   position: relative;
+  padding-bottom: 7*$base-margin;
   @include breakpoint(1px, 767px) {
     @include flex-gtr-col(2,$base-margin);
     .Choices-others-image {
@@ -115,6 +116,7 @@ padding-bottom: 4*$base-margin;
   @extend .Arrow-link;
   color: $red;
   cursor: pointer;
+  margin-top: $base-margin;
   &:hover {
     text-decoration: underline;
   }
@@ -123,11 +125,16 @@ padding-bottom: 4*$base-margin;
   display: none;
   padding: 0 $base-margin 1px $base-margin;
   p {
+    color: $text; 
     text-align: left;
   }
 }
 .Choices-others-choose {
   @include gradient-btn($orange);
+  left: 0;
+  right: 0;
   width: auto;
+  bottom: $base-margin;
   margin: $base-margin;
+  position: absolute;
 }

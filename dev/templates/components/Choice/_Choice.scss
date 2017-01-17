@@ -23,7 +23,7 @@
   margin-top: 2*$base-margin;
   background-color: rgb(58,93,155);
   color: white;
-  min-height: 300px;
+  min-height: 220px;
   @include flex-position(center);
   position: relative;
   &:before {
@@ -38,6 +38,9 @@
     bottom: 0;
     background: url("../images/svg/starburst.svg");
     background-size: cover;
+  }
+  h2 {
+    margin-top: 0;
   }
 }
 .Choice-share-btn {

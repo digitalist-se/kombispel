@@ -21,6 +21,14 @@
       <img src="images/campaign/foundue.png" alt="Fonduegryta Deluxe"/>
       <h3 class="Heading-3">Fonduegryta Deluxe</h3>
       <a href="#">Ja tack!</a>
+      <span class="js-Choices-others-readmore">Läs mer</span>
+      <div class="js-Choices-others-info">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+      </div>
       <p>
         Detta är din utvalda vinst som du får om du inte väljer en annan vinst.
       </p>
@@ -96,7 +104,7 @@
             <img src="images/campaign/kampanjbild.png" alt=""/>
         </div>
 
-        <h4>Digital fotoram</h4>
+        <h4>Digital fotoram fotoram</h4>
         <span class="js-Choices-others-readmore">Läs mer</span>
         <div class="js-Choices-others-info">
           <p>
@@ -111,7 +119,7 @@
         <div class="Choices-others-image">
           <img src="images/campaign/mobler-vinst.png" alt="Mysigt överkast från Mio"/>
         </div>
-        <h4>Mysigt överkast</h4>
+        <h4>Mysigt överkast överkast överkast överkast överkast överkast</h4>
         <span class="js-Choices-others-readmore">Läs mer</span>
         <div class="js-Choices-others-info">
           <p>
