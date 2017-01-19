@@ -25,6 +25,16 @@
       width: 30px;
       left: -$base-margin;
     }
+    @include breakpoint(1px,767px) {
+      font-size: 18px;
+      padding: $base-margin/2 $base-margin;
+      &:before {
+        left: -$base-margin*1.5;
+        height: 20px;
+        width: 20px;
+        top: 12px;
+      }
+    }
   }
   // ICON VARIANTS
   &.Campaign-hero-list--star li:before {
@@ -182,13 +192,16 @@
     }
   }
 }
+.Campaign-info-content {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 560px;
+}
 @include breakpoint(1px, 960px) {
   .Campaign-info {
     padding-bottom: 2*$base-margin;
   }
   .Campaign-info-content {
-    margin: 0 auto;
-    max-width: 560px;
     padding: 2*$base-margin $base-margin 3*$base-margin $base-margin;
   }
 }
@@ -197,9 +210,6 @@
     padding: 2*$base-margin 0;
   }
   .Campaign-info-content {
-    text-align: center;
-    margin: 0 auto;
-    max-width: 560px;
     padding: 3*$base-margin $base-margin 4*$base-margin $base-margin;
   }
 }

@@ -96,6 +96,14 @@ blockquote {
     @extend .Heading-3;
     text-align: left;
   }
+  h1,h2,h3,h4,h5,h6 {
+    @include breakpoint(1px,767px) {
+      line-height: 1em;
+      word-wrap:break-word;
+    }
+  }
+
+
   p {
     margin: $base-margin auto;
     font-size: 18px;

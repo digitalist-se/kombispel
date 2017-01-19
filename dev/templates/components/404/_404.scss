@@ -2,17 +2,20 @@ $notFound-height: 150px;
 .NotFound-container {
   @include gradient-bg($orange);
 }
-
 .NotFound-inner-container {
   @extend .Inner-container;
   padding: 4*$base-margin $base-margin;
 }
 .NotFound-lottery-container {
-  padding: 4*$base-margin 0 2*$base-margin 0;
+  padding: 0;
   margin: 0 auto;
   width: 90%;
   max-width: 560px;
   @include flex-row();
+  @include breakpoint(768px) {
+    padding: 4*$base-margin 0 2*$base-margin 0;
+
+  }
 }
 .NotFound-col {
   flex-basis: calc(33.3333% - 9px);
@@ -63,7 +66,6 @@ $notFound-height: 150px;
     text-align: center;
     }
 }
-
 @keyframes NotFound-Spinner {
   0% {
     transform: translateY(0);
@@ -100,7 +102,10 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   color: $red;
-  margin-bottom: 4*$base-margin;
+  @include breakpoint(768px) {
+    margin-bottom: 4*$base-margin;
+
+  }
 }
 a {
   @include gradient-btn($orange);

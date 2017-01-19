@@ -111,6 +111,7 @@ padding-bottom: 4*$base-margin;
     font-size: 28px;
     margin: 0;
   }
+
 }
 .js-Choices-others-readmore  {
   @extend .Arrow-link;
@@ -125,8 +126,8 @@ padding-bottom: 4*$base-margin;
   display: none;
   padding: 0 $base-margin 1px $base-margin;
   p {
-    color: $text; 
-    text-align: left;
+    color: $text;
+    text-align: justify;
   }
 }
 .Choices-others-choose {

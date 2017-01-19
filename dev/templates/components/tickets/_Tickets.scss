@@ -10,7 +10,8 @@
     @include flex-gtr-col (2, 15px);
   }
   @include breakpoint(1px, 374px) {
-    margin: 0 !important;
+    margin-left: 0 !important;
+    margin-right  : 0 !important;
   }
   padding: 2*$base-margin 0;
   position: relative;
@@ -229,6 +230,7 @@
 }
 .Tickets-winning-ticket-link--kombi {
   @include gradient-btn($orange);
+
 }
 .Tickets-winning-ticket-link--motor {
   @include gradient-btn($red);

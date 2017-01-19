@@ -74,6 +74,9 @@ img {
   span {
     display: block;
   }
+  @include breakpoint(1px, 767px) {
+  font-size: 34px;
+  }
 }
 
 .Heading-2 {
@@ -131,3 +134,12 @@ img {
      }
    }
  }
+/////////////////////////////////////////////
+// Rubriker och text mobilläge
+/////////////////////////////////////////////
+@include breakpoint(1px, 767px) {
+  h1 {
+    font-size: 34px;
+  }
+
+}

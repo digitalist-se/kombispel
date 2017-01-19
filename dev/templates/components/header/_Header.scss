@@ -17,6 +17,9 @@ border-bottom: 5px solid $orange;
   @include breakpoint(1px,767px) {
     width: 100%;
   }
+  @include breakpoint(1px,400px) {
+    padding: $base-margin 0 $base-margin/2 0;
+  }
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -115,7 +118,6 @@ border-bottom: 5px solid $orange;
 /////////////////////////////////////////////
  //  MENU
  /////////////////////////////////////////////
-
 @mixin headerBorders($color, $shadow:null) {
   position: relative;
   @include breakpoint(1024px) {
@@ -252,6 +254,20 @@ $burger-radius: 4px;
   margin: 0 auto;
   display: block;
 }
+// Tajtar till loggan för mobilvy i safari
+@include breakpoint(1px, 767px) {
+  .Header-flex--two {
+    position: relative;
+  }
+  .Header-kombo-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto;
+  }
+}
 /////////////////////////////////////////////
 // PROFILE
 /////////////////////////////////////////////
@@ -274,7 +290,7 @@ width: 22px;
 // RÄTTA DIN LOTT
 /////////////////////////////////////////////
 .Header-flex--four {
-  padding-top: 0.5*$base-margin;
+  padding-top: 0;
   @include breakpoint(768px,1023px) {
     padding-top: 1.5*$base-margin;
   }
