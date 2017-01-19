@@ -40,7 +40,6 @@
   background-color: #fff;
   padding: 20px;
   button {
-    padding: 10px 40px;
     font-family: $gill-regular;
     @include rounded-btn($orange,white,100%);
   }
@@ -49,7 +48,6 @@
 .MyPages-block--basic {
   margin-bottom: 30px;
   text-align: center;
-
   button {
     margin-top: 20px;
   }

@@ -15,7 +15,7 @@
             <!-- END BURGER -->
           </div>
           <div class="Header-title">
-            <h4 class="js-Header-title--menu">meny</h4>
+            <h4 class="js-Header-title--menu">Meny</h4>
           </div>
         </div>
       </div>
@@ -29,13 +29,15 @@
         <div class="Header-inner-grid">
           <div class="Header-profile-image"></div>
           <div class="Header-title">
-            <h4>min sida</h4>
+            <h4>Min sida</h4>
           </div>
         </div>
       </div>
       <!-- RÄTTA DIN LOTT -->
       <div class="Header-flex--four">
-        <button class="js-Header-correct-btn">Rätta din lott!</button>
+        <!-- LÄNK OM MAN ÄR INLOGGAD ANNARS KNAPP -->
+        {# <button class="js-Header-correct-btn">Rätta din lott!</button> #}
+        <a href="#" class="Header-correct-btn">Rätta din lott!</a>
       </div>
     </div>
 </header>

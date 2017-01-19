@@ -21,9 +21,9 @@ $border-red: rgb(208,81,88);
   margin-top: 0;
   text-align: center;
   padding: 15px 0;
-  text-transform: uppercase;
   color: white;
   @include breakpoint(1px, 1023px) {
+    font-size: 18px;
     border-right: 1px solid $border-red;
     &:nth-of-type(1),&:nth-of-type(3)  {
       border-left: 1px solid $border-red;
@@ -37,6 +37,7 @@ $border-red: rgb(208,81,88);
     border-left: 1px solid $border-red;
     border-right: none;
     border-bottom: none;
+    font-size: 22px;
     &:last-of-type {
       border-right: 1px solid $border-red;
     }

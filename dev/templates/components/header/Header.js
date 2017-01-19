@@ -66,9 +66,9 @@ function toggleMenu() {
   $(".js-Site-container").toggleClass("locked")
   $(".js-Header-menu-container").toggleClass("Burger--open");
 
-  if(menuText.text() == "meny") {
-      menuText.text("stäng")
+  if(menuText.text() == "Meny") {
+      menuText.text("Stäng")
   } else {
-    menuText.text("meny")
+    menuText.text("Meny")
   }
 }

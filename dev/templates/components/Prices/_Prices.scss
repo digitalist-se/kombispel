@@ -98,6 +98,28 @@
     }
   }
 }
+/////////////////////////////////////////////
+// LÄS MER BLOCK
+/////////////////////////////////////////////
+.js-Prices-readmore {
+  @extend .Arrow-link;
+  color: $red;
+  cursor: pointer;
+  padding-bottom: $base-margin;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.js-Prices-info {
+  display: none;
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 0 $base-margin $base-margin $base-margin;
+  p {
+    margin: 0;
+    text-align: left;
+  }
+}
 
 /////////////////////////////////////////////
 // PRICES PRICE LEVELS
@@ -109,13 +131,12 @@
   img {
     width: 100%;
   }
-  p {
-    text-align: center;
-    color: $dark-grey;
-
-    margin: 0;
-    padding: 10px 0 $base-margin 0;
-  }
+  // p:first-of-type {
+  //   text-align: center;
+  //   color: $dark-grey;
+  //   margin: 0;
+  //   padding: 10px 0 $base-margin 0;
+  // }
 }
 .Prices-buy-link {
   background-color: white;
@@ -128,6 +149,12 @@
 .Prices-price-inner {
   background-color: white;
   margin-bottom: 2*$base-margin;
+  > p {
+    text-align: center;
+    color: $dark-grey;
+    margin: 0;
+    padding: $base-margin;
+  }
 }
 .Prices-price-image {
   position: relative;

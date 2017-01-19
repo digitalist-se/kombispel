@@ -49,7 +49,7 @@
             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </p>
         </div>
-        <a class="Choices-others-choose" href="#">Välj</a>
+        <button class="Choices-others-choose" href="#">Välj</button>
       </div>
       <div class="Choices-others-col">
         <div class="Choices-others-image">
@@ -64,7 +64,7 @@
             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </p>
         </div>
-        <a class="Choices-others-choose" href="#">Välj</a>
+        <button class="Choices-others-choose" href="#">Välj</button>
       </div>
       <div class="Choices-others-col">
         <div class="Choices-others-image">
@@ -79,7 +79,7 @@
             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </p>
         </div>
-        <a class="Choices-others-choose" href="#">Välj</a>
+        <button class="Choices-others-choose" href="#">Välj</button>
       </div>
       <div class="Choices-others-col">
         <div class="Choices-others-image">
@@ -97,7 +97,7 @@
           </p>
         </div>
 
-        <a class="Choices-others-choose" href="#">Välj</a>
+        <button class="Choices-others-choose" href="#">Välj</button>
       </div>
       <div class="Choices-others-col">
         <div class="Choices-others-image">
@@ -113,7 +113,7 @@
             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </p>
         </div>
-        <a class="Choices-others-choose" href="#">Välj</a>
+        <button class="Choices-others-choose" href="#">Välj</button>
       </div>
       <div class="Choices-others-col">
         <div class="Choices-others-image">

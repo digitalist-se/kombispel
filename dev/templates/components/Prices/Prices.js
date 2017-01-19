@@ -15,4 +15,9 @@ $(function() {
     }
   });
 });
- 
+/////////////////////////////////////////////
+// LÄS MER OM VINSTER
+/////////////////////////////////////////////
+$(".js-Prices-readmore").click(function() {
+  $(this).next().slideToggle();
+})

@@ -2,15 +2,14 @@
 // BUTTONS
 ///////////////////////////////
 @mixin rounded-btn($background,$color,$width:null) {
-  text-transform: uppercase;
   cursor: pointer;
   background-color: $background;
   outline: 0;
   color: $color;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 18px;
   @include breakpoint(768px) {
-    font-size: 20px;
+    font-size: 22px;
   }
   padding: 15px 20px;
   max-width: $width;
@@ -25,24 +24,23 @@
 @mixin gradient-btn($color) {
   $color2: darken($color,5%);
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 18px;
+  max-width: 300px;
   @include breakpoint(768px) {
-    font-size: 20px;
+    font-size: 22px;
+    max-width: 320px;
   }
   border: solid 5px white;
   padding: 15px;
   width: 100%;
-  text-transform: uppercase;
   position: relative;
   font-family: $gill-regular;
-  max-width: 300px;
   margin: 0 auto;
   display: block;
   background: linear-gradient($color 45%, $color2 54%);
   cursor: pointer;
   color: white;
   text-align: center;
-
   &:hover {
     background: linear-gradient(darken($color,5%) 45%, darken($color2,5%) 54%);
     text-decoration: none;
@@ -57,6 +55,9 @@
     left:0;
     width: 100%;
     right: 0;
+  }
+  span {
+    display: block;
   }
 }
 @mixin media-btn($image,$color) {

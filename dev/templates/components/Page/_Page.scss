@@ -102,14 +102,9 @@ blockquote {
       word-wrap:break-word;
     }
   }
-
-
   p {
     margin: $base-margin auto;
     font-size: 18px;
-    @include breakpoint(1px, 767px) {
-      text-align: justify;
-    }
   }
   ul {
     @extend .u-Dots-list;
@@ -130,6 +125,7 @@ blockquote {
   background-color: $lighter-grey;
   font-size: 23px;
   padding: 2*$base-margin;
+  margin-bottom: 2*$base-margin;
 }
 .Page-video {
   max-width: $max-inner;

@@ -1,3 +1,28 @@
+/////////////////////////////////////////////
+// CHANGE PASSWORD MODAL
+/////////////////////////////////////////////
+.js-Campaign-overlay-container {
+  @extend .Modal-overlay-container;
+}
+.js-Campaign-clickarea {
+  @extend .Modal-clickarea;
+}
+.Campaign-info-container {
+  @extend .Modal-form-container;
+  h2 {
+    text-align: center;
+    @extend .Modal-header;
+  }
+  p {
+    padding: $base-margin 2*$base-margin;
+  }
+}
+.js-Campaign-close-form {
+  @extend .Modal-close-form;
+}
+/////////////////////////////////////////////
+// Campaign Page
+/////////////////////////////////////////////
 .Campaign-hero-image {
   width: 100%;
   background-size: cover;
@@ -47,10 +72,11 @@
     background:url("../images/svg/lists/ball.svg") no-repeat center center;
   }
 }
-.Campaign-hero-products-img {
+.js-Campaign-hero-products-img {
   max-height: 300px;
   width: auto;
   padding: $base-margin;
+  cursor: pointer;
 }
 /////////////////////////////////////////////
 // RESPONSIVITET HERO

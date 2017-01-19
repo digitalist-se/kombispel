@@ -47,11 +47,6 @@
     content: "”";
   }
 }
-.Hero-box-link {
-  span {
-    display: block;
-  }
-}
 .Hero-box-link-text {
   font-size: 20px;
 }
@@ -122,9 +117,6 @@
   }
   .Hero-box-quote {
     margin-bottom: 5px;
-  }
-  .Hero-box-link span {
-    font-size: 16px !important;
   }
 }
 @include breakpoint(768px,1023px) {

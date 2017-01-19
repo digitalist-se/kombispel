@@ -62,7 +62,7 @@
             <input type="email" name="email" required/>
             <label for="phone">Ditt telefonnummer</label>
             <input type="tel" name="phone" required/>
-      
+
             <label for="">Meddelande:</label>
             <textarea name="message"></textarea>
             <button type="submit" name="button">Skicka</button>
@@ -118,6 +118,13 @@
             <li>Condimentum lobortis.</li>
             <li>Duis id sem a neque viverra</li>
           </ul>
+          <blockquote>
+            <span>
+              Jag vinner varje vecka. Har slutat jobba. Livnär mig helt på att köpa Kombilotter.
+            </span>
+          </blockquote>
+          <div class="Page-lead">Ända sedan starten 1956 har vår målsättning varit densamma – spännande underhållning för alla. Nu har vi samlat alla våra varumärken på ett ställe och fortsätter vår vision att roa och ge spänning.</div>
+
         </section> <!-- END KOLUMN 1 av 1 -->
     </div> <!-- END Page-content -->
   </div> <!-- END Page-inner -->

@@ -93,17 +93,15 @@ border-bottom: 5px solid $orange;
     @include flex-position(center);
   }
   h4 {
-    text-transform: uppercase;
     font-family: $gill-regular;
     color: $red;
     @include breakpoint(1px, 767px) {
       margin: 2px 0 0 0;
-      font-size: 14px;
-
+      font-size: 18px;
     }
     @include breakpoint(768px) {
       margin: 0;
-      font-size: 18px;
+      font-size: 22px;
 
     }
   }
@@ -289,30 +287,30 @@ width: 22px;
 /////////////////////////////////////////////
 // RÄTTA DIN LOTT
 /////////////////////////////////////////////
+.js-Header-correct-btn, .Header-correct-btn {
+  @include breakpoint(1px, 1023px) {
+        @include rounded-btn($orange,white,300px);
+        margin: 0 auto;
+        // font-size: 16px;
+        // text-align: center;
+    }
+    display: inline-block;
+    @include breakpoint(1024px) {
+      @include rounded-btn($orange,white,100%);
+      padding: 20px 50px;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
 .Header-flex--four {
   padding-top: 0;
+  text-align: center;
   @include breakpoint(768px,1023px) {
     padding-top: 1.5*$base-margin;
   }
 }
-@include breakpoint(1px, 1023px) {
-  .Header-flex--four {
-    button {
-      @include rounded-btn($orange,white,300px);
-      margin: 0 auto;
-      display: block;
-      font-size: 16px;
-    }
-  }
-}
-@include breakpoint(1024px) {
-  .Header-flex--four {
-    button {
-      @include rounded-btn($orange,white,100%);
-      padding: 20px 50px;
-    }
-  }
-}
+
 /////////////////////////////////////////////
 // STATE LOGGED IN MYPAGES
 /////////////////////////////////////////////

@@ -281,7 +281,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- END BURGER -->
           </div>
           <div class="Header-title">
-            <h4 class="js-Header-title--menu">meny</h4>
+            <h4 class="js-Header-title--menu">Meny</h4>
           </div>
         </div>
       </div>
@@ -295,19 +295,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="Header-inner-grid">
           <div class="Header-profile-image"></div>
           <div class="Header-title">
-            <h4>min sida</h4>
+            <h4>Min sida</h4>
           </div>
         </div>
       </div>
       <!-- RÄTTA DIN LOTT -->
       <div class="Header-flex--four">
-        <button class="js-Header-correct-btn">Rätta din lott!</button>
+        <!-- LÄNK OM MAN ÄR INLOGGAD ANNARS KNAPP -->
+        
+        <a href="#" class="Header-correct-btn">Rätta din lott!</a>
       </div>
     </div>
 </header>
 
   <main>
   
+<!-- POPUP SOM VISAR INFO OM PRODUKTEN -->
+<section class="js-Campaign-overlay-container">
+  <div class="js-Campaign-clickarea"></div>
+  <div class="Campaign-info-container">
+    <div class="js-Campaign-close-form"></div>
+    <h2 class="">Information om produkten</h2>
+    <p>
+      Shoreditch selvage salvia humblebrag gentrify.
+       Cray chambray pork belly viral.
+       Paleo mustache occupy enamel pin pabst thundercats
+       YOLO, skateboard live-edge. Chambray pug DIY, thundercats
+       schlitz salvia chillwave. Keytar freegan salvia raclette, kogi tousled
+       literally banjo offal pug. Ethical asymmetrical freegan crucifix deep v pop-up poutine,
+       YOLO, skateboard live-edge. Chambray pug DIY, thundercats
+       schlitz salvia chillwave. Keytar freegan salvia raclette, kogi tousled
+       literally banjo offal pug. Ethical asymmetrical freegan crucifix deep v pop-up poutine,
+    </p>
+  </div>
+</section>
+<!-- KAMPANJSIDA -->
 <section class="Campaign Campaign--motor">
   <div class="Campaign-hero Campaign-hero-image" style="background-image: url('images/heroes/road.png')">
   <!-- If no image is uploaded it should get this Div to set a gradient background -->
@@ -324,9 +346,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li>Störst chans att bli miljonär</li>
             <li>Störst chans att bli miljonär</li>
           </ul>
-          <a href="#">
-            <img class="Campaign-hero-products-img" src="images/campaign/kampanj-produkter.png" alt="Väska, lotter och lite andra grejer" />
-          </a>
+            <img class="js-Campaign-hero-products-img" src="images/campaign/kampanj-produkter.png" alt="Väska, lotter och lite andra grejer" />
         </div>
         <!-- RIGHT Logo + form -->
         <div class="Campaign-hero-right">

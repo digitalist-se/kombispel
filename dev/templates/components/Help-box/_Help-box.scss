@@ -27,6 +27,9 @@
  }
  .Help-box-inner {
    padding: $base-margin;
+   h4 {
+     margin-left: 0;
+   }
  }
  .Help-box-contact-phone, .Help-box-contact-mail {
    padding: 7.5px 0 7.5px 30px;

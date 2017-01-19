@@ -7,7 +7,7 @@
             <div class="Promo-box">
                 <h3 >Är du en vinnare?</h3>
                 <img src="images/campaign/volvo.png" alt="Möbler" />
-                <a href="/tickets" class="js-Promo-correct-ticket-btn Promo-box-button">RÄTTA DIN LOTT</a>
+                <a href="/tickets" class="js-Promo-correct-ticket-btn Promo-box-button">Rätta din lott</a>
                 <div class="Promo-box-product">
                     <a href="#" class="Promo-box-product-item" style="background-image: url('images/svg/logos/kombi.svg')">Kombilotteriet</a>
                     <a href="#" class="Promo-box-product-item" style="background-image: url('images/svg/logos/dromrese.svg')">Drömreselotteriet</a>
@@ -22,7 +22,7 @@
                 <h3 >Månadens kampanj!</h3>
                 <div class="Promo-box-text">Premie: Vattenkaraff och skraplottpaket på köpet när du skaffar en Kombilott.</div>
                 <img src="images/campaign/mobler-vinst.png" alt="Möbler" />
-                <a href="#" class="Promo-box-button">KÖP EN KOMBILOTT</a>
+                <a href="#" class="Promo-box-button">Köp en kombilott</a>
             </div>
         </div>
 
@@ -31,7 +31,7 @@
             <div class="Promo-box">
                 <img src="images/campaign/mobler-vinst.png" alt="Möbler"/>
                 <div class="Promo-box-caption">
-                    <div class="Promo-box-caption-text">KOMBISPELS TUSENDE MILJONVINNARE</div>
+                    <div class="Promo-box-caption-text">Kombispels tusende vinnare</div>
                     <div class="Promo-box-caption-text--big">Maj tog hem storvinsten i motorlotteriet!</div>
                 </div>
                 <div class="Promo-box-link"><a href="/">Se fler vinnare</a></div>

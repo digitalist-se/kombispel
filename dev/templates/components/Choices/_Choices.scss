@@ -132,10 +132,10 @@ padding-bottom: 4*$base-margin;
 }
 .Choices-others-choose {
   @include gradient-btn($orange);
-  left: 0;
-  right: 0;
-  width: auto;
+  left: $base-margin;
+  right: $base-margin;
+  width: calc(100% - #{$base-margin*2});
+  display: block;
   bottom: $base-margin;
-  margin: $base-margin;
   position: absolute;
 }
