@@ -62,7 +62,7 @@ border-bottom: 5px solid $orange;
 @include respond-to(large) {
     //  MENU
   .Header-flex--one {
-    flex-basis: 120px;
+    flex-basis: 130px;
     order: 2;
     border-right: $menuBorder;
     border-left: $menuBorder;
@@ -74,7 +74,7 @@ border-bottom: 5px solid $orange;
   }
   //  MIN SIDA
   .Header-flex--three {
-    flex-basis: 150px;
+    flex-basis: 140px;
     border-right: $menuBorder;
   }
   .Header-flex--four {

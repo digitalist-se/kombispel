@@ -36,8 +36,8 @@
       <!-- RÄTTA DIN LOTT -->
       <div class="Header-flex--four">
         <!-- LÄNK OM MAN ÄR INLOGGAD ANNARS KNAPP -->
-        {# <button class="js-Header-correct-btn">Rätta din lott!</button> #}
-        <a href="#" class="Header-correct-btn">Rätta din lott!</a>
+        <button class="js-Header-correct-btn">Rätta din lott!</button>
+        {# <a href="#" class="Header-correct-btn">Rätta din lott!</a> #}
       </div>
     </div>
 </header>

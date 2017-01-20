@@ -227,7 +227,7 @@ function drawingDone()  {
   objectCounter++; // Counter for the iteration in the JSON RESPONSE
   if(objectCounter < correctNumbers.length) {
 
-    var count = 5;
+    var count = 3;
     lotteryMessage.innerHTML = "Nästa dragning för <span class='u-bold'>"+correctNumbers[objectCounter].header+" kr</span> om:<span class='js-Lottery-countdown-c'><span class='js-Lottery-spinner--big'></span><span class='js-Lottery-countdown'>"+count+"</span></span>";
     var myVar;
     function myFunction() {
