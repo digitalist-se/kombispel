@@ -1,6 +1,6 @@
 $menuSize: 37px;
 $menuBorder: 2px solid rgb(214,214,214);
-.Header-container {
+.js-Header-container {
 width: 100%;
 background-color: white;
 border-top: 5px solid $red;
@@ -343,27 +343,33 @@ width: 22px;
   }
 }
 /////////////////////////////////////////////
-// TIGHTER HEADER AFTER SCROLL IN DESKTOP
+// HEADER CONTAINER FIXED
 /////////////////////////////////////////////
-@include respond-to(large){
-  .Header-container--tight {
-    border-top: 2px solid $red;
-    border-bottom: 2px solid $orange;
+$headerTablet: 167px;
+$headerDesktop: 114px;
+@include breakpoint(768px) {
+  .js-Header-container {
+    z-index: 50;
     position: fixed;
-    z-index: 40;
-
-    .Header-inner-grid, .js-Header-menu-container  {
-      &::before, &::after {
-        display: none;
-        // position: static;
-      }
-    }
-    .Header-inner-container {
-      padding: 4px 0;
-    }
-    .js-Header-correct-btn {
-      padding: 10px 30px;
-      font-size: 16px;
-    }
+    top: 0;
+    transition: all 350ms ease;
+    left: 0;
+    right: 0;
+    transform: translateY(0);
   }
+  .js-Header-container.is-hidden {
+    transform: translateY(-$headerTablet);
+  }
+  main {
+    margin-top: $headerTablet;
+  }
+}
+@include breakpoint(1024px) {
+  .js-Header-container.is-hidden {
+    transform: translateY(-$headerDesktop);
+  }
+  main {
+    margin-top: $headerDesktop;
+  }
+
 }

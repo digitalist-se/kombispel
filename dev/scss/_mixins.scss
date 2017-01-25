@@ -27,7 +27,7 @@
   font-size: 18px;
   max-width: 300px;
   @include breakpoint(768px) {
-    font-size: 22px;
+    font-size: 20px;
     max-width: 320px;
   }
   border: solid 5px white;
@@ -59,12 +59,17 @@
   span {
     display: block;
     text-align: center;
-     &:first-of-type {
-       font-size: 16px;
-     }
-     &:last-of-type {
-       font-size: inherit;
-     }
+    @include breakpoint(768px) {
+      &:first-of-type {
+        // font-size: inherit;
+        font-size: 18px;
+      }
+      &:last-of-type {
+       //  font-size: inherit;
+        font-size: 22px;
+      }
+    }
+
    }
 }
 @mixin media-btn($image,$color) {

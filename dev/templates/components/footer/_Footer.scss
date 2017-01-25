@@ -33,20 +33,6 @@
 // FOOTER FIRST
 /////////////////////////////////////////////
 .Footer-box--first {
-  order: 1;
-  .Footer-box-col-container {
-    @include flex-row();
-  }
-  .Footer-box-col--image {
-      span {
-        color: transparent;
-        background: url("../images/svg/footer/stamp.png") no-repeat;
-        background-size: contain;
-        height: 60px;
-        width: 50px;
-        display: block;
-      }
-  }
   .Footer-menu {
     padding: 0;
     margin: 0;
@@ -104,13 +90,6 @@
     @include flex-gtr-col(2,$base-margin);
     margin-top: 5px !important;
 
-    span {
-      // position: relative;
-      // text-align: right;
-      // display: inline-block;
-      // padding-left: 2*$base-margin;
-      // margin: 0 auto;
-    }
   }
   .Footer-follow-item--facebook {
     @include media-btn("../images/svg/footer/facebook.svg",$facebook-blue);
@@ -138,26 +117,43 @@
   border-top: 4px solid $lighter-grey;
 }
 .Footer-help-logos-inner {
-  width: 70%;
-  max-width: 460px;
-  margin: 0 auto;
-  @include breakpoint(768px) {
-    padding-bottom: 2*$base-margin;
-    background-size: 100%;
+  width: 180px;
+  @include breakpoint(600px) {
+    width: 100%;
+    max-width: 560px;
   }
-  @include flex-row();
+  margin: $base-margin auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+
 }
-.Footer-logo--lottery-inspection, .Footer-logo--gamble {
-  @include flex-gtr-col(1,15px);
-  background-size: 180px 200px;
-  height: 35px;
-  @include breakpoint(768px) {
-    height: 55px;
-    @include flex-gtr-col(2,15px);
-  }
+.Footer-logo {
   color: transparent;
   background-repeat: no-repeat;
   background-position: center center;
+  height: 50px;
+  background-size: 50px auto;
+  display: flex;
+  background-size: contain;
+  margin-bottom: $base-margin;
+  @include breakpoint(600px) {
+    margin-bottom: 0;
+  }
+}
+.Footer-logo--age-limit,.Footer-logo--contact {
+  flex-basis: 50px;
+}
+.Footer-logo--lottery-inspection,
+.Footer-logo--gamble,
+ {
+   flex-basis: 180px;
+}
+.Footer-logo--contact {
+  background-image: url("../images/svg/footer/contact.png");
+}
+.Footer-logo--age-limit {
+  background-image: url("../images/svg/footer/stamp.png");
 }
 .Footer-logo--lottery-inspection {
   background-image: url("../images/svg/footer/lotteryinspection-logo.svg");

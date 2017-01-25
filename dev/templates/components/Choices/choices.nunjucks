@@ -128,7 +128,7 @@
             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </p>
         </div>
-        <a class="Choices-others-choose" href="choice.html">Välj</a>
+        <button class="Choices-others-choose" href="#">Välj</button>
       </div>
     </div>
   </div>

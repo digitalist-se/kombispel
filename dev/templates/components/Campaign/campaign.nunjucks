@@ -44,8 +44,8 @@
             <!-- De olika kampanjstegen.
                  Kommentera och avkommentera för att se. -->
 
-            {# {% include "components/Campaign/campaign-form-1.nunjucks" %} #}
-            {% include "components/Campaign/campaign-form-2.nunjucks" %}
+            {% include "components/Campaign/campaign-form-1.nunjucks" %}
+            {# {% include "components/Campaign/campaign-form-2.nunjucks" %} #}
             {# {% include "components/Campaign/campaign-form-3.nunjucks" %} #}
             {# {% include "components/Campaign/campaign-form-confirm.nunjucks" %} #}
           </div>
@@ -55,22 +55,21 @@
   <!-- END HERO -->
   <div class="Campaign-info">
     <div class="Campaign-info-inner">
+
       <div class="Campaign-info-content">
-        <h2 class="Campaign-info-header">Välkomstpaketet innehåller:</h2>
-        <ul class="Campaign-info-list">
-          <li><span>Kombilott</span> (Värde 200 kr)</li>
-          <li><span>Hygge Rumsdoft</span> (Värde 200 kr)</li>
-          <li><span>2 Femmanlotter</span> (Värde 200 kr)</li>
-          <li>Totalt värde 499 kr</li>
-        </ul>
-        <p>
-          25 kr i faktureringsavgift tillkommer. Du kan närsomhelst avsluta din prenumeration avsl.
-          25 kr i faktureringsavgift tillkommer. Du kan närsomhelst avsluta din prenumeration.
-        </p>
-      </div>
+  			<section class=" Page-one-col">
+          <h2 >Välkomstpaketet innehåller:</h2>
+          <ul>
+            <li ><strong>Kombilott</strong> (Värde 200 kr)</li>
+            <li ><strong>Hygge Rumsdoft</strong> (Värde 200 kr)</li>
+            <li ><strong>2 Femmanlotter</strong> (Värde 200 kr)</li>
+            <li >Totalt värde 499 kr</li>
+          </ul>
+          <p >25 kr i faktureringsavgift tillkommer.
+            Du kan närsomhelst avsluta din prenumeration avsl. 25 kr i faktureringsavgift tillkommer.
+             Du kan närsomhelst avsluta din prenumeration</p>
+  			</section>
+				</div>
     </div>
   </div>
-
-
-
 </section>

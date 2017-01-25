@@ -3,7 +3,7 @@
   <div class="Footer-inner">
     <div class="Footer-box Footer-box--first">
       <div class="Footer-box-col-container">
-        <div class="Footer-box-col Footer-box-col--image"><span>Spel för dig över 18</span></div>
+        {# <div class="Footer-box-col Footer-box-col--image"><span>Spel för dig över 18</span></div> #}
         <div class="Footer-box-col Footer-box-col--list">
           <ul class="Footer-menu">
             <li><a href="/">Spelansvar</a></li>
@@ -29,8 +29,10 @@
   </div>
   <div class="Footer-help-logos">
     <div class="Footer-help-logos-inner">
-      <span class="Footer-logo--lottery-inspection">Spel med tillstånd av lotteri-inspektionen</span>
-      <span class="Footer-logo--gamble">Spelar du för mycket? Ring stödlinjen på 020-81 91 00</span>
+      <span class="Footer-logo Footer-logo--age-limit">Spel för dig över 18</span>
+      <span class="Footer-logo Footer-logo--contact">Trygg kundkontakt</span>
+      <span class="Footer-logo Footer-logo--lottery-inspection">Spel med tillstånd av lotteri-inspektionen</span>
+      <span class="Footer-logo Footer-logo--gamble">Spelar du för mycket? Ring stödlinjen på 020-81 91 00</span>
     </div>
   </div>
 </footer>

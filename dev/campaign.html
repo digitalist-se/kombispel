@@ -16,7 +16,7 @@
     })(window,document,'script','dataLayer','GTM-MTHCKR');</script>
 <!-- End Google Tag Manager -->
 </head>
-<body>
+<body id="top">
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTHCKR"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -264,7 +264,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
   <div class="js-Site-container">
-  <header class="Header-container" id="top">
+  <header class="js-Header-container">
 
 
     <div class="Header-inner-container">
@@ -356,35 +356,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- De olika kampanjstegen.
                  Kommentera och avkommentera för att se. -->
 
-            
-            <h2 class="Heading-2">
-  <span>Hej Tommy</span>
-  <span>Fyll i din epostadress:</span>
-</h2>
-
+            <h2 class="Heading-2">Fyll i dina uppgifter</h2>
 <form class="Campaign-form" action="" method="">
-  <!-- INFOBLOCK -->
-  <div class="Campaign-form-info-block">
+  <label for="person-number" class="Campaign-label">Personnummer:</label>
+  <input type="text" name="person-number"   placeholder="YYMMDD-XXXX">
+  <label for="email" class="Campaign-label">E-postadress:</label>
+  <input type="text" name="email"  placeholder="">
+  <div class="Form-checkbox">
     <div>
-      <h5>Kundnummer</h5>
-      <p>
-        <span>AB12773247</span>
-      </p>
+      <span><input type="checkbox" name="signup-check" checked/></span>
+      <span><label for="signup-check">Ja, jag vill beställa en lott, är över 18 år och godkänner <a href="#">villkoren.</a></label></span>
     </div>
   </div>
-  <!-- INFOBLOCK -->
-  <div class="Campaign-form-info-block">
-    <div>
-      <h5>E-postadress</h5>
-      <p>
-        <span>Tommy.nilsson@opendoor.se</span>
-      </p>
-    </div>
-  </div>
-
   <button type="" class="Campaign-form-submit" name="button">Nästa steg</button>
 </form>
 
+            
             
             
           </div>
@@ -394,24 +381,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- END HERO -->
   <div class="Campaign-info">
     <div class="Campaign-info-inner">
+
       <div class="Campaign-info-content">
-        <h2 class="Campaign-info-header">Välkomstpaketet innehåller:</h2>
-        <ul class="Campaign-info-list">
-          <li><span>Kombilott</span> (Värde 200 kr)</li>
-          <li><span>Hygge Rumsdoft</span> (Värde 200 kr)</li>
-          <li><span>2 Femmanlotter</span> (Värde 200 kr)</li>
-          <li>Totalt värde 499 kr</li>
-        </ul>
-        <p>
-          25 kr i faktureringsavgift tillkommer. Du kan närsomhelst avsluta din prenumeration avsl.
-          25 kr i faktureringsavgift tillkommer. Du kan närsomhelst avsluta din prenumeration.
-        </p>
-      </div>
+  			<section class=" Page-one-col">
+          <h2 >Välkomstpaketet innehåller:</h2>
+          <ul>
+            <li ><strong>Kombilott</strong> (Värde 200 kr)</li>
+            <li ><strong>Hygge Rumsdoft</strong> (Värde 200 kr)</li>
+            <li ><strong>2 Femmanlotter</strong> (Värde 200 kr)</li>
+            <li >Totalt värde 499 kr</li>
+          </ul>
+          <p >25 kr i faktureringsavgift tillkommer.
+            Du kan närsomhelst avsluta din prenumeration avsl. 25 kr i faktureringsavgift tillkommer.
+             Du kan närsomhelst avsluta din prenumeration</p>
+  			</section>
+				</div>
     </div>
   </div>
-
-
-
 </section>
 
 
@@ -421,7 +407,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="Footer-inner">
     <div class="Footer-box Footer-box--first">
       <div class="Footer-box-col-container">
-        <div class="Footer-box-col Footer-box-col--image"><span>Spel för dig över 18</span></div>
+        
         <div class="Footer-box-col Footer-box-col--list">
           <ul class="Footer-menu">
             <li><a href="/">Spelansvar</a></li>
@@ -447,14 +433,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <div class="Footer-help-logos">
     <div class="Footer-help-logos-inner">
-      <span class="Footer-logo--lottery-inspection">Spel med tillstånd av lotteri-inspektionen</span>
-      <span class="Footer-logo--gamble">Spelar du för mycket? Ring stödlinjen på 020-81 91 00</span>
+      <span class="Footer-logo Footer-logo--age-limit">Spel för dig över 18</span>
+      <span class="Footer-logo Footer-logo--contact">Trygg kundkontakt</span>
+      <span class="Footer-logo Footer-logo--lottery-inspection">Spel med tillstånd av lotteri-inspektionen</span>
+      <span class="Footer-logo Footer-logo--gamble">Spelar du för mycket? Ring stödlinjen på 020-81 91 00</span>
     </div>
   </div>
 </footer>
 
   </div>
   <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/lodash.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

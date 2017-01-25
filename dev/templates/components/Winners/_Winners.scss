@@ -76,7 +76,7 @@ $winners-gtr-large: 30px;
     position: absolute;
   }
   .Winners-winner-logo {
-    z-index: 99;
+    z-index: 10; 
     position: absolute;
     bottom: 2*$base-margin;
     display: block;

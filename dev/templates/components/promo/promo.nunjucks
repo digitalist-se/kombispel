@@ -31,9 +31,9 @@
             <div class="Promo-box">
                 <img src="images/campaign/mobler-vinst.png" alt="Möbler"/>
                 <div class="Promo-box-caption">
-                    <div class="Promo-box-caption-text">Kombispels tusende vinnare</div>
-                    <div class="Promo-box-caption-text--big">Maj tog hem storvinsten i motorlotteriet!</div>
-                </div>
+                    <h3 class="Promo-box-caption-text">Kombispels tusende vinnare</h3>
+                    <h4 class="Promo-box-caption-text--big">Maj tog hem storvinsten i motorlotteriet!</h4>
+                </div> 
                 <div class="Promo-box-link"><a href="/">Se fler vinnare</a></div>
             </div>
         </div>

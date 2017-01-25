@@ -1,37 +1,28 @@
 /////////////////////////////////////////////
-// Debounce for header. Courtesy of David Walsh
+// HEADER SLIDE DOWN
 /////////////////////////////////////////////
-// var $headerContainer = $(".Header-container");
-// function debounce(func, wait, immediate) {
-// 	var timeout;
-// 	return function() {
-// 		var context = this, args = arguments;
-// 		var later = function() {
-// 			timeout = null;
-// 			if (!immediate) func.apply(context, args);
-// 		};
-// 		var callNow = immediate && !timeout;
-// 		clearTimeout(timeout);
-// 		timeout = setTimeout(later, wait);
-// 		if (callNow) func.apply(context, args);
-// 	};
-// };
-//
-// var $tightHeader = debounce(function() {
-//   // console.log($siteContainer.offset().top);
-//   if(document.body.scrollTop > 0) {
-//     $headerContainer.addClass("Header-container--tight")
-//   } else {
-//     $headerContainer.removeClass("Header-container--tight")
-//   }
-// }, 250);
-//
-// $(window).on('scroll', function() {
-// $tightHeader()
-//  })
-
-
-
+var previousTop = window.pageYOffset;
+var headerContainer = $(".js-Header-container");
+var headerSlideDown = function() {
+  // console.log("kallas på!");
+  // console.log(window.pageYOffset);
+  // console.log(window.pageYOffset);
+  if(window.pageYOffset > 0) { // <-- Man är inte högst upp på sidan
+    var currentOffTop = window.pageYOffset;
+    if(currentOffTop > previousTop && window.pageYOffset > 130) {
+        headerContainer.addClass("is-hidden")
+    } else {
+      headerContainer.removeClass("is-hidden")
+    }
+    previousTop = currentOffTop;
+  } else {
+    headerContainer.removeClass("is-hidden")
+  }
+}
+$(window).on('scroll',_.throttle(headerSlideDown, 100));
+/////////////////////////////////////////////
+// ALL THE OTHER STUFF
+/////////////////////////////////////////////
 $(".js-Header-correct-btn").click(function() {
   $(".js-Login-header").html("Logga in för att rätta din lott")
   $(".js-Site-container").toggleClass("locked");

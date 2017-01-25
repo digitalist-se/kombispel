@@ -16,7 +16,7 @@
     })(window,document,'script','dataLayer','GTM-MTHCKR');</script>
 <!-- End Google Tag Manager -->
 </head>
-<body>
+<body id="top">
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTHCKR"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -37,6 +37,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   {% include "components/Footer/footer.nunjucks" %}
   </div>
   <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/lodash.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

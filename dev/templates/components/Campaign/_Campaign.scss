@@ -205,23 +205,27 @@
   background-color: white;
   @extend .Inner-container;
 }
-.Campaign-info-header {
-  margin: 0;
-}
-.Campaign-info-list {
-  list-style: none;
-  padding-left: 0;
-  li {
-    padding: $base-margin/2 0;
-    span {
-      font-family: $gill-bold;
-    }
-  }
-}
+
 .Campaign-info-content {
   text-align: center;
   margin: 0 auto;
   max-width: 560px;
+
+  h2 {
+    margin: 0;
+    font-family: $gill-regular;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    li {
+      padding: $base-margin/2 0;
+      span {
+        font-family: $gill-bold;
+      }
+    }
+  }
 }
 @include breakpoint(1px, 960px) {
   .Campaign-info {
@@ -252,7 +256,7 @@
   .Campaign-form-submit {
     @include gradient-btn($orange);
   }
-  .Campaign-info-header {
+  .Campaign-info-content h2 {
     color: $blue;
   }
 }
@@ -266,7 +270,7 @@
   .Campaign-form-submit {
     @include gradient-btn($green);
   }
-  .Campaign-info-header {
+  .Campaign-info-content h2 {
     color: $blue;
   }
 }
@@ -280,7 +284,7 @@
   .Campaign-form-submit {
     @include gradient-btn($red);
   }
-  .Campaign-info-header {
+  .Campaign-info-content h2 {
     color: $red;
   }
 }

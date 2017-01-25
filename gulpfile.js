@@ -20,7 +20,6 @@ gulp.task('browserSync', function() {
         server: {
             baseDir: 'dev'
         }
-        // proxy: "localhost:8081";
     })
 });
 /////////////////////////////////////////////
