@@ -160,10 +160,17 @@
     margin-top: $base-margin;
     margin-bottom: 5px;
   }
+  .Form-checkbox {
+    margin-bottom: 2*$base-margin;
+  }
 }
-.Campaign-form-submit {
-  margin: 2*$base-margin auto !important;
+.Campaign-form-submit, .js-Campaign-form-login {
+  margin: $base-margin auto !important;
+  max-width: 460px !important;
 }
+
+
+
 // Campaign-form-info-block (Kundnummer, Adress, etc.)
 .Campaign-form-info-block {
   text-align: center;
@@ -253,7 +260,7 @@
   .Campaign-hero-right-logo {
     background-image: url("../images/svg/logos/kombi.svg");
   }
-  .Campaign-form-submit {
+  .Campaign-form-submit, .js-Campaign-form-login {
     @include gradient-btn($orange);
   }
   .Campaign-info-content h2 {
@@ -267,7 +274,7 @@
   .Campaign-hero-right-logo {
     background-image: url("../images/svg/logos/dromrese.svg");
   }
-  .Campaign-form-submit {
+  .Campaign-form-submit, .js-Campaign-form-login {
     @include gradient-btn($green);
   }
   .Campaign-info-content h2 {
@@ -281,7 +288,7 @@
   .Campaign-hero-right-logo {
     background-image: url("../images/svg/logos/motor.svg");
   }
-  .Campaign-form-submit {
+  .Campaign-form-submit, .js-Campaign-form-login {
     @include gradient-btn($red);
   }
   .Campaign-info-content h2 {

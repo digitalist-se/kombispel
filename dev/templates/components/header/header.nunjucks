@@ -33,6 +33,17 @@
           </div>
         </div>
       </div>
+
+      <!-- LÄNK OM MAN ÄR INLOGGAD -->
+      {# <a class="Header-profile Header-flex--three" href="information.html">
+        <div class="Header-inner-grid">
+          <div class="Header-profile-image"></div>
+          <div class="Header-title">
+            <h4>Min sida</h4>
+          </div>
+        </div>
+      </a> #}
+
       <!-- RÄTTA DIN LOTT -->
       <div class="Header-flex--four">
         <!-- LÄNK OM MAN ÄR INLOGGAD ANNARS KNAPP -->

@@ -120,16 +120,15 @@
   }
   .js-Login-form-submit-btn {
     display: block;
-    margin-top: 30px;
+    // margin-top: $base-margin;
     text-align: center;
     text-decoration: none;
     @include gradient-btn($red);
-    // outline: blue;
     color: white;
-    margin-bottom: 3*$base-margin;
+    margin: 1*$base-margin 0 2*$base-margin 0;
+    max-width: 100% !important;
   }
 }
-
 /////////////////////////////////////////////
 // ERROR DISPLAY
 /////////////////////////////////////////////

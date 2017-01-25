@@ -32,7 +32,7 @@ $(".js-Header-correct-btn").click(function() {
   }
 })
 //
-$(".js-Header-profile, .js-Open-login").click(function() {
+$(".js-Header-profile, .js-Open-login, .js-Campaign-form-login").click(function() {
   $(".js-Login-header").html("Logga in på Min Sida")
   $(".js-Site-container").toggleClass("locked");
   $(".js-Login-overlay-container").fadeIn("fast");

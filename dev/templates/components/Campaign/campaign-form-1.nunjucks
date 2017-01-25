@@ -11,4 +11,6 @@
     </div>
   </div>
   <button type="" class="Campaign-form-submit" name="button">Nästa steg</button>
+  <span>Är du redan befintlig kund hos oss?</span>
+  <button type="button" class="js-Campaign-form-login" name="button">Logga in</button>
 </form>
