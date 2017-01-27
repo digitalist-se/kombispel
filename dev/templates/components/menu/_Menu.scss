@@ -103,6 +103,16 @@ background-position: center center;
   margin-top: 5px;
 }
 
+
+// Användare är inloggad
+.Menu-level-one-header.user-is-authenticated {
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+
 /////////////////////////////////////////////
 // MENU PROMOS
 /////////////////////////////////////////////
@@ -139,6 +149,9 @@ background-position: center center;
   &:hover {
     background-color: $dark-red;
   }
+  &:active {
+    background-color: $darker-red;
+  }
 }
 .js-Menu-level-one-header.children-open {
   background-color: $darker-red;
@@ -173,6 +186,9 @@ background-position: center center;
     }
     &:hover {
       background-color: $dark-orange;
+    }
+    &:active {
+      background-color: darken($dark-orange,10%);
     }
   }
   li:last-of-type {

@@ -140,6 +140,9 @@
   @include breakpoint(600px) {
     margin-bottom: 0;
   }
+  span {
+    opacity: 0;
+  }
 }
 .Footer-logo--age-limit,.Footer-logo--contact {
   flex-basis: 50px;

@@ -1,0 +1,57 @@
+
+.Winnings-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 50px;
+  li {
+    &:nth-of-type(even) {
+      background-color: white;
+    }
+    @include breakpoint(1px, 599px) {
+      &:first-of-type{
+        display: none;
+      }
+    }
+    .Winnings-list-item {
+
+      padding: $base-margin/2 0;
+
+      @include breakpoint(600px) {
+        @include flex-row();
+        text-align: center;
+      }
+
+      width: 95%;
+      max-width: 760px;
+      margin: 0 auto;
+      > h4 {
+       @include flex-gtr-col(3,$base-margin);
+       margin-bottom: $base-margin;
+      }
+      div {
+        @include breakpoint(1px, 599px) {
+          padding: $base-margin/2 0;
+          h4, span {
+            display: inline-block;
+            vertical-align: top;
+          }
+          h4 {
+            margin: 0 $base-margin/2 0 0;
+            width:90px;
+          }
+          span {
+            width: calc(100% - 105px);
+            word-break: break-all;
+          }
+        }
+        @include breakpoint(600px) {
+          @include flex-gtr-col(3,$base-margin);
+          padding-bottom: $base-margin/2;
+          h4 {
+            display: none
+          }
+        }
+      }
+    }
+  }
+}

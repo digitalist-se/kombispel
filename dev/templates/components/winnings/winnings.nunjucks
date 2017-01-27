@@ -7,7 +7,7 @@
       <h3 class="Heading-3">Här hittar du alla dina vinster från de senaste 12 månaderna</h3>
     </div>
 
-    <div class="List">
+    {# <div class="List">
       <div class="List-item">
         <div class="List-item-inner">
           <img class="List-item-image" src="images/list/ps4.jpg" alt="PS4" />
@@ -24,7 +24,65 @@
           <p class="List-item-p">Speldragning vecka 2</p>
         </div>
       </div>
-    </div>
+    </div> #}
+    <ul class="Winnings-list">
+      <li>
+        <div class="Winnings-list-item">
+          <h4>Datum</h4>
+          <h4>Lotteri</h4>
+          <h4>Vinstnamn</h4>
+        </div>
+      </li>
+      <li>
+        <div class="Winnings-list-item">
+          <div>
+              <h4>Datum</h4>
+              <span>2016-02-15</span>
+          </div>
+          <div>
+              <h4>Lotteri</h4>
+              <span>Drömreselotteriet - 208161</span>
+          </div>
+          <div>
+            <h4>Vinstnamn</h4>
+            <span>Skraplottspaket 8+8 Glädje & Femman</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="Winnings-list-item">
+          <div>
+              <h4>Datum</h4>
+              <span>2016-02-15</span>
+          </div>
+          <div>
+              <h4>Lotteri</h4>
+              <span>Drömreselotteriet - 208161</span>
+          </div>
+          <div>
+            <h4>Vinstnamn</h4>
+            <span>Skraplottspaket 8+8 Glädje & Femman</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="Winnings-list-item">
+          <div>
+              <h4>Datum</h4>
+              <span>2016-02-15</span>
+          </div>
+          <div>
+              <h4>Lotteri</h4>
+              <span>Drömreselotteriet - 208161</span>
+          </div>
+          <div>
+            <h4>Vinstnamn</h4>
+            <span>Skraplottspaket 8+8 Glädje & Femman</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+
     <a class="MyPages-show-list-link" href="#">Visa tidigare dragningslistor</a>
   </div>
   <div class="Cta-block">
