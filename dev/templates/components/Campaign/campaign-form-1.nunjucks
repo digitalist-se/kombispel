@@ -7,7 +7,7 @@
   <div class="Form-checkbox">
     <div>
       <span><input type="checkbox" name="signup-check" checked/></span>
-      <span><label for="signup-check">Ja, jag vill beställa en lott, är över 18 år och godkänner <a href="#">villkoren.</a></label></span>
+      <span><label for="signup-check">Ja, jag vill beställa en lott, är över 18 år och godkänner <span class="js-Campaign-open-terms">villkoren.</span></label></span>
     </div>
   </div>
   <button type="" class="Campaign-form-submit" name="button">Nästa steg</button>

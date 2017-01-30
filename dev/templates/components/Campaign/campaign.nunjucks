@@ -1,22 +1,7 @@
 <!-- POPUP SOM VISAR INFO OM PRODUKTEN -->
-<section class="js-Campaign-overlay-container">
-  <div class="js-Campaign-clickarea"></div>
-  <div class="Campaign-info-container">
-    <div class="js-Campaign-close-form"></div>
-    <h2 class="">Information om produkten</h2>
-    <p>
-      Shoreditch selvage salvia humblebrag gentrify.
-       Cray chambray pork belly viral.
-       Paleo mustache occupy enamel pin pabst thundercats
-       YOLO, skateboard live-edge. Chambray pug DIY, thundercats
-       schlitz salvia chillwave. Keytar freegan salvia raclette, kogi tousled
-       literally banjo offal pug. Ethical asymmetrical freegan crucifix deep v pop-up poutine,
-       YOLO, skateboard live-edge. Chambray pug DIY, thundercats
-       schlitz salvia chillwave. Keytar freegan salvia raclette, kogi tousled
-       literally banjo offal pug. Ethical asymmetrical freegan crucifix deep v pop-up poutine,
-    </p>
-  </div>
-</section>
+{% include "components/Campaign/campaign-productinfo.nunjucks" %}
+<!-- POPUP SOM VISAR KAMPANJENS VILLKOR -->
+{% include "components/Campaign/campaign-terms.nunjucks" %}
 <!-- KAMPANJSIDA -->
 <section class="Campaign Campaign--motor">
   <div class="Campaign-hero Campaign-hero-image" style="background-image: url('images/heroes/road.png')">

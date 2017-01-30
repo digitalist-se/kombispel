@@ -1,5 +1,5 @@
 /////////////////////////////////////////////
-// CHANGE PASSWORD MODAL
+// Information om produkten popup
 /////////////////////////////////////////////
 .js-Campaign-overlay-container {
   @extend .Modal-overlay-container;
@@ -14,11 +14,37 @@
     @extend .Modal-header;
   }
   p {
-    padding: $base-margin 2*$base-margin;
+    // padding: $base-margin 2*$base-margin;
   }
 }
 .js-Campaign-close-form {
   @extend .Modal-close-form;
+}
+/////////////////////////////////////////////
+// Villkor popup
+/////////////////////////////////////////////
+.Form-checkbox {
+  .js-Campaign-open-terms  {
+    display: inline;
+    color: $red;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.js-Campaign-terms-container {
+  @extend .Modal-overlay-container;
+}
+.Campaign-terms-container {
+  @extend .Modal-form-container;
+  h2 {
+    text-align: center;
+    @extend .Modal-header;
+  }
+  ul {
+    // @include ;
+  }
 }
 /////////////////////////////////////////////
 // Campaign Page
