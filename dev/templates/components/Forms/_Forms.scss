@@ -154,3 +154,6 @@ input[type="checkbox"] {
     text-align: left;
   }
 }
+.radiobuttonlist label, .checkboxlist label {
+    display: inline;
+}
