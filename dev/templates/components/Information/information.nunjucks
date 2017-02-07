@@ -195,18 +195,18 @@
                   Vestibulum accumsan sodales accumsan. Sed et interdum magna. Aenean vitae ipsum nibh. Sed egestas felis.
                 </p>
                 <label >Vinstnivå 500 kr</label>
-                <select class="Information-select" name="">
-                    <option value="">Vinstnivå 1</option>
-                    <option value="">Vinstnivå 2</option>
-                    <option value="">Vinstnivå 3</option>
-                    <option value="">Vinstnivå 4</option>
+                <select class="Information-select js-Information-input" name="">
+                    <option value="1">Vinstnivå 1</option>
+                    <option value="2">Vinstnivå 2</option>
+                    <option value="3">Vinstnivå 3</option>
+                    <option value="4" selected>Vinstnivå 4</option>
                 </select>
                 <label >Vinstnivå 200 kr</label>
-                <select class="Information-select" name="">
-                    <option value="">Vinstnivå 1</option>
-                    <option value="">Vinstnivå 2</option>
-                    <option value="">Vinstnivå 3</option>
-                    <option value="">Vinstnivå 4</option>
+                <select class="Information-select js-Information-input" name="">
+                    <option value="1">Vinstnivå 1</option>
+                    <option value="2" selected>Vinstnivå 2</option>
+                    <option value="3">Vinstnivå 3</option>
+                    <option value="4">Vinstnivå 4</option>
                 </select>
               </div>
               </div>
@@ -243,33 +243,44 @@
             <div class="MyPages-block-row">
               <span>2015-12-25</span>
               <span>200 SEK</span>
-              {# <span><a href="#">Ladda hem PDF</a> #}
               </span>
             </div>
             <div class="MyPages-block-row">
               <span>2015-12-25</span>
               <span>200 SEK</span>
-              {# <span><a href="#">Ladda hem PDF</a></span> #}
             </div>
           </div>
         </div>
-        <!-- NYTT BLOCK -->
+        <!-- NYTT  TABELL BLOCK -->
         <div class="MyPages-header">
-          <h1 class="Heading-1">Mina lotter</h1>
+          <h1 class="Heading-1">Mina Prenumerationer</h1>
         </div>
         <div class="MyPages-block MyPages-block--subscription">
-          <div class="MyPages-block-section">
-            <label>Lottonummer</label>
-            <div class="MyPages-block-row">
-              <span>125448</span>
-              <span>2016-01-25</span>
 
+          <div class="MyPages-block-section">
+             <label>Lottonummer</label>
+                 <table class="MyPages-table MyPages-table--3-col">
+                     <thead>
+                       <tr>
+                           <th>Startmånad</th>
+                           <th>Lottnummer</th>
+                           <th>Spel</th>
+                       </tr>
+                     </thead>
+                     <tbody>
+                       <tr>
+                           <td>2016-05</td>
+                           <td>024200</td>
+                           <td>Kombilotteriet</td>
+                       </tr>
+                       <tr>
+                           <td>2016-12</td>
+                           <td>024200</td>
+                           <td>Skraplottspaket3</td>
+                       </tr>
+                     </tbody>
+                 </table>
             </div>
-            <div class="MyPages-block-row">
-              <span>124838</span>
-              <span>2016-01-25</span>
-            </div>
-          </div>
         </div>
       </section>
     </div>

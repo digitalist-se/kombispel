@@ -33,7 +33,10 @@ $lotteryRowWidth:  480px;
 $small-spinner: 30px;
 .js-Lottery-status {
   position: absolute;
+  bottom: 20px;
+  @include breakpoint(768px) {
   bottom: 25px;
+  }
   color: white;
   left: 0;
   right: 0;
@@ -165,6 +168,7 @@ $mynumber-size: 80px;
   max-width: $lotteryRowWidth;
   margin: $base-margin auto 0 auto;
   position: relative;
+  width: calc(100% - #{$base-margin});
   &:after {
     content: "";
     display: block;

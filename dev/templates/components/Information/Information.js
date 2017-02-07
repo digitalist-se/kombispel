@@ -14,7 +14,6 @@ var $informationInput = $(".js-Information-input");
 var $initInfo = [];
 var $infoRegretBtn = $(".js-Information-regret-btn");
 var $infoSaveContainer = $(".js-Information-save-container");
-
 $informationInput.each(function() {
   $initInfo.push($(this).val())
 })

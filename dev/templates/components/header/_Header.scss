@@ -291,8 +291,6 @@ width: 22px;
   @include breakpoint(1px, 1023px) {
         @include rounded-btn($orange,white,300px);
         margin: 0 auto;
-        // font-size: 16px;
-        // text-align: center;
     }
     display: inline-block;
     @include breakpoint(1024px) {
@@ -303,6 +301,12 @@ width: 22px;
       text-decoration: none;
     }
   }
+
+.Header-correct-btn {
+  @include breakpoint(1024px) {
+    padding: 16px 50px;
+  }
+}
 .Header-flex--four {
   padding-top: 0;
   text-align: center;

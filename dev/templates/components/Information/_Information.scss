@@ -10,7 +10,12 @@
 .Information-form-block {
   margin-bottom: 2*$base-margin;
   background-color: #fff;
-  padding: 2*$base-margin;
+  padding: $base-margin;
+  @include breakpoint(768px) {
+    padding: 2*$base-margin;
+  }
+
+
   background-color: white;
   h3 {
     text-align: left;
