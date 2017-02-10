@@ -3,7 +3,6 @@
   <div class="Footer-inner">
     <div class="Footer-box Footer-box--first">
       <div class="Footer-box-col-container">
-        {# <div class="Footer-box-col Footer-box-col--image"><span>Spel för dig över 18</span></div> #}
         <div class="Footer-box-col Footer-box-col--list">
           <ul class="Footer-menu">
             <li><a href="/">Spelansvar</a></li>
@@ -22,8 +21,8 @@
     <div class="Footer-box Footer-box--third">
       <div class="Footer-title">Följ oss:</div>
       <div class="Footer-follow">
-        <a href="#" class="Footer-follow-item Footer-follow-item--facebook"><span>Facebook</span></a>
-        <a href="#" class="Footer-follow-item Footer-follow-item--youtube"><span>Youtube</span></a>
+        <a href="#" target="_blank" class="Footer-follow-item Footer-follow-item--facebook"><span>Facebook</span></a>
+        <a href="#" target="_blank" class="Footer-follow-item Footer-follow-item--youtube"><span>Youtube</span></a>
       </div>
     </div>
   </div>
