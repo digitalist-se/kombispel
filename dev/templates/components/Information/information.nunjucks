@@ -258,7 +258,7 @@
         <div class="MyPages-block MyPages-block--subscription">
 
           <div class="MyPages-block-section">
-             <label>Lottonummer</label>
+             <label>Lottnummer</label>
                  <table class="MyPages-table MyPages-table--3-col">
                      <thead>
                        <tr>
