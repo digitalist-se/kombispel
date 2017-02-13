@@ -8,23 +8,38 @@ $(".js-Information-toggle-mobile").click(function() {
   $(".js-Information-help-box--mobile").slideToggle()
 })
 /////////////////////////////////////////////
-// On input
+// On input & select
 /////////////////////////////////////////////
 var $informationInput = $(".js-Information-input");
-var $initInfo = [];
+var $informationSelect = $(".js-Information-select");
+var $initInfo = []
+var $initSelect = []
 var $infoRegretBtn = $(".js-Information-regret-btn");
 var $infoSaveContainer = $(".js-Information-save-container");
 $informationInput.each(function() {
   $initInfo.push($(this).val())
 })
-$informationInput.on('input', function() {
-if($infoSaveContainer.hasClass("js-Information-save-container--visible") == false) {
-  $infoSaveContainer.addClass("js-Information-save-container--visible")
+$informationSelect.each(function() {
+  $initSelect.push($(this).val())
+})
+
+function toggleSaveContainer() {
+  if($infoSaveContainer.hasClass("js-Information-save-container--visible") == false) {
+    $infoSaveContainer.addClass("js-Information-save-container--visible")
+  }
 }
+$informationInput.on('input', function() {
+  toggleSaveContainer();
+})
+$informationSelect.on('change', function() {
+  toggleSaveContainer();
 })
 $infoRegretBtn.click(function() {
   $informationInput.each(function(i) {
     $informationInput[i].value = $initInfo[i]
+  })
+  $informationSelect.each(function(i) {
+    $informationSelect[i].value = $initSelect[i]
   })
   $infoSaveContainer.removeClass("js-Information-save-container--visible")
 })
