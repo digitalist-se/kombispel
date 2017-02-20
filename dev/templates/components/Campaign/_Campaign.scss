@@ -60,6 +60,13 @@
 }
 .Campaign-hero-left {
   flex-basis: 60%;
+  h1 {
+    line-height: normal;
+    font-size: 42px;
+    color: white;
+    margin-bottom: $base-margin;
+    padding: $base-margin $base-margin 0 $base-margin;
+  }
 }
 .Campaign-hero-list {
   list-style: none;

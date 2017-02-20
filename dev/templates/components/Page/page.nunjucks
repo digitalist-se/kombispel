@@ -12,7 +12,10 @@
           <section class="Page-two-col"> <!-- KOLUMN 1 av 2. Kolumner wrappas i section taggar för semantik och läslighet -->
           <h2>Här är en H2 rubrik innanför första kolumnen</h2>
           <p>
-            Mauris vitae ex non massa venenatis semper eu at odio. Vivamus eu sem ipsum. Vivamus eget tellus placerat, efficitur sapien sit amet, bibendum tortor. Phasellus ut arcu convallis, fermentum lorem et, aliquet nisl. Maecenas eu condimentum diam. Aliquam varius odio a condimentum lobortis.
+            Mauris vitae ex non massa venenatis semper eu at odio.
+            Vivamus eu sem ipsum. Vivamus eget tellus placerat, efficitur sapien sit amet,
+             bibendum tortor. Phasellus ut arcu convallis, fermentum lorem et, aliquet nisl.
+            <strong>Maecenas eu condimentum diam</strong>. Aliquam varius odio a condimentum lobortis.
           </p>
           <div class="Page-image">
             <img class="Page-image-image" src="./images/content/beach.jpg" alt="Strand" />

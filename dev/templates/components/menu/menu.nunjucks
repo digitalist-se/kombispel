@@ -2,15 +2,23 @@
     <menu class="Menu-inner-container">
       <nav>
         <ul class="Menu-level-one">
-            <!-- LOGIN -->
+
+          <!-- LOGIN -->
           <li class="Menu-item-no-children">
-            {# <div class="Menu-level-one-header js-Open-login"> #}
-            <div class="Menu-level-one-header user-is-authenticated">
+            <div class="Menu-level-one-header js-Open-login">
               <span class="Menu-icon--lock"></span>
-              {# <span class="Menu-item-header">Logga in på din sida</span> #}
-              <a class="Menu-item-header">Logga ut</a>
+              <span class="Menu-item-header">Logga in på din sida</span>
             </div>
           </li>
+
+          <!-- LOGOUT -->
+          <li class="Menu-item-no-children">
+            <a class="Menu-level-one-header user-is-authenticated">
+              <span class="Menu-icon--lock"></span>
+              <span class="Menu-item-header">Logga ut</span>
+            </a>
+          </li>
+
             <!-- PROMOS -->
           <li class="Menu-item-no-children">
             <div class="Menu-level-one-header">

@@ -10,6 +10,7 @@
       <div class="Campaign-hero-inner">
         <!-- LEFT list + image -->
         <div class="Campaign-hero-left">
+          <h1>Ta chansen och bli miljonär du med!</h1>
           {# <ul class="Campaign-hero-list Campaign-hero-list--ball"> #}
           {# <ul class="Campaign-hero-list Campaign-hero-list--check"> #}
           <ul class="Campaign-hero-list Campaign-hero-list--star">

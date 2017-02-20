@@ -58,6 +58,10 @@ blockquote {
     }
   }
 }
+strong {
+  font-size: inherit;
+  font-family: $gill-bold;
+}
 img {
   max-width: 100%;
   height: auto;

@@ -69,15 +69,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <menu class="Menu-inner-container">
       <nav>
         <ul class="Menu-level-one">
-            <!-- LOGIN -->
+
+          <!-- LOGIN -->
           <li class="Menu-item-no-children">
-            
-            <div class="Menu-level-one-header user-is-authenticated">
+            <div class="Menu-level-one-header js-Open-login">
               <span class="Menu-icon--lock"></span>
-              
-              <a class="Menu-item-header">Logga ut</a>
+              <span class="Menu-item-header">Logga in på din sida</span>
             </div>
           </li>
+
+          <!-- LOGOUT -->
+          <li class="Menu-item-no-children">
+            <a class="Menu-level-one-header user-is-authenticated">
+              <span class="Menu-icon--lock"></span>
+              <span class="Menu-item-header">Logga ut</span>
+            </a>
+          </li>
+
             <!-- PROMOS -->
           <li class="Menu-item-no-children">
             <div class="Menu-level-one-header">
@@ -330,7 +338,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <section class="Page-two-col"> <!-- KOLUMN 1 av 2. Kolumner wrappas i section taggar för semantik och läslighet -->
           <h2>Här är en H2 rubrik innanför första kolumnen</h2>
           <p>
-            Mauris vitae ex non massa venenatis semper eu at odio. Vivamus eu sem ipsum. Vivamus eget tellus placerat, efficitur sapien sit amet, bibendum tortor. Phasellus ut arcu convallis, fermentum lorem et, aliquet nisl. Maecenas eu condimentum diam. Aliquam varius odio a condimentum lobortis.
+            Mauris vitae ex non massa venenatis semper eu at odio.
+            Vivamus eu sem ipsum. Vivamus eget tellus placerat, efficitur sapien sit amet,
+             bibendum tortor. Phasellus ut arcu convallis, fermentum lorem et, aliquet nisl.
+            <strong>Maecenas eu condimentum diam</strong>. Aliquam varius odio a condimentum lobortis.
           </p>
           <div class="Page-image">
             <img class="Page-image-image" src="./images/content/beach.jpg" alt="Strand" />
