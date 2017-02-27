@@ -72,7 +72,7 @@
           <div class="js-Login-password-sent-box">
             <h4>Toppen!</h4>
             <p>Vi har nu skickat ett mail till:</p>
-            <p class="js-Login-reset-email"></p> 
+            <p class="js-Login-reset-email"></p>
             <p>Om du inte har fått något mail inom ett par minuter kan det bero på att den e-postadress du angivet inte är kopplad till något konto.</p>
             <p>Kontakta isåfall Kundtjänst</p>
             <ul class="Help-box-list">
@@ -96,6 +96,16 @@
         </div>
       </div>
       <button class="js-Login-form-submit-btn" type="submit">Logga in</button>
+
+      <!-- LOGIN LOADER -->
+      {# <div class="js-Login-loader">
+        <div>Inloggning pågår</div>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div> #}
+      <!-- END LOGIN LOADER -->
+
     </form>
   </div>
 </section>

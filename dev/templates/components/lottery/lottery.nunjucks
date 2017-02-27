@@ -1,5 +1,5 @@
 {% include "components/submenu/submenu.nunjucks" %}
-<section class="Lottery-container Lottery-container--dream" id="lottery">
+<section class="Lottery-container Lottery-container--dream" id="anchor">
   <div class="js-Lottery-starburst-bg"></div>
   <div class="js-Lottery-starburst-bg"></div>
     <div class="Lottery-inner-container">
@@ -63,7 +63,7 @@
 
     </div>
     <div class="Start-lottery-btn-container">
-      <a href="#lottery"><button class="js-Start-lottery-btn">Starta dragning</button></a>
+      <a href="#anchor"><button class="js-Start-lottery-btn">Starta dragning</button></a>
     </div>
     <!-- HÄMTA VINSTER LÄNKAR
     Kommer vara där hela tiden men visas först när dragningen är klar.

@@ -128,15 +128,10 @@ img {
    &.Cta-btn--blue {
      @include gradient-btn($blue);
    }
-  //  span {
-  //    display: block;
-  //    text-align: center;
-  //    &:first-of-type {
-  //      margin-bottom: 5px;
-  //      font-size: 15px;
-  //      font-family: $gill-light;
-  //    }
-  //  }
+   &.Cta-btn--purple {
+     @include gradient-btn($purple); 
+   }
+
  }
 /////////////////////////////////////////////
 // Rubriker och text mobilläge

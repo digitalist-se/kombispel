@@ -41,9 +41,9 @@ function startLottery () {
   rotateBG.className = "js-Lottery-starburst-bg"
 
   // Clear numbers after first iteration
-    for (var i = 0; i < lotteryNumbers.length; i++) {
-      lotteryNumbers[i].innerHTML = "";
-    }
+  for (var i = 0; i < lotteryNumbers.length; i++) {
+    lotteryNumbers[i].innerHTML = "";
+  }
   // Add new numbers
   for (var i = 0; i < lotteryNumbers.length; i++) {
     for (var l = 0; l < 2; l++) {
@@ -147,7 +147,7 @@ function correct () {
         diff = 10 - (drawArray[y] - drawArray[y+1]);
       }
       startInterval ? stop = spinnInterval + (( diff * spinnTime )/10) : stop =  (( diff * spinnTime )/10);
-      lotteryNumbers[y].className = "js-Lottery-number";
+      lotteryNumbers[y].className="js-Lottery-number js-Lottery-number--not-spinning";
       /////////////////////////////////////////////
       // COLOR OF EACH NUMBER
       /////////////////////////////////////////////
@@ -157,7 +157,8 @@ function correct () {
         } else {
           colorNumber(y)
         }
-      } else {
+      }
+      else {
         colorNumber(y)
       }
       setTimeout( function()
@@ -172,6 +173,7 @@ function correct () {
     }
 }
 function colorNumber(i) {
+
   if(drawArray[i] === myNumbers[i]) {
     lotteryNumbers[i].innerHTML = "<div class='Lottery-correct'>"+drawArray[i]+"</div>";
   } else {

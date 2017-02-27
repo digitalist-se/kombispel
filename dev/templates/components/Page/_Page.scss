@@ -25,11 +25,11 @@ padding-bottom: 2*$base-margin;
 .Page-two-col {
   @include flex-col(1, 1, 2*$base-margin);
   @include breakpoint(1024px) {
-    &:nth-of-type(odd) {
+    &.Page-two-col--left {
     @include flex-col(2, 3, 2*$base-margin);
     margin-right: 4*$base-margin;
     }
-    &:nth-of-type(even) {
+    &.Page-two-col--right {
     @include flex-col(1, 3, 2*$base-margin);
     }
   }
@@ -149,4 +149,12 @@ blockquote {
 .Page-buy-ticket {
   @include gradient-btn($red);
   margin: 2*$base-margin auto;
+}
+/////////////////////////////////////////////
+// Page Möt en vinnare
+/////////////////////////////////////////////
+.Page {
+  .Winners-winner {
+
+  }
 }

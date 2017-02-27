@@ -1,6 +1,6 @@
 {% import 'macros/header-navigation.nunjucks' as nav %}
 
-<nav class="Submenu">
+<nav class="Submenu" id="SubmenuAnchor">
   <div class="Submenu-container">
     {# <a class="Submenu-link is-active" href="tickets.html">Mina lotter</a>
     <a class="Submenu-link" href="information.html">Mina uppgifter</a>

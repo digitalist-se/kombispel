@@ -39,23 +39,25 @@ $winners-gtr-large: 30px;
     background-color: transparent;
     font-size: 18px;
   }
-
 }
 
-.Winners-winner {
-  @include flex-gtr-col(1,$winners-gtr-small);
-  @include breakpoint(1px,899px) {
-    margin-left: 0;
-    margin-right: 0;
+.Page-winners { //  <-- Scopa eftersom den här komponenten även används på en vanlig innehållssida
+  .Winners-winner {
+    @include flex-gtr-col(1,$winners-gtr-small);
+    @include breakpoint(1px,899px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    @include breakpoint(900px, 1199px) {
+      @include flex-gtr-col(2,$winners-gtr-medium);
+    }
+    @include breakpoint(1200px) {
+      @include flex-gtr-col(3,$winners-gtr-large);
+    }
   }
-  @include breakpoint(900px, 1199px) {
-    @include flex-gtr-col(2,$winners-gtr-medium);
-  }
-  @include breakpoint(1200px) {
-    @include flex-gtr-col(3,$winners-gtr-large);
-  }
-
 }
+
+
 .Winners-winner-inner {
   @include flex-row();
 }
@@ -76,7 +78,7 @@ $winners-gtr-large: 30px;
     position: absolute;
   }
   .Winners-winner-logo {
-    z-index: 10; 
+    z-index: 10;
     position: absolute;
     bottom: 2*$base-margin;
     display: block;

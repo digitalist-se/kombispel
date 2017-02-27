@@ -215,10 +215,13 @@ $mynumber-size: 80px;
   }
 }
 .js-Lottery-number--spinning {
-  animation: spinning 1.7s linear  infinite;
+  animation: spinning 1.7s linear infinite;
   div {
     color: darken($grey,30%) !important;
   }
+}
+.js-Lottery-number--not-spinning {
+  animation: none;
 }
 .js-Lottery-number {
   background-color: $lighter-grey;

@@ -45,6 +45,10 @@
     background: linear-gradient(darken($color,5%) 45%, darken($color2,5%) 54%);
     text-decoration: none;
   }
+  &:active {
+    background: linear-gradient(darken($color,10%) 45%, darken($color2,10%) 54%);
+    text-decoration: none;
+  }
   &:after {
     background: url("../images/svg/shadow-border.svg") no-repeat;
     background-size: contain;

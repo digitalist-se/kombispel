@@ -106,10 +106,10 @@
   }
 }
 .js-Campaign-hero-products-img {
-  max-height: 300px;
-  width: auto;
+  width: 100%;
   padding: $base-margin;
   cursor: pointer;
+
 }
 /////////////////////////////////////////////
 // RESPONSIVITET HERO
@@ -287,6 +287,20 @@
 /////////////////////////////////////////////
 // VARIANTER
 /////////////////////////////////////////////
+.Campaign--skrap {
+  .Campaign-hero-no-image {
+    @include gradient-bg($orange);
+  }
+  .Campaign-hero-right-logo {
+    background-image: url("../images/svg/logos/skrap.svg");
+  }
+  .Campaign-form-submit, .js-Campaign-form-login {
+    @include gradient-btn($orange);
+  }
+  .Campaign-info-content h2 {
+    color: $blue;
+  }
+}
 .Campaign--kombi {
   .Campaign-hero-no-image {
     @include gradient-bg($orange);
