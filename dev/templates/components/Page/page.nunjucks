@@ -1,9 +1,3 @@
-<!--
-###############################################################
-####  SIDA MED TVÅ KOLUMNER!
-####  Varje kolumn ska wrappas innanför en article tag
-##############################################################
--->
 <article class="Page">
     <div class="Page-inner">
       <!-- Fast innehåll, bara rubrik är obligatoriskt -->
