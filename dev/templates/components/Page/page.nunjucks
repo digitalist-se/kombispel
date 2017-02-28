@@ -19,38 +19,39 @@
              </p>
           </section>
           <section class="Page-two-col"> <!-- KOLUMN 1 av 2. Kolumner wrappas i section taggar för semantik och läslighet -->
-          <h2>Här är en H2 rubrik innanför första kolumnen</h2>
-          <p>
-            Mauris vitae ex non massa venenatis semper eu at odio.
-            Vivamus eu sem ipsum. Vivamus eget tellus placerat, efficitur sapien sit amet,
-             bibendum tortor. Phasellus ut arcu convallis, fermentum lorem et, aliquet nisl.
-            <strong>Maecenas eu condimentum diam</strong>. Aliquam varius odio a condimentum lobortis.
-          </p>
-          <div class="Page-image">
-            <img class="Page-image-image" src="./images/content/beach.jpg" alt="Strand" />
-            <span class="Page-image-caption">Foto: Jacob Henriksson</span>
-          </div>
-          <div class="Page-lead">Ända sedan starten 1956 har vår målsättning varit densamma – spännande underhållning för alla. Nu har vi samlat alla våra varumärken på ett ställe och fortsätter vår vision att roa och ge spänning.</div>
-          <h2>En underrubrik</h2>
-          <p>
-            Mauris vitae ex non massa venenatis semper eu at odio. Vivamus eu sem ipsum. Vivamus eget tellus placerat, efficitur sapien sit amet, bibendum tortor. Phasellus ut arcu convallis, fermentum lorem et, aliquet nisl. Maecenas eu condimentum diam. Aliquam varius odio a condimentum lobortis.
-          </p>
-          <blockquote>
-            <span>
-              Jag vinner varje vecka. Har slutat jobba. Livnär mig helt på att köpa Kombilotter.
-            </span>
-          </blockquote>
-          <p>
-            Maecenas eu condimentum diam. Aliquam varius odio a condimentum lobortis. In dictum feugiat nisi. Duis id sem a neque viverra pulvinar a finibus justo. Pellentesque in orci vitae ligula dapibus fermentum. Nunc sed consectetur orci, vel maximus dolor.
-          </p>
-          <a class="Page-buy-ticket" href="#">Köp en lott!</a>
-          <h2>Se på en video!</h2>
-          <!-- VIDEO -->
-          <div class="Page-video">
-            <div class="Page-video-inner">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/L79kwZSLjwA" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
+            <div class="Page-two-col-col">
+                <h2>Här är en H2 rubrik innanför första kolumnen</h2>
+                <p>
+                  Mauris vitae ex non massa venenatis semper eu at odio.
+                  Vivamus eu sem ipsum. Vivamus eget tellus placerat, efficitur sapien sit amet,
+                   bibendum tortor. Phasellus ut arcu convallis, fermentum lorem et, aliquet nisl.
+                  <strong>Maecenas eu condimentum diam</strong>. Aliquam varius odio a condimentum lobortis.
+                </p>
+                <div class="Page-image">
+                  <img class="Page-image-image" src="./images/content/beach.jpg" alt="Strand" />
+                  <span class="Page-image-caption">Foto: Jacob Henriksson</span>
+                </div>
+                <div class="Page-lead">Ända sedan starten 1956 har vår målsättning varit densamma – spännande underhållning för alla. Nu har vi samlat alla våra varumärken på ett ställe och fortsätter vår vision att roa och ge spänning.</div>
+                <h2>En underrubrik</h2>
+                <p>
+                  Mauris vitae ex non massa venenatis semper eu at odio. Vivamus eu sem ipsum. Vivamus eget tellus placerat, efficitur sapien sit amet, bibendum tortor. Phasellus ut arcu convallis, fermentum lorem et, aliquet nisl. Maecenas eu condimentum diam. Aliquam varius odio a condimentum lobortis.
+                </p>
+                <blockquote>
+                  <span>
+                    Jag vinner varje vecka. Har slutat jobba. Livnär mig helt på att köpa Kombilotter.
+                  </span>
+                </blockquote>
+                <p>
+                  Maecenas eu condimentum diam. Aliquam varius odio a condimentum lobortis. In dictum feugiat nisi. Duis id sem a neque viverra pulvinar a finibus justo. Pellentesque in orci vitae ligula dapibus fermentum. Nunc sed consectetur orci, vel maximus dolor.
+                </p>
+                <a class="Page-buy-ticket" href="#">Köp en lott!</a>
+                <h2>Se på en video!</h2>
+                <!-- VIDEO -->
+                <div class="Page-video">
+                  <div class="Page-video-inner">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/L79kwZSLjwA" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
 
           <h2>Glöm aldrig dessa tre punkter.</h2>
 
@@ -63,9 +64,8 @@
           <p>
             Mauris vitae ex non massa venenatis semper eu at odio. Vivamus eu sem ipsum. Vivamus eget tellus placerat, efficitur sapien sit amet, bibendum tortor. Phasellus ut arcu convallis, fermentum lorem et, aliquet nisl. Maecenas eu condimentum diam. Aliquam varius odio a condimentum lobortis.
           </p>
-        </section> <!-- END KOLUMN 1 av 2.  -->
-        <section class="Page-two-col"> <!-- START KOLUMN 2 av 2.  -->
-
+        </div>                     <!-- END KOLUMN 1 av 2.  -->
+        <div class="Page-two-col-col"> <!-- START KOLUMN 2 av 2.  -->
           <form class="Standard-form">
             <h3>Kontakta oss</h3>
             <label for="name">Ditt namn</label>
@@ -103,9 +103,7 @@
               </div>
             </div>
           </div>
-
-
-        </section> <!-- END KOLUMN 2 av 2.  -->
+        </div> <!-- END KOLUMN 2 av 2.  -->
         <!--
         ###############################################################
         ####  End Page-two-col
@@ -155,93 +153,29 @@
           <div class="Page-lead">Ända sedan starten 1956 har vår målsättning varit densamma – spännande underhållning för alla. Nu har vi samlat alla våra varumärken på ett ställe och fortsätter vår vision att roa och ge spänning.</div>
 
         </section> <!-- END KOLUMN 1 av 1 -->
-        <section class=" Page-two-col">
-        <h2 class="Heading-2">Rubrik H2</h2>
-        <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-           ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.</span></p>
-        <ul>
-        <li><span>punktlista med text</span></li>
-        <li><span>punktlista med text</span></li>
-        <li><span>punktlista med text</span></li>
-        </ul>
-			</section>
-
-      <section class="Page-two-col">
-        <h2 class="Heading-2">Rubrik H2</h2>
-          <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
-			</section>
-      <section class="Page-two-col">
-        <h2 class="Heading-2">Rubrik H2</h2>
-          <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-             sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
-             <img class="Page-image" src="./images/content/beach.jpg" alt="Strand" />
-
-			</section>
-      <section class="Page-two-col">
-        <blockquote><span>Här gör jag ett citat<br>
-          – vem sa det</span>
-        </blockquote>
-			</section>
-      <section class="Page-two-col">
-        <h2 class="Heading-2">Rubrik H2</h2>
-        <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-           irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</span></p>
-            <div class="Winners-winner Winners-winner--motor">
-              <div class="Winners-winner-inner">
-                <div class="Winners-winner-image" style="background-image: url('images/winners/vinnare1.png')">
-                  <span class="Winners-winner-logo"></span>
-                </div>
-                <div class="Winners-winner-content">
-                  <div class="Winners-winner-content-inner">
-                      <p>Nu kan jag äntligen köpa en båt!</p>
-                      <a href="#">Läs mer</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-      </section>
-      <section class=" Page-two-col">
-        <blockquote><span>Här gör jag ett citat<br>
-          – vem sa det</span>
-        </blockquote>
-        <div class="Winners-winner Winners-winner--dream">
-          <div class="Winners-winner-inner">
-            <div class="Winners-winner-image" style="background-image: url('images/winners/vinnare3.png')">
-              <span class="Winners-winner-logo"></span>
-            </div>
-            <div class="Winners-winner-content">
-              <div class="Winners-winner-content-inner">
-                  <p>Nu kan jag äntligen köpa en båt!</p>
-                  <a href="#">Läs mer</a>
-              </div>
-            </div>
+        <section class="Page-two-col">
+          <div class="Page-two-col-col">
+            <h2 class="Heading-2">Rubrik H2</h2>
+            <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+               ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum.</span></p>
+            <ul>
+            <li><span>punktlista med text</span></li>
+            <li><span>punktlista med text</span></li>
+            <li><span>punktlista med text</span></li>
+            </ul>
           </div>
+        <div class="Page-two-col-col">
+          <h2 class="Heading-2">Rubrik H2</h2>
+            <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
         </div>
-
       </section>
-      <section class=" Page-one-col">
-        <h2 class="Heading-2">Rubrik H2</h2>
-        <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-           irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</span></p>
-			</section>
     </div> <!-- END Page-content -->
   </div> <!-- END Page-inner -->
 </article> <!-- END Page -->

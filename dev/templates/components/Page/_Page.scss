@@ -23,16 +23,19 @@ padding-bottom: 2*$base-margin;
 // Page grid
 /////////////////////////////////////////////
 .Page-two-col {
+  @include flex-row();
+  }
+.Page-two-col-col {
   @include flex-col(1, 1, 2*$base-margin);
   @include breakpoint(1024px) {
-    &.Page-two-col--left {
+    &:nth-of-type(odd) {
     @include flex-col(2, 3, 2*$base-margin);
     margin-right: 4*$base-margin;
     }
-    &.Page-two-col--right {
+    &:nth-of-type(even) {
     @include flex-col(1, 3, 2*$base-margin);
     }
-  }
+}
 }
 .Page-one-col {
   width: 100%;
