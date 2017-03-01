@@ -24,6 +24,7 @@ padding-bottom: 2*$base-margin;
 /////////////////////////////////////////////
 .Page-two-col {
   @include flex-row();
+  width: 100%;
   }
 .Page-two-col-col {
   @include flex-col(1, 1, 2*$base-margin);
@@ -45,7 +46,12 @@ padding-bottom: 2*$base-margin;
     margin-left: auto;
     margin-right: auto;
   }
+  .Page-one-col-col {
+    width: 100%;
+  }
 }
+
+
 /////////////////////////////////////////////
 // Text and Stuff
 /////////////////////////////////////////////

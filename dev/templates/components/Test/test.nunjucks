@@ -1,0 +1,208 @@
+<section class="Page">
+	<div class="Page-inner">
+		<h1 class="Heading-1">Vi hjälper dig!</h1>
+
+		<div class="Page-content">
+
+			<section class="Page-two-col">
+				<div class="Page-two-col-col">
+
+					<h2 class="Heading-2">Vi finns för dig</h2>
+
+					<p>Vill du komma i kontakt med oss på kundservice? Vi svarar på e-post inom 48 timmar men behöver du snabbare svar är du välkommen att ringa oss. Vi besvarar ditt samtal varje vardag mellan 8-18 på telefon 08-453 54 00.</p>
+
+					<h2 class="Heading-2">Frågor och svar</h2>
+
+					<p>Ibland är det många som ringer till oss samtidigt och för att vi ska kunna&nbsp;hjälpa dig så snabbt som möjligt har vi sammanställt de vanligaste frågorna här. Hittar du inte svaret på just din fråga? Kontakta oss så hjälper vi dig!</p>
+					<p>
+						<a data-id="1475" href="/kontakta-oss/vanliga-fragor-och-svar/" title="Vanliga frågor och svar">Läs alla våra vanligaste frågor här</a>
+					</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+
+					<div class="Page-image">
+						<img class="Page-image-image" src="/media/1167/kundservice-stor.png?width=1280&amp;height=720&amp;center=0,429090909090909,0,302272727272727&amp;mode=crop&amp;upscale=false">
+						<span class="Page-image-caption"></span>
+					</div>
+
+				</div>
+				<div class="Page-two-col-col">
+
+					<h2 class="Heading-2">Kontakta oss</h2>
+
+					<div id="Kontaktakundservice" class="contour kontaktakundservice form-container">
+
+						<form action="/kontakta-oss/kundservice/" class="Standard-form" enctype="multipart/form-data" method="post">
+							<div class="hidden-fields">
+								<input type="hidden" name="FormId" value="1d4c8b2a-87f8-40c2-9f17-ddef8c3b0b32">
+								<input id="FormName" name="FormName" type="hidden" value="Kontakta kundservice">
+								<input id="RecordId" name="RecordId" type="hidden" value="00000000-0000-0000-0000-000000000000">
+								<input id="PreviousClicked" name="PreviousClicked" type="hidden" value="">
+
+								<input type="hidden" name="FormStep" value="0">
+								<input type="hidden" name="RecordState" value="">
+							</div>
+							<div class="contourPage">
+
+								<div class="form-section">
+									<div class="form-group contourField epost shortanswer mandatory ">
+										<label for="f178e12c-16f1-4f5e-f03d-f268a6dc66b6" class="fieldLabel">
+											E-post
+											<span class="mandatory-indicator">*</span>
+										</label>
+
+										<input
+											type="text"
+											name="f178e12c-16f1-4f5e-f03d-f268a6dc66b6"
+											id="f178e12c-16f1-4f5e-f03d-f268a6dc66b6"
+											placeholder=""
+											class="form-control"
+											value=""
+											maxlength="500"
+											required="required"
+											data-error="Du måste ange en e-post för att vi skall kunna kontakta dig."
+											data-val-regex="Please provide a valid value for E-post"
+											pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+">
+
+										<span class="help-block with-errors"></span>
+									</div>
+									<div class="form-group contourField ämne singlechoice mandatory alternating ">
+										<label for="371a7991-133f-4534-c8c2-091e3dc7f3ef" class="fieldLabel">
+											Ämne
+											<span class="mandatory-indicator">*</span>
+										</label>
+
+										<span class="radiobuttonlist" id="371a7991-133f-4534-c8c2-091e3dc7f3ef">
+											<input type="radio" name="371a7991-133f-4534-c8c2-091e3dc7f3ef" id="371a7991-133f-4534-c8c2-091e3dc7f3ef_0" value="Vinstfrågor" data-val="true" data-val-requiredlist="Please provide a value for Ämne">
+											<label for="371a7991-133f-4534-c8c2-091e3dc7f3ef_0">Vinstfrågor</label>
+											<br>
+											<input type="radio" name="371a7991-133f-4534-c8c2-091e3dc7f3ef" id="371a7991-133f-4534-c8c2-091e3dc7f3ef_1" value="Betalning/Fakturafrågor" data-val="true" data-val-requiredlist="Please provide a value for Ämne">
+											<label for="371a7991-133f-4534-c8c2-091e3dc7f3ef_1">Betalning/Fakturafrågor</label>
+											<br>
+											<input type="radio" name="371a7991-133f-4534-c8c2-091e3dc7f3ef" id="371a7991-133f-4534-c8c2-091e3dc7f3ef_2" value="Bli kund" data-val="true" data-val-requiredlist="Please provide a value for Ämne">
+											<label for="371a7991-133f-4534-c8c2-091e3dc7f3ef_2">Bli kund</label>
+											<br>
+											<input type="radio" name="371a7991-133f-4534-c8c2-091e3dc7f3ef" id="371a7991-133f-4534-c8c2-091e3dc7f3ef_3" value="Uppsägning" data-val="true" data-val-requiredlist="Please provide a value for Ämne">
+											<label for="371a7991-133f-4534-c8c2-091e3dc7f3ef_3">Uppsägning</label>
+											<br>
+											<input type="radio" name="371a7991-133f-4534-c8c2-091e3dc7f3ef" id="371a7991-133f-4534-c8c2-091e3dc7f3ef_4" value="Annat" data-val="true" data-val-requiredlist="Please provide a value for Ämne" checked="checked">
+											<label for="371a7991-133f-4534-c8c2-091e3dc7f3ef_4">Annat</label>
+											<br>
+										</span>
+										<span class="help-block with-errors"></span>
+									</div>
+									<div class="form-group contourField vilketspelhandlardetom singlechoice mandatory ">
+										<label for="7489423a-f453-4ca0-a407-d926273e3de8" class="fieldLabel">
+											Vilket spel handlar det om?
+											<span class="mandatory-indicator">*</span>
+										</label>
+
+										<span class="radiobuttonlist" id="7489423a-f453-4ca0-a407-d926273e3de8">
+											<input type="radio" name="7489423a-f453-4ca0-a407-d926273e3de8" id="7489423a-f453-4ca0-a407-d926273e3de8_0" value="Kombilotteriet" data-val="true" data-val-requiredlist="Please provide a value for Vilket spel handlar det om?">
+											<label for="7489423a-f453-4ca0-a407-d926273e3de8_0">Kombilotteriet</label>
+											<br>
+											<input type="radio" name="7489423a-f453-4ca0-a407-d926273e3de8" id="7489423a-f453-4ca0-a407-d926273e3de8_1" value="Drömreselotteriet" data-val="true" data-val-requiredlist="Please provide a value for Vilket spel handlar det om?">
+											<label for="7489423a-f453-4ca0-a407-d926273e3de8_1">Drömreselotteriet</label>
+											<br>
+											<input type="radio" name="7489423a-f453-4ca0-a407-d926273e3de8" id="7489423a-f453-4ca0-a407-d926273e3de8_2" value="Motorlotteriet" data-val="true" data-val-requiredlist="Please provide a value for Vilket spel handlar det om?">
+											<label for="7489423a-f453-4ca0-a407-d926273e3de8_2">Motorlotteriet</label>
+											<br>
+											<input type="radio" name="7489423a-f453-4ca0-a407-d926273e3de8" id="7489423a-f453-4ca0-a407-d926273e3de8_3" value="Skraplotter" data-val="true" data-val-requiredlist="Please provide a value for Vilket spel handlar det om?">
+											<label for="7489423a-f453-4ca0-a407-d926273e3de8_3">Skraplotter</label>
+											<br>
+											<input type="radio" name="7489423a-f453-4ca0-a407-d926273e3de8" id="7489423a-f453-4ca0-a407-d926273e3de8_4" value="Vet ej" data-val="true" data-val-requiredlist="Please provide a value for Vilket spel handlar det om?">
+											<label for="7489423a-f453-4ca0-a407-d926273e3de8_4">Vet ej</label>
+											<br>
+										</span>
+										<span class="help-block with-errors"></span>
+									</div>
+									<div class="form-group contourField meddelande longanswer mandatory alternating ">
+										<label for="985be2b3-3492-416d-e836-47bae5ec63c6" class="fieldLabel">
+											Meddelande
+											<span class="mandatory-indicator">*</span>
+										</label>
+
+										<textarea name="985be2b3-3492-416d-e836-47bae5ec63c6" id="985be2b3-3492-416d-e836-47bae5ec63c6" class="form-control" placeholder="" rows="5" cols="20" data-val="true" required="required" data-error="Please provide a value for Meddelande"></textarea>
+
+										<span class="help-block with-errors"></span>
+									</div>
+									<div class="form-group contourField namn shortanswer mandatory ">
+										<label for="833e4554-ab16-4b42-d8fe-4db480e8aa69" class="fieldLabel">
+											Namn
+											<span class="mandatory-indicator">*</span>
+										</label>
+
+										<input type="text" name="833e4554-ab16-4b42-d8fe-4db480e8aa69" id="833e4554-ab16-4b42-d8fe-4db480e8aa69" placeholder="" class="form-control" value="" maxlength="500" required="required" data-error="Please provide a value for Namn">
+
+										<span class="help-block with-errors"></span>
+									</div>
+									<div class="form-group contourField personnummer shortanswer alternating ">
+										<label for="f9912220-4458-4960-ce2f-7643674df9e0" class="fieldLabel">
+											Personnummer
+										</label>
+
+										<input
+											type="text"
+											name="f9912220-4458-4960-ce2f-7643674df9e0"
+											id="f9912220-4458-4960-ce2f-7643674df9e0"
+											placeholder="YYYY-DD-DD-XXXX"
+											class="form-control"
+											value=""
+											maxlength="500"
+											data-val-regex="Fel format använd YYYY-DD-DD-XXXX"
+											pattern="^(19|20)?[0-9]{6}[- ]?[0-9]{4}$">
+
+										<span class="help-block with-errors"></span>
+									</div>
+									<div class="form-group contourField kundnummer shortanswer mandatory ">
+										<label for="7df905d0-d813-4c31-f8aa-2759fc85fa2f" class="fieldLabel">
+											Kundnummer
+											<span class="mandatory-indicator">*</span>
+										</label>
+
+										<input type="text" name="7df905d0-d813-4c31-f8aa-2759fc85fa2f" id="7df905d0-d813-4c31-f8aa-2759fc85fa2f" placeholder="" class="form-control" value="" maxlength="500" required="required" data-error="Please provide a value for Kundnummer">
+
+										<span class="help-block with-errors"></span>
+									</div>
+									<div class="form-group contourField lottnummer shortanswer alternating ">
+										<label for="97c9c254-7de8-4cee-b231-6528b3df0e1c" class="fieldLabel">
+											Lottnummer
+										</label>
+
+										<input type="text" name="97c9c254-7de8-4cee-b231-6528b3df0e1c" id="97c9c254-7de8-4cee-b231-6528b3df0e1c" placeholder="" class="form-control" value="" maxlength="500">
+
+										<span class="help-block with-errors"></span>
+									</div>
+								</div>
+								<div class="form-section"></div>
+
+								<div style="display: none">
+									<input type="text" name="1d4c8b2a87f840c29f17ddef8c3b0b32">
+								</div>
+								<div class="form-buttons">
+									<button type="submit" class="btn btn-default">
+										<span>Skicka</span>
+									</button>
+								</div>
+							</div>
+							<input
+								name="ufprt"
+								type="hidden"
+								value="A1200563CBFB9904E39710476C8066720DD5E6BF5BE71841663A611EF47AA19F5280FB5F32DBE17E3D4C5E2F55820840BFE95007ED4745002ADC89CF02080EADA55EB27971E163654B91F82C0BC527A42C438115A537FBCEBCE445FEF59549D3089D7466245ADF5DCD1C72897C785AF0647BEDEE0B6FEDFCB093DB3C6CB5BA63244099F72CF96D7C6CD3117439CBE4F9"></form>
+					</div>
+
+				</div>
+			</section>
+			<section class="Page-one-col">
+				<div class="Page-one-col-col">
+
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+
+				</div>
+			</section>
+
+		</div>
+
+	</div>
+</section>
