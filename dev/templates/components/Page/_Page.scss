@@ -159,3 +159,8 @@ blockquote {
   @include gradient-btn($red);
   margin: 2*$base-margin auto;
 }
+.Page:not(.Page-winners) {
+  .Winners-winner {
+    margin-bottom: 2*$base-margin;
+  } 
+}

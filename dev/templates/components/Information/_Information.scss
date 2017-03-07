@@ -138,14 +138,32 @@
     margin: 2*$base-margin auto;
     width: 290px;
   }
-  .Information-save-btn {
-    @include rounded-btn($orange,white,100%);
+
+  @include breakpoint(1px,767px) {
+    height: 150px;
+    transition: all 350ms ease;
+    .Information-save-container-cols {
+      @include flex-row();
+      button {
+        @include flex-gtr-col(2,$base-margin);
+      }
+    }
   }
-  .js-Information-regret-btn {
-    @include rounded-btn($lighter-grey,$motor-black,100%);
-   }
+.Information-save-container-cols {
+  @include breakpoint(1px, 400px) {
+    margin: 0 $base-margin/2;
+  }
+  @include breakpoint(401px, 767px) {
+    margin: 0 $base-margin;
+  }
+}
+.Information-save-btn {
+  @include rounded-btn($orange,white,100%);
+}
+.js-Information-regret-btn {
+  @include rounded-btn($lighter-grey,$motor-black,100%);
+ }
 }
 .js-Information-save-container--visible {
-  // transform: translateY(0);
   bottom: 0;
 }

@@ -39,7 +39,7 @@
           <button class="js-MyPages-password-btn" type="button">Ändra ditt lösenord</button>
         </div>
 
-        <form name="" class="Information-form">
+        <form name="" class="Information-form js-Information-form">
         <!-- ////////////////////////////////////////////////////////
         BLOCK 2 (Kontaktuppgifter)
         //////////////////////////////////////////////////////////-->
@@ -213,8 +213,10 @@
             </div>
             <div class="js-Information-save-container">
               <h4>Du har gjort en ändring i dina uppgifter</h4>
-              <button class="Information-save-btn" type="submit">Spara dina ändringar</button>
-              <button class="js-Information-regret-btn" type="button">Ångra</button>
+              <div class="Information-save-container-cols">
+                <button class="Information-save-btn js-Information-save-btn" type="submit">Spara dina ändringar</button>
+                <button class="js-Information-regret-btn" type="button">Ångra</button>
+              </div>
             </div>
             <!-- END BLOCKS & FORM  -->
           </form>

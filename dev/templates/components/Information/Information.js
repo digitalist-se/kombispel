@@ -43,3 +43,19 @@ $infoRegretBtn.click(function() {
   })
   $infoSaveContainer.removeClass("js-Information-save-container--visible")
 })
+
+////////////////////////////////////////////////
+// Om fält är tomt vid spara-klick scrolla dit
+///////////////////////////////////////////////
+var $saveButton = $(".js-Information-save-btn");
+var $infoForm = $(".js-Information-form");
+
+$saveButton.click(function(e) {
+  $infoForm[0].checkValidity();
+  $informationInput.each(function(i) {
+    if($(this).val()=="" && $(this).attr("type")==="email") {
+      $("html, body").animate({ scrollTop: $(this).offset().top - 200 }, 600);
+      return false
+    }
+  })
+})
