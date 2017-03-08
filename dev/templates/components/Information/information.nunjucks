@@ -211,6 +211,7 @@
               </div>
               </div>
             </div>
+
             <div class="js-Information-save-container">
               <h4>Du har gjort en ändring i dina uppgifter</h4>
               <div class="Information-save-container-cols">
@@ -218,6 +219,7 @@
                 <button class="js-Information-regret-btn" type="button">Ångra</button>
               </div>
             </div>
+
             <!-- END BLOCKS & FORM  -->
           </form>
       </section>
