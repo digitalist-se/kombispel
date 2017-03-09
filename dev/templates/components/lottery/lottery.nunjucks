@@ -63,7 +63,7 @@
 
     </div>
     <div class="Start-lottery-btn-container">
-      <a href="#anchor"><button class="js-Start-lottery-btn">Starta dragning</button></a>
+      <button class="js-Start-lottery-btn">Starta dragning</button>
     </div>
     <!-- HÄMTA VINSTER LÄNKAR
     Kommer vara där hela tiden men visas först när dragningen är klar.

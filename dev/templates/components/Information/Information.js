@@ -24,8 +24,8 @@ $informationSelect.each(function() {
 })
 
 function toggleSaveContainer() {
-  if($infoSaveContainer.hasClass("js-Information-save-container--visible") == false) {
-    $infoSaveContainer.addClass("js-Information-save-container--visible")
+  if($infoSaveContainer.hasClass("is-visible") == false) {
+    $infoSaveContainer.addClass("is-visible")
   }
 }
 $informationInput.on('input', function() {
@@ -41,7 +41,7 @@ $infoRegretBtn.click(function() {
   $informationSelect.each(function(i) {
     $informationSelect[i].value = $initSelect[i]
   })
-  $infoSaveContainer.removeClass("js-Information-save-container--visible")
+  $infoSaveContainer.removeClass("is-visible")
 })
 
 ////////////////////////////////////////////////
@@ -49,13 +49,27 @@ $infoRegretBtn.click(function() {
 ///////////////////////////////////////////////
 var $saveButton = $(".js-Information-save-btn");
 var $infoForm = $(".js-Information-form");
+var $infoFieldRequired = $(".js-Information-field-required");
+var mailRegex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+$infoFieldRequired.click(function() {
+  $(this).toggleClass("is-visible");
+})
+var formValid;
 
 $saveButton.click(function(e) {
-  $infoForm[0].checkValidity();
+ formValid = true;
+  e.preventDefault();
   $informationInput.each(function(i) {
-    if($(this).val()=="" && $(this).attr("type")==="email") {
-      $("html, body").animate({ scrollTop: $(this).offset().top - 200 }, 600);
+    if(mailRegex.test($(this).val()) === false && $(this).attr("type")==="email") {
+      formValid = false;
+      $("html, body").animate({ scrollTop: $(this).offset().top - 125 }, 600);
+      $(this).focus()
+      $(this).next().addClass("is-visible");
       return false
     }
   })
+  if(formValid) {
+    $infoForm.submit();
+  }
 })

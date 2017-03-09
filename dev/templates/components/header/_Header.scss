@@ -373,7 +373,7 @@ $headerDesktop: 114px;
     transform: translateY(-$headerDesktop);
   }
   main {
-    margin-top: $headerDesktop;
+    margin-top: $headerDesktop - 2;
   }
 
 }
