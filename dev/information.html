@@ -9,17 +9,12 @@
   <link rel="icon" href="images/favicon/kombi.ico" type="image/icon">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
   <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MTHCKR');</script>
+    
 <!-- End Google Tag Manager -->
 </head>
 <body id="top">
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTHCKR"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
 <!-- End Google Tag Manager (noscript) -->
   <!-- Start Site information -->
   <!-- CHECK FOR OLD IE -->
@@ -399,17 +394,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3 class="Heading-3">Kontaktuppgifter:</h3>
 
             <div class="Information-input-section">
-              <label for="adress">Adress:</label>
-              <input type="text" name="adress" class="js-Information-input" placeholder="Gatuadress" value="Storgatan 23" required />
+              <label for="adress">Adress *</label>
+              <input type="text" name="adress" class="js-Information-input" placeholder="Gatuadress *" value="Storgatan 23" required />
               <div class="Information-input-row Information-input-row--adress">
-                <input type="number" class="Information-input-inline js-Information-input" name="post-number" placeholder="Postnummer" value="12345" required/>
-                <input type="text" class="Information-input-inline js-Information-input" name="city" placeholder="Ort" value="Storstad" required/>
+                <input type="number" class="Information-input-inline js-Information-input" name="post-number" placeholder="Postnummer *" value="12345" required/>
+                <input type="text" class="Information-input-inline js-Information-input" name="city" placeholder="Ort *" value="Storstad" required/>
               </div>
             </div>
 
 
             <div class="Information-input-section">
-                <label for="phone">Telefon:</label>
+                <label for="phone">Telefon</label>
 
                 <div class="Information-input-row">
                   <input class="js-Information-input Information-input--has-helpbox" type="text" name="phone" placeholder="Telefonnumer" value="08615656151" required/>
@@ -438,7 +433,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <!-- END HELP BOX -->
             </div>
             <div class="Information-input-section">
-                <label for="mobile">Mobiltelefon:</label>
+                <label for="mobile">Mobiltelefon</label>
 
                 <div class="Information-input-row">
                   <input class="js-Information-input Information-input--has-helpbox" type="text" name="mobile" placeholder="Telefonnumer" value="0708123456" required/>
@@ -467,10 +462,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <!-- END HELP BOX -->
             </div>
             <div class="Information-input-section">
-              <label for="email">E-postadress:</label>
-
+              <label for="email">E-postadress *</label>
               <div class="Information-input-row">
-                <input class="js-Information-input Information-input--has-helpbox" type="email" name="email" placeholder="E-postadress" value="test@test.se" required/>
+                <input class="js-Information-input Information-input--has-helpbox" type="email" name="email" placeholder="E-postadress *" value="test@test.se" required/>
+                <span class="js-Information-field-required">En lång exempeltext på varför man måste ange sin
+                  e-postadress innan man kan bli kund</span>
                 <div class="Information-toggle-helpbox">
                   <span class="Icon Icon--question js-Information-toggle-mail"></span>
                 </div>
@@ -564,7 +560,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <div class="js-Information-save-container">
-              <h4>Du har gjort en ändring i dina uppgifter</h4>
+              
               <div class="Information-save-container-cols">
                 <button class="Information-save-btn js-Information-save-btn" type="submit">Spara dina ändringar</button>
                 <button class="js-Information-regret-btn" type="button">Ångra</button>
@@ -684,7 +680,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   </div>
   <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/lodash.min.js"></script> 
+  <script src="js/lodash.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

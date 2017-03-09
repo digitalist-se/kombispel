@@ -38,6 +38,9 @@ input[type="date"],
     height: 60px;
     border: 1px solid $orange;
     background-color: white;
+    + .js-Information-field-required {
+      top: 60px;
+    }
   }
 }
 select {
@@ -55,6 +58,7 @@ select {
   &:focus {
     border: 1px solid $orange;
     background-color: white;
+
   }
 }
 

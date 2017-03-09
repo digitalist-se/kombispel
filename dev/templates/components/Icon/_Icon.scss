@@ -1,20 +1,20 @@
 .Icon {
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  right: 5px;
-  top: 31px;
-  cursor: pointer;
-  transition: all .2s ease;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    top: 31px;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .Icon--topRight {
-  top: 0;
-  right: 10px;
+    top: 0;
+    right: 10px;
 }
 
 .Icon--question {
-  background-image: url("../images/svg/login-question.svg");
+    background-image: url("../images/svg/login-question.svg");
 }
