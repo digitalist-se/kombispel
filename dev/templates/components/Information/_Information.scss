@@ -168,10 +168,15 @@
 
     .Information-save-container-cols {
         @include flex-row();
+        width: 70%;
+        max-width: 560px;
         button {
             @include flex-gtr-col(2,$base-margin);
+            max-width: calc(50%  - #{$base-margin/2});
             margin-top: 0;
             margin-bottom: 0;
+            display: block;
+            // box-sizing: border-box !important;
         }
     }
     .Information-save-btn {
