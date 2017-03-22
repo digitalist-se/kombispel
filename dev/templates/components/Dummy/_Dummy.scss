@@ -1,0 +1,32 @@
+.Dummy-container {
+  @include flex-row();
+  @extend .Inner-container;
+}
+.Dummy-box {
+  height: 200px;
+  background-color: red;
+  @include flex-position(center); //
+  @include breakpoint(1px, 799px) {
+    @include flex-gtr-col(2,$base-margin);
+  }
+  @include breakpoint(800px) {
+    @include flex-gtr-col(4,$base-margin);
+  }
+}
+.Dummy-btn--dream {
+  @include gradient-btn($green);
+}
+.Dummy-btn--motor {
+  @include gradient-btn($red);
+}
+.Dummy-btn--kombi {
+  @include gradient-btn($orange);
+}
+
+.Dummy-btn--skrap {
+  @include gradient-btn($purple);
+}
+.Dummy-btn {
+  width: 80%;
+  margin: 0;
+}

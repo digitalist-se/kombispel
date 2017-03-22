@@ -151,7 +151,7 @@ function correct () {
       /////////////////////////////////////////////
       // COLOR OF EACH NUMBER
       /////////////////////////////////////////////
-      if(objectCounter == (correctNumbers.length-1)) { // IF ITS THE LAST ROUND THE FIRST THE FIRST THREE NUMBERS SHOULD BE DISREGARDED
+      if(objectCounter == (correctNumbers.length-1)) { // IF ITS THE LAST ROUND THE FIRST THREE NUMBERS SHOULD BE DISREGARDED
         if(y<3) {
           lotteryNumbers[y].innerHTML = "<div class='Lottery-correct'>"+drawArray[y]+"</div>";
         } else {

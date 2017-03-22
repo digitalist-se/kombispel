@@ -1,0 +1,17 @@
+<section class="Dummy-container">
+  <div class="Dummy-box">
+    <button class="Dummy-btn Dummy-btn--dream">
+      <span>Köp en sån här</span>
+      <span>Drömreselott</span>
+    </button>
+  </div>
+  <div class="Dummy-box">
+    <button class="Dummy-btn Dummy-btn--kombi">Kombilott</button>
+  </div>
+  <div class="Dummy-box">
+    <button class="Dummy-btn Dummy-btn--motor">Motorlott</button>
+  </div>
+  <div class="Dummy-box">
+    <button class="Dummy-btn Dummy-btn--skrap">Skraplott</button>
+  </div>
+</section>
