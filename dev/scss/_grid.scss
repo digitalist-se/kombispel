@@ -49,6 +49,7 @@ margin-right: $gutter/2;
   flex-direction: row;
 }
 
+// Hur många kolumner och vilken gutter mellan dem
 @mixin flex-gtr-col($columns, $gutter) {
   $percentage: percentage(1/$columns);
   $width: (($columns - 1)*$gutter)/$columns;
@@ -67,6 +68,9 @@ margin-right: $gutter/2;
     };
   }
 }
+// Hur många kolumner totalt, hur många kolumner this ska ta och vilken marginal
+// Exempelvis flex-col(12,4,15px); då ska alltså den ta upp 4 av 12 kolumner
+// dvs. en tredjedel och ha en marginal på 15px
 @mixin flex-col($span, $columns, $margin: 0px) {
   $percentage: percentage($span/$columns);
   @if $columns != 1 {
@@ -78,6 +82,8 @@ margin-right: $gutter/2;
 
 /////////////////////////////////////////////
 // FLEX POSITION
+// Andra argumentet är frivilligt.
+// Möjliga argument är flex-start, center, flex-end
 /////////////////////////////////////////////
 @mixin flex-position($horizontal, $vertical:null) {
   @if($vertical) {

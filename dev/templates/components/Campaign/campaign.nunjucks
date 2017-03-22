@@ -3,10 +3,10 @@
 <!-- POPUP SOM VISAR KAMPANJENS VILLKOR -->
 {% include "components/Campaign/campaign-terms.nunjucks" %}
 <!-- KAMPANJSIDA -->
-<section class="Campaign Campaign--skrap">
-  <div class="Campaign-hero Campaign-hero-image" style="background-image: url('images/heroes/road.png')">
+<section class="Campaign Campaign--kombi">
+  {# <div class="Campaign-hero Campaign-hero-image" style="background-image: url('images/heroes/road.png')"> #}
   <!-- If no image is uploaded it should get this Div to set a gradient background -->
-  {# <div class="Campaign-hero Campaign-hero-no-image"> #}
+  <div class="Campaign-hero Campaign-hero-no-image">
       <div class="Campaign-hero-inner">
         <!-- LEFT list + image -->
         <div class="Campaign-hero-left">
