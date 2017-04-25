@@ -163,24 +163,28 @@
                   <span><label for="signup-check">Ja tack, jag vill ha mitt lottoutskick via e-post</label></span>
                 </div>
               </div>
-              <h4>Det här ingår:</h4>
-              <ul class="Information-contact-list">
-                <li>Papperstidningen Kombi</li>
-                <li>PDF-tidningen Kombi via E-post</li>
-                <li>Lottnummer/bevis hittar du här på Mina sidor</li>
-              </ul>
+              <div class="Information-form-description">
+                <h4>Det här ingår:</h4>
+                <ul>
+                  <li>Papperstidningen Kombi</li>
+                  <li>PDF-tidningen Kombi via E-post</li>
+                  <li>Lottnummer/bevis hittar du här på Mina sidor</li>
+                </ul>
+              </div>
               <div class="Form-checkbox">
                 <div>
                   <span><input type="checkbox" name="signup-check" checked/></span>
                   <span><label for="signup-check">Ja tack, jag vill ha mitt lottoutskick via brev</label></span>
                 </div>
               </div>
-              <h4>Det här ingår:</h4>
-              <ul class="Information-contact-list">
-                <li>Papperstidningen Kombi</li>
-                <li>PDF-tidningen Kombi via E-post</li>
-                <li>Lottnummer/bevis hittar du här på Mina sidor</li>
-              </ul>
+              <div class="Information-form-description">
+                <h4>Det här ingår:</h4>
+                <ul class="Information-contact-list">
+                  <li>Papperstidningen Kombi</li>
+                  <li>PDF-tidningen Kombi via E-post</li>
+                  <li>Lottnummer/bevis hittar du här på Mina sidor</li>
+                </ul>
+              </div>
               </div>
             </div>
             <!-- ////////////////////////////////////////////////////////

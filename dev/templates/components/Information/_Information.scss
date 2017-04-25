@@ -89,7 +89,12 @@
 /////////////////////////////////////////////
 // KONTAKTVÄG BLOCK
 /////////////////////////////////////////////
-
+.Information-form-description{
+    ul {
+        @extend .u-Dots-list--grey;
+        margin-left: $base-margin*2;
+    }    
+}
 .Information-contact-list {
     @extend .u-Dots-list--grey;
     margin-left: $base-margin*2;
