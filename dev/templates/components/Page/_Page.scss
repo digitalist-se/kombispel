@@ -2,165 +2,224 @@
 // Page General
 /////////////////////////////////////////////
 .Page {
-background-color: #F2F2F2;
-padding-bottom: 2*$base-margin;
-&:after {
-  content: "";
-  height: 100px;
-  width: 100%;
-  background-color: red;
-}
-.Page-inner {
-  background-color: white;
-  @extend .Inner-container;
-  @include page-inner();
-}
-.Page-content {
-  margin: 0 auto;
-  @include flex-row();
-}
-/////////////////////////////////////////////
-// Page grid
-/////////////////////////////////////////////
-.Page-two-col {
-  @include flex-row();
-  width: 100%;
-  }
-.Page-two-col-col {
-  @include flex-col(1, 1, 2*$base-margin);
-  @include breakpoint(1024px) {
-    &:nth-of-type(odd) {
-    @include flex-col(2, 3, 2*$base-margin);
-    margin-right: 4*$base-margin;
-    }
-    &:nth-of-type(even) {
-    @include flex-col(1, 3, 2*$base-margin);
-    }
-}
-}
-.Page-one-col {
-  width: 100%;
-  margin: 0 auto;
-  .Page-lead {
-    max-width: $max-inner;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .Page-one-col-col {
-    width: 100%;
-  }
+	background-color: #F2F2F2;
+	padding-bottom: 2*$base-margin;
+
+	&:after {
+		content: "";
+		height: 100px;
+		width: 100%;
+		background-color: red;
+	}
+
+	.Page-inner {
+		background-color: white;
+		@extend .Inner-container;
+		@include page-inner();
+	}
+
+	.Page-content {
+		margin: 0 auto;
+		@include flex-row();
+	}
+	/////////////////////////////////////////////
+	// Page grid
+	/////////////////////////////////////////////
+	.Page-two-col {
+		@include flex-row();
+		width: 100%;
+	}
+
+	.Page-two-col-col {
+		@include flex-col(1, 1, 2*$base-margin);
+
+		@include breakpoint(1024px) {
+			&:nth-of-type(odd) {
+				@include flex-col(2, 3, 2*$base-margin);
+				margin-right: 4*$base-margin;
+			}
+
+			&:nth-of-type(even) {
+				@include flex-col(1, 3, 2*$base-margin);
+			}
+		}
+	}
+
+	.Page-one-col {
+		width: 100%;
+		margin: 0 auto;
+
+		.Page-lead {
+			max-width: $max-inner;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.Page-one-col-col {
+			width: 100%;
+		}
+	}
+	/////////////////////////////////////////////
+	// Text and Stuff
+	/////////////////////////////////////////////
+	h1, h2, h3, h4, h5, h6, p, ul {
+		max-width: $max-inner;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	blockquote {
+		&:before {
+			background: none; // Get rid of the inital
+		}
+
+		text-align: center;
+		padding-top: 45px;
+		padding-bottom: 45px;
+		position: relative;
+
+		span {
+			position: relative;
+			text-align: left;
+			display: inline-block;
+			margin: 0 auto;
+
+			&:before {
+				background: url("../images/svg/quote.svg");
+				content: '';
+				position: absolute;
+				height: 30px;
+				width: 30px;
+				left: -45px;
+				top: 5px;
+				background-repeat: no-repeat;
+			}
+		}
+	}
 }
 
-
-/////////////////////////////////////////////
-// Text and Stuff
-/////////////////////////////////////////////
-h1,h2,h3,h4,h5,h6,p,ul {
-  max-width: $max-inner;
-  margin-left: auto;
-  margin-right: auto;
-}
-blockquote {
-  &:before {
-    background: none; // Get rid of the inital
-  }
-  text-align: center;
-  padding-top: 45px;
-  padding-bottom: 45px;
-  position: relative;
-  span {
-    position: relative;
-    text-align: left;
-    display: inline-block;
-    margin: 0 auto;
-    &:before {
-      background: url("../images/svg/quote.svg");
-      content: '';
-      position: absolute;
-      height: 30px;
-      width: 30px;
-      left: -45px;
-      top: 5px;
-      background-repeat: no-repeat;
-    }
-  }
-}
-}
 .Page {
-  h1 {
-    font-size: 40px;
-    display: block;
-    margin: 10px auto;
-    @extend .Heading-1;
-  }
-  h2 {
-    font-size: 32px;
-    margin-bottom: $base-margin;
-    @extend .Heading-2;
-    text-align: left;
-  }
-  h3 {
-    font-size: 23px;
-    margin-bottom: $base-margin;
-    @extend .Heading-3;
-    text-align: left;
-  }
-  h1,h2,h3,h4,h5,h6 {
-    @include breakpoint(1px,767px) {
-      line-height: 1em;
-      word-wrap:break-word;
-    }
-  }
-  p {
-    margin: $base-margin auto;
-    font-size: 18px;
-  }
-  ul {
-    @extend .u-Dots-list;
-  }
+	h1 {
+		font-size: 40px;
+		display: block;
+		margin: 10px auto;
+		@extend .Heading-1;
+	}
+
+	h2 {
+		font-size: 32px;
+		margin-bottom: $base-margin;
+		@extend .Heading-2;
+		text-align: left;
+	}
+
+	h3 {
+		font-size: 23px;
+		margin-bottom: $base-margin;
+		@extend .Heading-3;
+		text-align: left;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		@include breakpoint(1px,767px) {
+			line-height: 1em;
+			word-wrap: break-word;
+		}
+	}
+
+	p {
+		margin: $base-margin auto;
+		font-size: 18px;
+	}
+
+	ul {
+		@extend .u-Dots-list;
+	}
 }
 
 .Page-image {
-  margin-bottom: 2*$base-margin;
-  img {
-    width: 100%;
-    height: auto;
-  }
-  span {
-    display: block;
-  }
+	margin-bottom: 2*$base-margin;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	span {
+		display: block;
+	}
 }
+
 .Page-lead {
-  background-color: $lighter-grey;
-  font-size: 23px;
-  padding: 2*$base-margin;
-  margin-bottom: 2*$base-margin;
+	background-color: $lighter-grey;
+	font-size: 23px;
+	padding: 2*$base-margin;
+	margin-bottom: 2*$base-margin;
 }
+
 .Page-video {
-  max-width: $max-inner;
-  width: 100%;
-  margin: 0 auto;
+	max-width: $max-inner;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .Page-video-inner {
-  margin: 0 auto;
-  position: relative;
-  padding-bottom: percentage(9/16);
-  padding-top: 25px;
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+	margin: 0 auto;
+	position: relative;
+	padding-bottom: percentage(9/16);
+	padding-top: 25px;
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 }
+
 .Page-buy-ticket {
-  @include gradient-btn($red);
-  margin: 2*$base-margin auto;
+	@include gradient-btn($red);
+	margin: 2*$base-margin auto;
 }
+
 .Page:not(.Page-winners) {
-  .Winners-winner {
-    margin-bottom: 2*$base-margin;
-  } 
+	.Winners-winner {
+		margin-bottom: 2*$base-margin;
+	}
+}
+
+.Page-two-col {
+	@include flex-row();
+	width: 100%;
+}
+
+.Page-two-col-col {
+	@include flex-col(1, 1, 2*$base-margin);
+
+	@include breakpoint(1024px) {
+		&:nth-of-type(odd) {
+			@include flex-col(2, 3, 2*$base-margin);
+			margin-right: 4*$base-margin;
+		}
+
+		&:nth-of-type(even) {
+			@include flex-col(1, 3, 2*$base-margin);
+		}
+	}
+}
+
+.Page-one-col {
+	width: 100%;
+	margin: 0 auto;
+
+	.Page-lead {
+		max-width: $max-inner;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.Page-one-col-col {
+		width: 100%;
+	}
 }

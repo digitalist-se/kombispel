@@ -1,94 +1,141 @@
 .MyPages-container {
-  background-color: $lighter-grey;
-  padding-bottom: 100px;
+	background-color: $lighter-grey;
+	padding-bottom: 100px;
+
+	.Page-two-col {
+		@include flex-row();
+		width: 100%;
+	}
+
+	.Page-two-col-col {
+		@include flex-col(1, 1, 2*$base-margin);
+
+		@include breakpoint(1024px) {
+			&:nth-of-type(odd) {
+				@include flex-col(2, 3, 2*$base-margin);
+				margin-right: 4*$base-margin;
+			}
+
+			&:nth-of-type(even) {
+				@include flex-col(1, 3, 2*$base-margin);
+			}
+		}
+	}
+
+	.Page-one-col {
+		width: 100%;
+		margin: 0 auto;
+
+		.Page-lead {
+			max-width: $max-inner;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.Page-one-col-col {
+			width: 100%;
+		}
+	}
 }
+
 .MyPages-inner-container {
-  @extend .Inner-container;
+	@extend .Inner-container;
 }
 /////////////////////////////////////////////
 // HEADER
 /////////////////////////////////////////////
 .MyPages-header {
-  text-align: center;
-  padding-top: $base-margin;
+	text-align: center;
+	padding-top: $base-margin;
 
-  p {
-    margin: $base-margin/2 0;
-    color: $dark-grey;
-    font-family: $gill-regular;
-  }
+	p {
+		margin: $base-margin/2 0;
+		color: $dark-grey;
+		font-family: $gill-regular;
+	}
 }
 
 .MyPages-information {
-  @include flex-row();
+	@include flex-row();
 }
-.MyPages-info-col-main,.MyPages-info-col-side  {
-  @include flex-col(1, 1, $base-margin);
+
+.MyPages-info-col-main, .MyPages-info-col-side {
+	@include flex-col(1, 1, $base-margin);
 }
+
 @include breakpoint(1250px) {
-  .MyPages-info-col-main  {
-    @include flex-col(2, 3, $base-margin);
-    margin-right: $base-margin;
-  }
-  .MyPages-info-col-side {
-    @include flex-col(1, 3, $base-margin);
-    margin-left: $base-margin;
-  }
+	.MyPages-info-col-main {
+		@include flex-col(2, 3, $base-margin);
+		margin-right: $base-margin;
+	}
+
+	.MyPages-info-col-side {
+		@include flex-col(1, 3, $base-margin);
+		margin-left: $base-margin;
+	}
 }
 
 .MyPages-block {
-  background-color: #fff;
-  padding: $base-margin;
-  @include breakpoint(768px) {
-    padding: 20px;
-  }
-  button {
-    font-family: $gill-regular;
-    @include rounded-btn($orange,white,100%);
-  }
+	background-color: #fff;
+	padding: $base-margin;
+
+	@include breakpoint(768px) {
+		padding: 20px;
+	}
+
+	button {
+		font-family: $gill-regular;
+		@include rounded-btn($orange,white,100%);
+	}
 }
 
 .MyPages-block--basic {
-  margin-bottom: 30px;
-  text-align: center;
-  button {
-    margin-top: 20px;
-  }
+	margin-bottom: 30px;
+	text-align: center;
+
+	button {
+		margin-top: 20px;
+	}
 }
 
 .MyPages-block-title {
-  display: inline-block;
-  border-bottom: 1px solid $dark-grey;
-  padding-bottom: 10px;
+	display: inline-block;
+	border-bottom: 1px solid $dark-grey;
+	padding-bottom: 10px;
 }
+
 .MyPages-block-section {
-  max-width: 560px;
-  margin: 0 auto;
-  &:first-child {
-    margin-bottom: 30px;
-  }
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
+	max-width: 560px;
+	margin: 0 auto;
+
+	&:first-child {
+		margin-bottom: 30px;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 10px;
+	}
 }
+
 .MyPages-block-row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  a {
-    @extend .Arrow-link;
-  }
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+
+	a {
+		@extend .Arrow-link;
+	}
 }
 /////////////////////////////////////////////
 // LINKS
 /////////////////////////////////////////////
 .MyPages-show-list-link {
-  display: block;
-  text-align: center;
-  margin: 40px auto;
-  width: 210px;
-  @extend .Arrow-link;
+	display: block;
+	text-align: center;
+	margin: 40px auto;
+	width: 210px;
+	@extend .Arrow-link;
 }
 
 
@@ -96,55 +143,65 @@
 // CHANGE PASSWORD MODAL
 /////////////////////////////////////////////
 .js-MyPages-pswrd-overlay-container {
-  @extend .Modal-overlay-container;
+	@extend .Modal-overlay-container;
 }
-.js-MyPages-pswrd-clickarea {
-  @extend .Modal-clickarea;
-}
-.MyPages-pswrd-form-container {
-  @extend .Modal-form-container;
-  h2 {
-    text-align: center;
-    @extend .Modal-header;
-  }
-}
-.js-MyPages-close-form {
-  @extend .Modal-close-form;
-}
-.MyPages-pswrd-form {
-  @extend .Modal-form;
 
-  label {
-    margin-top: 25px;
-    display: block;
-  }
-  button {
-    @include gradient-btn($orange);
-    margin-bottom: 3*$base-margin;
-  }
+.js-MyPages-pswrd-clickarea {
+	@extend .Modal-clickarea;
+}
+
+.MyPages-pswrd-form-container {
+	@extend .Modal-form-container;
+
+	h2 {
+		text-align: center;
+		@extend .Modal-header;
+	}
+}
+
+.js-MyPages-close-form {
+	@extend .Modal-close-form;
+}
+
+.MyPages-pswrd-form {
+	@extend .Modal-form;
+
+	label {
+		margin-top: 25px;
+		display: block;
+	}
+
+	button {
+		@include gradient-btn($orange);
+		margin-bottom: 3*$base-margin;
+	}
 }
 /////////////////////////////////////////////
 // TABELL
 /////////////////////////////////////////////
 .MyPages-table {
-  width: 100%;
-  td, th {
-    text-align: left;
-    padding: $base-margin/3 0;
-  }
+	width: 100%;
+
+	td, th {
+		text-align: left;
+		padding: $base-margin/3 0;
+	}
 }
+
 .MyPages-table--2-col {
-  td, th {
-    width: 33%;
-  }
+	td, th {
+		width: 33%;
+	}
 }
+
 .MyPages-table--3-col {
-  td, th {
-    width: 33%;
-  }
+	td, th {
+		width: 33%;
+	}
 }
+
 .MyPages-table--4-col {
-  td, th {
-    width: 25%;
-  }
+	td, th {
+		width: 25%;
+	}
 }
